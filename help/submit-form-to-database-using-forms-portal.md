@@ -5,7 +5,7 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 translation-type: tm+mt
-source-git-commit: 040b0ddb489b5bdfd640a93b22cd7bc512a39aea
+source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 040b0ddb489b5bdfd640a93b22cd7bc512a39aea
 
 Le service de conversion automatisée de formulaires vous permet de convertir un formulaire PDF non interactif, un formulaire Acro ou un formulaire PDF XFA en formulaire adaptatif. Lors du lancement du processus de conversion, vous avez la possibilité de générer un formulaire adaptatif avec ou sans liaisons de données.
 
-Si vous choisissez de générer un formulaire adaptatif sans liaison de données, vous pouvez intégrer le formulaire adaptatif converti à un modèle de données de formulaire, un schéma XML ou un schéma JSON après la conversion. Cependant, si vous générez un formulaire adaptatif avec des liaisons de données, le service de conversion associe automatiquement le ou les formulaires adaptatifs à un schéma JSON et crée une liaison de données entre les champs disponibles dans le formulaire adaptatif et le schéma JSON. Vous pouvez ensuite intégrer le formulaire adaptatif à une base de données de votre choix, remplir les données du formulaire et les envoyer à la base de données à l’aide de Forms Portal.
+Si vous choisissez de générer un formulaire adaptatif sans liaison de données, vous pouvez intégrer le formulaire adaptatif converti à un modèle de données de formulaire, un  XML ou un JSON  après la conversion. Cependant, si vous générez un formulaire adaptatif avec des liaisons de données, le service de conversion associe automatiquement le ou les formulaires adaptatifs à un  JSON et crée une liaison de données entre les champs disponibles dans le formulaire adaptatif et le  JSON. Vous pouvez ensuite intégrer le formulaire adaptatif à une base de données de votre choix, remplir les données du formulaire et les envoyer à la base de données à l’aide de Forms Portal.
 
 La figure suivante illustre les différentes étapes de l’intégration d’un formulaire adaptatif converti à une base de données à l’aide de Forms Portal :
 
@@ -26,18 +26,19 @@ L’exemple présenté dans cet article est une implémentation de référence d
 
 ## Conditions préalables {#pre-requisites}
 
-* Instance d’auteur AEM 6.5 avec la dernière version d’AEM 6.5 Service Pack
+* Configuration d’une instance d’auteur AEM 6.4 ou 6.5
+* Installer le Service Pack [](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) le plus récent pour votre instance AEM
 * Dernière version du module complémentaire AEM Forms
-* [Service de conversion de formulaires automatisés](configure-service.md)
-* Base de données à intégrer. La base de données utilisée dans l’exemple d’implémentation est MySQL 5.6.24. Vous pouvez toutefois intégrer Forms Portal à n’importe quelle base de données de votre choix.
+* Configuration du service de conversion [automatisée des formulaires](configure-service.md)
+* Configurez une base de données. La base de données utilisée dans l’exemple d’implémentation est MySQL 5.6.24. Vous pouvez toutefois intégrer le formulaire adaptatif converti à n’importe quelle base de données de votre choix.
 
-## Configurer la connexion entre l’instance AEM et la base de données {#set-up-connection-aem-instance-database}
+## Configuration de la connexion entre l’instance AEM et la base de données {#set-up-connection-aem-instance-database}
 
 La configuration d’une connexion entre une instance AEM et une base de données MYSQL consiste à :
 
 * [Installation d’un package de connecteur MYSQL](#install-mysql-connector-java-file)
 
-* [Création de schémas et de tableaux dans la base de données](#create-schema-and-tables-in-database)
+* [Création de  et de tableaux dans la base de données](#create-schema-and-tables-in-database)
 
 * [Configuration des paramètres de connexion](#configure-connection-between-aem-instance-and-database)
 
@@ -54,19 +55,19 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 1. Cliquez sur **[!UICONTROL Install]** ou **[!UICONTROL Update]**. Une fois cette opération effectuée, redémarrez le serveur.
 1. (Windows uniquement) Désactivez le pare-feu système pour votre système d’exploitation.
 
-### Création de schémas et de tableaux dans la base de données {#create-schema-and-tables-in-database}
+### Création de  et de tableaux dans la base de données {#create-schema-and-tables-in-database}
 
-Pour créer un schéma et des tables dans la base de données, procédez comme suit :
+Effectuez les étapes suivantes pour créer des  et des tableaux dans la base de données :
 
-1. Créez un schéma dans la base de données à l’aide de l’instruction SQL suivante :
+1. Créez un  dans la base de données à l’aide de l’instruction SQL suivante :
 
    ```sql
    CREATE SCHEMA `formsportal` ;
    ```
 
-   où **formsportal** fait référence au nom du schéma.
+   où **formsportal** fait référence au nom du  de.
 
-1. Créez une table de **données** dans le schéma de base de données à l’aide de l’instruction SQL suivante :
+1. Créez une table de **données** dans le de base de données à l’aide de l’instruction SQL suivante :
 
    ```sql
     CREATE TABLE `data` (
@@ -78,7 +79,7 @@ Pour créer un schéma et des tables dans la base de données, procédez comme s
         ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-1. Créez une table de **métadonnées** dans le schéma de base de données à l’aide de l’instruction SQL suivante :
+1. Créez une table de **métadonnées** dans le de base de données à l’aide de l’instruction SQL suivante :
 
    ```sql
    CREATE TABLE `metadata` (
@@ -118,7 +119,7 @@ Pour créer un schéma et des tables dans la base de données, procédez comme s
        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-1. Créez une table **supplémentaire** métadatable dans le schéma de base de données à l’aide de l’instruction SQL suivante :
+1. Créez une table **supplémentaire** métadatable dans le de base de données à l’aide de l’instruction SQL suivante :
 
    ```sql
    CREATE TABLE `additionalmetadatatable` (
@@ -130,7 +131,7 @@ Pour créer un schéma et des tables dans la base de données, procédez comme s
        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-1. Créez une table **commentable** dans le schéma de base de données à l’aide de l’instruction SQL suivante :
+1. Créez une table **commentable** dans le de base de données à l’aide de l’instruction SQL suivante :
 
    ```sql
    CREATE TABLE `commenttable` (
@@ -141,7 +142,7 @@ Pour créer un schéma et des tables dans la base de données, procédez comme s
        `time` varchar(255) DEFAULT NULL);
    ```
 
-### Configurer la connexion entre l’instance AEM et la base de données {#configure-connection-between-aem-instance-and-database}
+### Configuration de la connexion entre l’instance AEM et la base de données {#configure-connection-between-aem-instance-and-database}
 
 Effectuez les étapes de configuration suivantes pour créer une connexion entre l’instance AEM et la base de données MYSQL :
 
@@ -199,7 +200,7 @@ Effectuez les étapes de configuration suivantes pour créer une connexion entre
     </tr> 
     <tr> 
     <td><p>Nom de la source de données </p></td> 
-    <td><p>Un nom de source de données pour filtrer les pilotes du pool de la source de données  . L’exemple d’implémentation utilise FormsPortal comme nom de source de données.</p></td>
+    <td><p>Un nom de source de données pour filtrer les pilotes du pool de la source de données . L’exemple d’implémentation utilise FormsPortal comme nom de source de données.</p></td>
     </tr>
     <tr> 
     <td><p>Classe de pilote JDBC </p></td> 
@@ -278,8 +279,8 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 Exécutez les étapes suivantes pour activer l’envoi de formulaires adaptatifs à l’aide de la page Forms Portal :
 1. [Exécutez la conversion](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process) pour convertir un formulaire source en formulaire adaptatif.
 1. Ouvrez le formulaire adaptatif en mode d’édition.
-1. Appuyez sur Conteneur de formulaires et sélectionnez Configurer ![le formulaire](assets/configure-adaptive-form.png)adaptatif.
-1. Dans la **[!UICONTROL Submission]** section, sélectionnez **[!UICONTROL Forms Portal Submit Action]** dans la liste **[!UICONTROL Submit Action]** déroulante.
+1. Appuyez sur  de formulaire et sélectionnez Configurer ![le formulaire](assets/configure-adaptive-form.png)adaptatif.
+1. Dans la **[!UICONTROL Submission]** section, sélectionnez **[!UICONTROL Forms Portal Submit Action]** dans le  **[!UICONTROL Submit Action]** déroulant.
 1. Appuyez sur ![Enregistrer la stratégie](assets/edit_template_done.png) de modèle pour enregistrer les paramètres.
 
 ## Création et configuration de la page Forms Portal {#create-configure-forms-portal-page}
@@ -291,7 +292,7 @@ Effectuez les étapes suivantes pour créer une page Forms Portal et la configur
 1. Sélectionnez le modèle de la page, appuyez sur **[!UICONTROL Next]**, spécifiez un titre pour la page et appuyez sur **[!UICONTROL Create]**.
 1. Appuyez sur **[!UICONTROL Edit]** pour configurer la page.
 1. Dans l’en-tête de la page, appuyez sur ![Modifier le modèle](assets/edit_template_sites.png) > **[!UICONTROL Edit Template]** pour ouvrir le modèle de la page.
-1. Appuyez sur Conteneur de mise en page et appuyez sur ![Modifier la stratégie](assets/edit_template_policy.png)de modèle. Dans l’ **[!UICONTROL Allowed Components]** onglet, activez les options **[!UICONTROL Document Services]** et **[!UICONTROL Document Services Predicates]** , puis appuyez sur ![Enregistrer la stratégie](assets/edit_template_done.png)de modèle.
+1. Appuyez sur  de mise en page et appuyez sur ![Modifier la stratégie](assets/edit_template_policy.png)de modèle. Dans l’ **[!UICONTROL Allowed Components]** onglet, activez les options **[!UICONTROL Document Services]** et **[!UICONTROL Document Services Predicates]** , puis appuyez sur ![Enregistrer la stratégie](assets/edit_template_done.png)de modèle.
 1. Insérez le **[!UICONTROL Search & Lister]** composant dans la page. Par conséquent, tous les formulaires adaptatifs existants disponibles sur votre instance AEM sont répertoriés sur la page.
 1. Insérez le **[!UICONTROL Drafts & Submissions]** composant dans la page. Deux onglets, **[!UICONTROL Draft Forms]** et **[!UICONTROL Submitted Forms]**, s’affichent sur la page Forms Portal. L’ **[!UICONTROL Draft Forms]** onglet affiche également le formulaire adaptatif converti généré à l’aide des étapes mentionnées dans [Configuration du formulaire adaptatif converti pour l’intégration de Forms Portal.](#configure-converted-adaptive-form-for-forms-portal-integration)
 
