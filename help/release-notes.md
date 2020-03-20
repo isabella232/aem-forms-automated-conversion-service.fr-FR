@@ -2,7 +2,7 @@
 title: Nouveautés? Notes de mise à jour - Service de conversion de formulaires automatisés
 description: 'Découvrez les dernières fonctionnalités et le bogue corrigé pour le service de conversion automatisée des formulaires. '
 translation-type: tm+mt
-source-git-commit: 01dfd20951314017d47713bfb1a2a5f2d563f434
+source-git-commit: 6d658dbb181c09e42073e328e0232e40d4fb6b58
 
 ---
 
@@ -18,15 +18,13 @@ Le service de conversion automatisée des formulaires reçoit régulièrement de
 * Instructions spéciales
 * Plans futurs pour les changements
 
-Cette page est mise à jour mensuellement, alors revisitez-la régulièrement.
-
 ## 20 mars 2020 (AFC-2020.03.1)
 
 ### Nouveautés
 
 **Détecter automatiquement les sections logiques d’un formulaire**
 
-Par défaut, le service crée un panneau de niveau supérieur distinct pour chaque page d’un formulaire PDF d’entrée. Vous pouvez désormais sélectionner l’ **[!UICONTROL Auto-detect logical sections]** option permettant de supprimer la notion de création d’un panneau supérieur distinct pour chaque page PDF et de détecter automatiquement les sections logiques. Les clubs de service associaient les champs d’un formulaire à une section logique. Par exemple, tous les champs liés à l’adresse de facturation sont regroupés en une section et tous les champs liés à l’adresse d’expédition sont regroupés en une autre section. Le service crée également un panneau de niveau supérieur distinct pour chaque section logique détectée automatiquement.
+Par défaut, le service crée un panneau de niveau supérieur distinct pour chaque page d’un formulaire PDF. Désormais, vous pouvez utiliser l’ **[!UICONTROL Auto-detect logical sections]** option pour déposer les panneaux de niveau page (panneaux basés sur le numéro de page) et créer uniquement des panneaux logiques.  Il regroupe également les champs qui n’appartiennent à aucune section avec une section logique prédéfinie. Il regroupe également les champs d’une section logique répartis sur deux pages adjacentes en une seule section logique. Par exemple, si certains champs d’une section logique se trouvent à la fin de la page 1 et que d’autres se trouvent au début de la page 2, tous ces champs sont regroupés en une seule section logique.
 
 ### Améliorations
 
