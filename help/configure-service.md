@@ -2,7 +2,7 @@
 title: Configuration du service de conversion de formulaires automatisés
 description: Prêt de votre instance AEM à utiliser le service de conversion de formulaires automatisés
 translation-type: tm+mt
-source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
+source-git-commit: 5f27fcbf756350a03b7143af489f737e01a7f0e3
 
 ---
 
@@ -43,6 +43,7 @@ Avant d’utiliser le service, préparez votre instance d’auteur AEM pour vous
 1. [Téléchargement et installation d’AEM 6.4 ou d’AEM 6.5](#aemquickstart)
 1. [Téléchargement et installation de la dernière version d’AEM Service Pack](#servicepack)
 1. [Téléchargement et installation des derniers modules complémentaires d’AEM Forms](#downloadaemformsaddon)
+1. [Téléchargement et installation des derniers packages de connecteur](#installConnectorPackage)
 1. [Création de  et de modèles personnalisés](#referencepackage)
 
 ### Téléchargement et installation d’AEM 6.4 ou d’AEM 6.5 {#aemquickstart}
@@ -65,8 +66,20 @@ Téléchargez et installez la dernière version d’AEM Service Pack. Pour obten
 Une instance AEM contient les fonctionnalités de base des formulaires. Le service de conversion nécessite des fonctionnalités complètes d’AEM Forms. Téléchargez et installez le module complémentaire AEM Forms pour bénéficier de toutes les fonctionnalités d’AEM Forms. Le package est requis pour configurer et exécuter le service de conversion. Pour obtenir des instructions détaillées, voir [Installation et configuration des fonctionnalités de capture de données.](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html)
 
 >[!NOTE]
-> Si vous êtes un utilisateur existant du service de conversion automatisée des formulaires, installez la dernière version d’AEM Forms Ajouter-on pour continuer à utiliser le service. Le module Connector est fusionné au module Ajouter d’AEM Forms. Le module connecteur supplémentaire n&#39;est plus requis.
 > Assurez-vous d’effectuer les configurations post-installation obligatoires après l’installation du module complémentaire.
+
+
+### Téléchargement et installation du module Connector {#installConnectorPackage}
+
+Vous avez besoin du module connecteur version 1.1.38 ou ultérieure pour utiliser les dernières fonctionnalités et améliorations fournies dans la version AFC-2020.03.1. Vous pouvez télécharger le package de connecteur à partir du partage de package AEM.
+
+| Système d’exploitation | Lien de téléchargement du package Connector |
+| ------------- | ------------- |
+| Microsoft Windows | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
+| Linux | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
+
+>[!NOTE]
+> si vous disposez déjà d’un de service de conversion automatisée des formulaires en cours d’exécution, pour utiliser les dernières fonctionnalités du service de conversion, installez le dernier Service Pack, le dernier module complémentaire AEM Forms et le dernier module connecteur dans la commande susmentionnée.
 
 
 ### Création de  et de modèles personnalisés {#referencepackage}
