@@ -2,7 +2,7 @@
 title: Configuration du service de conversion de formulaires automatisés
 description: Prêt de votre instance AEM à utiliser le service de conversion de formulaires automatisés
 translation-type: tm+mt
-source-git-commit: 5f27fcbf756350a03b7143af489f737e01a7f0e3
+source-git-commit: 01dfd20951314017d47713bfb1a2a5f2d563f434
 
 ---
 
@@ -79,7 +79,7 @@ Vous avez besoin du module connecteur version 1.1.38 ou ultérieure pour utilise
 | Linux | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
 
 >[!NOTE]
-> si vous disposez déjà d’un de service de conversion automatisée des formulaires en cours d’exécution, pour utiliser les dernières fonctionnalités du service de conversion, installez le dernier Service Pack, le dernier module complémentaire AEM Forms et le dernier module connecteur dans la commande susmentionnée.
+> Si vous disposez déjà d’un de service de conversion automatisée des formulaires en cours d’exécution, pour utiliser les dernières fonctionnalités du service de conversion, installez le dernier Service Pack, le dernier module complémentaire AEM Forms et le dernier module connecteur dans l’ordre mentionné.
 
 
 ### Création de  et de modèles personnalisés {#referencepackage}
