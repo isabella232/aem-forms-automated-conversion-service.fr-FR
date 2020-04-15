@@ -1,6 +1,6 @@
 ---
-title: '[NE PAS PUBLIER] Étendre le méta-modèle par défaut'
-seo-title: '[NE PAS PUBLIER] Étendre le méta-modèle par défaut'
+title: '[NE PAS PUBLIER] Étendre le métamodèle par défaut'
+seo-title: '[NE PAS PUBLIER] Étendre le métamodèle par défaut'
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -9,10 +9,10 @@ topic-tags: forms
 discoiquuid: 9fce5d31-0a3e-4401-b9d7-bb63799121bf
 privatebeta: true
 index: false
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: afe461baa5bcfc1106c16aae2d6a9c839ea675e8
 
 ---
 
 
-# [NE PAS PUBLIER] Étendre le méta-modèle par défaut{#do-not-publish-extend-the-default-meta-model}
+# [NE PAS PUBLIER] Étendre le métamodèle par défaut{#do-not-publish-extend-the-default-meta-model}
