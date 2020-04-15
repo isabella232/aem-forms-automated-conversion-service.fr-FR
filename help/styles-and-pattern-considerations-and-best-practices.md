@@ -7,27 +7,49 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 8e373b978535cd6616072cf50c223bd7f4f7c35a
+source-git-commit: 12b4df8feb19fdc6e723c4d7301d299f26676716
 
 ---
 
 
 # Bonnes pratiques et modèles complexes connus {#Best-practices-and-considerations2}
 
-Ce document fournit des instructions et des recommandations dont peuvent bénéficier l’administrateur, les auteurs et les développeurs de formulaires au moment d’utiliser le service de conversion automatisée de formulaires. Il décrit les bonnes pratiques, de la préparation des formulaires sources à la correction des modèles complexes qui nécessitent un effort supplémentaire pour la conversion automatisée. Ces bonnes pratiques contribuent globalement aux performances globales et au rendement du service de conversion automatisée des formulaires.
+Ce document fournit des instructions et des recommandations dont peuvent bénéficier l’administrateur, les auteurs et les développeurs de formulaires au moment d’utiliser le service de conversion automatisée de formulaires. Il décrit les bonnes pratiques, de la préparation des formulaires sources à la correction des modèles complexes qui nécessitent un effort supplémentaire pour la conversion automatisée. Ces meilleures pratiques contribuent collectivement aux performances et à la sortie globales du service de conversion automatisée des formulaires.
 
 ## Bonnes pratiques
 
-Le service de conversion convertit les formulaires PDF disponibles sur votre instance AEM Forms en formulaires adaptatifs. Vous pouvez télécharger tous les formulaires PDF en une seule ou en plusieurs fois, selon les besoins. Avant de télécharger les formulaires, tenez compte des éléments suivants :
+Le service de conversion convertit les formulaires PDF disponibles sur votre instance AEM Forms en formulaires adaptatifs. Les meilleures pratiques répertoriées ci-dessous vous aident à améliorer la vitesse et la précision des conversions. En outre, ces bonnes pratiques vous aident à gagner du temps après  de conversion .
+
+### Avant de télécharger des formulaires source
+Vous pouvez télécharger tous les formulaires PDF en une seule ou en plusieurs fois, selon les besoins. Avant de télécharger les formulaires, tenez compte des éléments suivants :
 
 * N’enregistrez pas plus de 15 formulaires dans un dossier et veillez à ce que le nombre total de pages dans un dossier ne dépasse pas 50.
 * Veillez à ce que la taille du dossier ne dépasse pas 10 Mo. Ne conservez pas les formulaires dans un sous-dossier.
 * Veillez à ce qu’un formulaire ne dépasse pas 15 pages.
+* Organisez les  sources dans un lot de  de 8 à 15. Conservez les formulaires source avec des fragments de formulaire adaptatif courants dans un seul lot.
 * Ne téléchargez pas de formulaires protégés. Le service ne convertit pas les formulaires protégés par mot de passe et sécurisés.
-* Ne téléchargez pas de [portfolios PDF](https://helpx.adobe.com/fr/acrobat/using/overview-pdf-portfolios.html). Le service ne convertit pas les portfolios PDF en formulaires adaptatifs.
-* Ne téléchargez pas de formulaires remplis, numérisés, en couleurs et dans une langue autre que l’anglais. Ces types de formulaires ne sont pas pris en charge.
+* Ne téléchargez pas de [portfolios PDF](https://helpx.adobe.com/fr/acrobat/using/overview-pdf-portfolios.html). Le service ne convertit pas un portfolio PDF en formulaire adaptatif.
+* Ne transférez pas les formulaires numérisés, colorés, en langue autre que l’anglais et remplis. Ces types de formulaires ne sont pas pris en charge.
 * Ne téléchargez pas de formulaires PDF sources dont le nom comporte des espaces. Supprimez l’espace du nom du fichier avant de télécharger les formulaires.
-* Pour le formulaire adaptatif de sortie, utilisez des modèles de formulaires adaptatifs pour spécifier l’en-tête et le pied de page. Le service ignore l’en-tête et le pied de page des documents PDF sources et utilise l’en-tête et le pied de page spécifiés dans le modèle de formulaire adaptatif.
+
+Lorsque vous utilisez un formulaire XDP pour la conversion, effectuez les étapes suivantes avant de télécharger les formulaires XPD source :
+
+* Analysez le formulaire XDP et corrigez les problèmes visuels. Assurez-vous que le source utilise les contrôles et les structures prévus. Par exemple, le formulaire source peut comporter des cases à cocher au lieu de boutons radio pour une sélection unique. Remplacez les cases à cocher par des boutons radio pour produire un formulaire adaptatif avec les composants prévus.
+* [Ajouter des liaisons au formulaire](http://www.adobe.com/go/learn_aemforms_designer_65) XDP avant de commencer la conversion. Lorsque des liaisons sont disponibles dans le formulaire XDP source, le service applique automatiquement des liaisons aux champs de formulaire adaptatif correspondants pendant la conversion. Cela vous permet de gagner du temps pour appliquer manuellement les liaisons.
+* [Ajouter les balises](https://helpx.adobe.com/sign/using/text-tag.html) Adobe Sign au fichier XDP. Le service convertit automatiquement les balises Adobe Sign en champs de formulaire adaptatif correspondants. Les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign. Pour obtenir le complet des champs pris en charge, reportez-vous à la documentation [Utilisation d’Adobe Sign dans un formulaire](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) adaptatif.
+* Utilisez des sous-formulaires dans le XDP pour créer des panneaux dans les formulaires adaptatifs. Le service convertit chaque sous-formulaire en panneau de formulaire adaptatif pendant la conversion.
+* Si possible, convertissez des tableaux complexes dans le XDP en tableaux simples.
+
+### Avant d’ la conversion
+
+* Créez des modèles de formulaire adaptatif. Les modèles permettent de définir une structure uniforme pour les formulaires de votre organisation ou de votre service.
+* Spécifiez l’en-tête et le pied de page dans les modèles de formulaire adaptatif. Le service ignore l’en-tête et le pied de page des documents  sources et utilise l’en-tête et le pied de page spécifiés dans le modèle de formulaire adaptatif.
+* Créez des  de formulaire adaptatif. Les  vous aident à donner une apparence uniforme aux formulaires de votre organisation ou de votre service.
+* Configurez le modèle de données de formulaire pour enregistrer et récupérer une source de données. Créez et configurez des services de lecture et d’écriture pour le modèle de données de formulaire.
+* Créez des fragments de formulaire adaptatif et configurez le service pour utiliser vos fragments de formulaire adaptatif.
+* Préparez des modèles de processus courants pour les formulaires qui nécessitent l’automatisation des processus d’entreprise.
+* Configuration d’Adobe Analytics, le cas échéant
+
 
 ## Modèles complexes connus
 
