@@ -6,7 +6,7 @@ seo-description: Problèmes courants de l'AFCS et leurs solutions
 contentOwner: khsingh
 topic-tags: forms
 translation-type: tm+mt
-source-git-commit: aebfde420d02bd4184022ecb42496a379d66a3b5
+source-git-commit: 65dd07048b3cc7d9434568a8188dc08a1db66ada
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: aebfde420d02bd4184022ecb42496a379d66a3b5
 
 L’article fournit des informations sur les problèmes d’installation, de configuration et d’administration qui peuvent survenir dans un de production  service de conversion automatisée de formulaires. Le  fournit également des étapes de dépannage de base et une explication des messages d’erreur courants.
 
-### Erreurs courantes {#commonerrors}
+## Erreurs courantes {#commonerrors}
 
 | Erreur | Exemple |
 |--- |--- |
