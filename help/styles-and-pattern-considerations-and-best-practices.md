@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: cab926fc408a1a680853ee557e36354938f7424a
+source-git-commit: a5d663c2a59895eb71eb5287586bc6b3862927fc
 
 ---
 
@@ -39,7 +39,7 @@ Lorsque vous utilisez un formulaire XDP pour la conversion, effectuez les étape
 * [Ajouter des liaisons au formulaire](http://www.adobe.com/go/learn_aemforms_designer_65) XDP avant de commencer la conversion. Lorsque des liaisons sont disponibles dans le formulaire XDP source, le service applique automatiquement des liaisons aux champs de formulaire adaptatif correspondants pendant la conversion. Cela vous permet de gagner du temps pour appliquer manuellement les liaisons.
 * [Ajouter les balises](https://helpx.adobe.com/sign/using/text-tag.html) Adobe Sign au fichier XDP. Le service convertit automatiquement les balises Adobe Sign en champs de formulaire adaptatif correspondants. Les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign. Pour obtenir le complet des champs pris en charge, reportez-vous à la documentation [Utilisation d’Adobe Sign dans un formulaire](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) adaptatif.
 * Utilisez des sous-formulaires dans le XDP pour créer des panneaux dans les formulaires adaptatifs. Le service convertit chaque sous-formulaire en panneau de formulaire adaptatif pendant la conversion.
-* Si possible, convertissez des tableaux complexes dans le XDP en tableaux simples.
+* Si possible, convertissez des tableaux complexes dans le XDP en tableaux simples. Un tableau comportant des champs de formulaire dans des cellules de tableau, des cellules de taille inégale, des cellules étendues de rangée ou de colonne, des cellules fusionnées, des bordures partielles ou aucune bordure visible est considéré comme un tableau complexe. Un tableau comportant l&#39;un des éléments susmentionnés est considéré comme un tableau complexe.
 
 ### Avant d’ la conversion
 
