@@ -6,7 +6,7 @@ seo-description: Problèmes courants de l'AFCS et leurs solutions
 contentOwner: khsingh
 topic-tags: forms
 translation-type: tm+mt
-source-git-commit: 65dd07048b3cc7d9434568a8188dc08a1db66ada
+source-git-commit: f8147653c9d0d0fbecfb06a7baa858f26a0406c4
 
 ---
 
@@ -20,5 +20,6 @@ L’article fournit des informations sur les problèmes d’installation, de con
 
 | Erreur | Exemple |
 |--- |--- |
-| **Message** d’erreur <br> L’en-tête  n’est pas disponible. <br><br>**Raison **<br>: un administrateur a créé plusieurs configurations IMS ou la configuration IMS n’est pas en mesure d’accéder au service AFCS sur Adobe Cloud.<br><br>**Résolution**<br> S&#39;il existe plusieurs configurations, supprimez toutes les configurations et [créez une nouvelle configuration](configure-service.md#obtainpubliccertificates). <br> S’il existe une configuration unique, **[!UICONTROL Health Check]** vérifiez la connectivité [](configure-service.md#createintegrationoption). | ![Formulaire coloré](assets/invalid-ims-configuration.png) |
-| **Message** d’erreur <br> Impossible de se connecter au service.  <br><br>**Raison **<br>d’une URL de service incorrecte ou d’aucune URL de service mentionnée dans les services cloud Service de conversion de formulaires automatisés.<br><br>**Résolution**<br> URL [de](configure-service.md#configure-the-cloud-service) service correct dans les services Cloud du service de conversion automatisée des formulaires. | ![Formulaire coloré](assets/wrong-endpoint-configured.png) |
+| **Message** d’erreur <br> L’en-tête  n’est pas disponible. <br><br>**Raison **<br>: un administrateur a créé plusieurs configurations IMS ou la configuration IMS n’est pas en mesure d’accéder au service AFCS sur Adobe Cloud.<br><br>**Résolution**<br> S&#39;il existe plusieurs configurations, supprimez toutes les configurations et [créez une nouvelle configuration](configure-service.md#obtainpubliccertificates). <br> S’il existe une configuration unique, **[!UICONTROL Health Check]** vérifiez la connectivité [](configure-service.md#createintegrationoption). | ![L&#39;en-tête  du n&#39;est pas disponible](assets/invalid-ims-configuration.png) |
+| **Message** d’erreur <br> Impossible de se connecter au service.  <br><br>**Raison **<br>d’une URL de service incorrecte ou d’aucune URL de service mentionnée dans les services cloud Service de conversion de formulaires automatisés.<br><br>**Résolution**<br> URL [de](configure-service.md#configure-the-cloud-service) service correct dans les services Cloud du service de conversion automatisée des formulaires. | ![Impossible de se connecter au service.](assets/wrong-endpoint-configured.png) |
+| **Message** d’erreur <br> Impossible de se connecter au service.  <br><br>**Raison **<br>d’une URL de service incorrecte ou d’aucune URL de service mentionnée dans les services cloud Service de conversion de formulaires automatisés.<br><br>**Résolution**<br> URL [de](configure-service.md#configure-the-cloud-service) service correct dans les services Cloud du service de conversion automatisée des formulaires. | ![Impossible de se connecter au service.](assets/wrong-endpoint-configured.png) |
