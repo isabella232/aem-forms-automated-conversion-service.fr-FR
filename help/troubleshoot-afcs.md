@@ -6,7 +6,7 @@ seo-description: Problèmes courants de l'AFCS et leurs solutions
 contentOwner: khsingh
 topic-tags: forms
 translation-type: tm+mt
-source-git-commit: e905833e5b58c05aac612e3a8139eb7fb60ef4bf
+source-git-commit: 3a82102feffa7fc618dc37c9a745c254a46a0700
 
 ---
 
@@ -20,7 +20,10 @@ source-git-commit: e905833e5b58c05aac612e3a8139eb7fb60ef4bf
 
 | Erreur | Exemple |
 |--- |--- |
-| **Message** d’erreur <br> L’en-tête  n’est pas disponible. <br><br>**Raison **<br>: un administrateur a créé plusieurs configurations IMS ou la configuration IMS n’est pas en mesure d’accéder au service AFCS sur Adobe Cloud.<br><br>**Résolution**<br> S&#39;il existe plusieurs configurations, supprimez toutes les configurations et [créez une nouvelle configuration](configure-service.md#obtainpubliccertificates). <br> S’il existe une configuration unique, **[!UICONTROL Health Check]** vérifiez la connectivité [](configure-service.md#createintegrationoption). | ![L&#39;en-tête  du n&#39;est pas disponible](assets/invalid-ims-configuration.png) |
+| **Message** d’erreur <br> L’en-tête  n’est pas disponible. <br><br> **Raison** <br> : un administrateur a créé plusieurs configurations IMS ou la configuration IMS n’est pas en mesure d’accéder au service AFCS sur Adobe Cloud. <br><br>**Résolution **<br>S&#39;il existe plusieurs configurations, supprimez toutes les configurations et[créez une nouvelle configuration](configure-service.md#obtainpubliccertificates).<br>S’il existe une configuration unique, utilisez** Health Check **pour[vérifier la connectivité](configure-service.md#createintegrationoption). | ![L&#39;en-tête  du n&#39;est pas disponible](assets/invalid-ims-configuration.png) |
+
+| Erreur | Exemple |
+|--- |--- |
 | **Message** d’erreur <br> Impossible de se connecter au service.  <br><br>**Raison **<br>d’une URL de service incorrecte ou d’aucune URL de service mentionnée dans les services cloud Service de conversion de formulaires automatisés.<br><br>**Résolution**<br> URL [de](configure-service.md#configure-the-cloud-service) service correct dans les services Cloud du service de conversion automatisée des formulaires. | ![Impossible de se connecter au service.](assets/wrong-endpoint-configured.png) |
 | **Message** d’erreur <br> Le service n’a pas pu convertir le formulaire.  <br><br>**Raison **<br>des problèmes de connectivité réseau à votre fin, le service est arrêté en raison d’une maintenance planifiée ou d’une panne sur Adobe Cloud.<br><br>**Résolution** <br> Résolvez les problèmes de connectivité réseau à votre fin et vérifiez l’état du service sur https://status.adobe.com/ en cas de panne planifiée ou non planifiée. | ![Impossible de se connecter au service.](assets/service-failure.png) |
 | **Message** d’erreur <br> Le nombre de pages est supérieur à 15.  <br><br>**Motif **<br>Le formulaire source fait plus de 15 pages.<br><br>**Résolution** <br> Utilisez Adobe Acrobat pour scinder des formulaires de plus de 15 pages. Ramenez le nombre de pages d’un formulaire à moins de 15. | ![Impossible de se connecter au service.](assets/number-of-pages.png) |
