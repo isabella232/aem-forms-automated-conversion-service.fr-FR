@@ -20,7 +20,7 @@ source-git-commit: 3a82102feffa7fc618dc37c9a745c254a46a0700
 
 | Erreur | Exemple |
 |--- |--- |
-| **Message** d’erreur <br> L’en-tête  n’est pas disponible. <br><br> **Raison** <br> : un administrateur a créé plusieurs configurations IMS ou la configuration IMS n’est pas en mesure d’accéder au service AFCS sur Adobe Cloud. <br><br>**Résolution **<br>S&#39;il existe plusieurs configurations, supprimez toutes les configurations et[créez une nouvelle configuration](configure-service.md#obtainpubliccertificates).<br>S’il existe une configuration unique, utilisez** Health Check **pour[vérifier la connectivité](configure-service.md#createintegrationoption). | ![L&#39;en-tête  du n&#39;est pas disponible](assets/invalid-ims-configuration.png) |
+| **Message** d’erreur <br> L’en-tête  n’est pas disponible. <br><br> **Raison** <br> : un administrateur a créé plusieurs configurations IMS ou la configuration IMS n’est pas en mesure d’accéder au service AFCS sur Adobe Cloud. <br><br>**Résolution **<br>S&#39;il existe plusieurs configurations, supprimez toutes les configurations et[créez une nouvelle configuration](configure-service.md#obtainpubliccertificates).<br>S’il existe une configuration unique, utilisez** Health Check **pour[vérifier la connectivité](configure-service.md#createintegrationoption). | ![L&#39;en-tête  du n&#39;est pas disponible](assets/invalid-ims-configurations.png) |
 
 | Erreur | Exemple |
 |--- |--- |
