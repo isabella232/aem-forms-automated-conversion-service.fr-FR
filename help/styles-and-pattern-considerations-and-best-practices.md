@@ -7,18 +7,18 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 43b9b30e7e912081756050aa002a9e398d1d74fc
+source-git-commit: fa3b365b9762a044fddb3820ad3c091d211e0ae6
 
 ---
 
 
 # Bonnes pratiques et modèles complexes connus {#Best-practices-and-considerations2}
 
-Ce document fournit des instructions et des recommandations dont peuvent bénéficier l’administrateur, les auteurs et les développeurs de formulaires au moment d’utiliser le service de conversion automatisée de formulaires. Il décrit les bonnes pratiques, de la préparation des formulaires sources à la correction des modèles complexes qui nécessitent un effort supplémentaire pour la conversion automatisée. Ces meilleures pratiques contribuent collectivement aux performances et à la sortie globales du service de conversion automatisée des formulaires.
+This document provides guidelines and recommendations that forms administrator, authors, and developers can benefit from when working with [!DNL Automated Forms Conversion service]. Il décrit les bonnes pratiques, de la préparation des formulaires sources à la correction des modèles complexes qui nécessitent un effort supplémentaire pour la conversion automatisée. These best practices collectively contribute to the overall performance and output of the [!DNL Automated Forms Conversion service].
 
 ## Bonnes pratiques
 
-Le service de conversion convertit les formulaires PDF disponibles sur votre instance AEM Forms en formulaires adaptatifs. Les meilleures pratiques répertoriées ci-dessous vous aident à améliorer la vitesse et la précision des conversions. En outre, ces bonnes pratiques vous aident à gagner du temps après  de conversion .
+The conversion service converts PDF forms available on your AEM [!DNL Forms] instance to adaptive forms. Les bonnes pratiques répertoriées ci-dessous vous aident à améliorer la vitesse et la précision de conversion. Elles vous permettent également de gagner du temps sur les activités après conversion.
 
 ### Avant de télécharger la source
 
@@ -27,36 +27,36 @@ Vous pouvez télécharger tous les formulaires PDF en une seule ou en plusieurs
 * N’enregistrez pas plus de 15 formulaires dans un dossier et veillez à ce que le nombre total de pages dans un dossier ne dépasse pas 50.
 * Conservez la taille du dossier inférieure à 10 Mo. Ne conservez pas les formulaires dans un sous-dossier.
 * Veillez à ce qu’un formulaire ne dépasse pas 15 pages.
-* Organisez les  sources dans un lot de  de 8 à 15. Conservez les formulaires source avec des fragments de formulaire adaptatif courants dans un seul lot.
+* Regroupez les documents sources dans un lot de 8 à 15 documents. Conservez les formulaires sources avec des fragments de formulaires adaptatifs courants dans un seul lot.
 * Ne téléchargez pas de formulaires protégés. Le service ne convertit pas les formulaires protégés par mot de passe et sécurisés.
-* Ne téléchargez pas de [portfolios PDF](https://helpx.adobe.com/fr/acrobat/using/overview-pdf-portfolios.html). Le service ne convertit pas un portfolio PDF en formulaire adaptatif.
-* Ne transférez pas les formulaires numérisés, colorés, en langue autre que l’anglais et remplis. Ces types de formulaires ne sont pas pris en charge.
+* Ne téléchargez pas de [portfolios PDF](https://helpx.adobe.com/fr/acrobat/using/overview-pdf-portfolios.html). Le service ne convertit pas un portfolio PDF en formulaire adaptatif.
+* Ne téléchargez pas de formulaires remplis, numérisés, en couleurs et dans une langue autre que l’anglais. Ces types de formulaires ne sont pas pris en charge.
 * Ne téléchargez pas de formulaires PDF sources dont le nom comporte des espaces. Supprimez l’espace du nom du fichier avant de télécharger les formulaires.
 
-Lorsque vous utilisez un formulaire XDP pour la conversion, effectuez les étapes suivantes avant de télécharger les formulaires XPD source :
+Lorsque vous utilisez un formulaire XDP pour la conversion, effectuez les étapes suivantes avant de télécharger les formulaires XDP sources :
 
-* Analysez le formulaire XDP et corrigez les problèmes visuels. Assurez-vous que le source utilise les contrôles et les structures prévus. Par exemple, le formulaire source peut comporter des cases à cocher au lieu de boutons radio pour une sélection unique. Remplacez les cases à cocher par des boutons radio pour produire un formulaire adaptatif avec les composants prévus.
-* [Ajouter des liaisons au formulaire](http://www.adobe.com/go/learn_aemforms_designer_65) XDP avant de commencer la conversion. Lorsque des liaisons sont disponibles dans le formulaire XDP source, le service applique automatiquement des liaisons aux champs de formulaire adaptatif correspondants pendant la conversion. Cela vous permet de gagner du temps pour appliquer manuellement les liaisons.
-* [Ajouter les balises](https://helpx.adobe.com/sign/using/text-tag.html) Adobe Sign au fichier XDP. Le service convertit automatiquement les balises Adobe Sign en champs de formulaire adaptatif correspondants. Les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign. Pour obtenir le complet des champs pris en charge, reportez-vous à la documentation [Utilisation d’Adobe Sign dans un formulaire](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) adaptatif.
-* Si possible, convertissez des tableaux complexes dans le XDP en tableaux simples. Un tableau comportant des champs de formulaire dans des cellules de tableau, des cellules de taille inégale, des cellules étendues de rangée ou de colonne, des cellules fusionnées, des bordures partielles ou aucune bordure visible est considéré comme un tableau complexe. Un tableau comportant l’un des éléments susmentionnés est considéré comme un tableau complexe.
+* Analysez le formulaire XDP et corrigez les problèmes visuels. Assurez-vous que le source utilise les contrôles et les structures prévus. Par exemple, le formulaire source peut comporter des cases à cocher au lieu de boutons radio pour une seule sélection. Remplacez les cases à cocher par des boutons radio pour produire un formulaire adaptatif avec les composants prévus.
+* [Ajoutez des liaisons au formulaire XDP](http://www.adobe.com/go/learn_aemforms_designer_65_fr) avant de démarrer la conversion. Lorsque des liaisons sont disponibles dans le formulaire XDP source, le service applique automatiquement des liaisons aux champs de formulaires adaptatifs correspondants lors de la conversion. Ainsi, vous ne perdrez pas de temps à appliquer manuellement les liaisons.
+* [Ajoutez des balises Adobe Sign](https://helpx.adobe.com/fr/sign/using/text-tag.html) au fichier XDP. Le service convertit automatiquement les balises Adobe Sign en champs de formulaires adaptatifs correspondants. Les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign. Pour obtenir la liste complète des champs pris en charge, consultez la documentation [Utilisation d’Adobe Sign dans un formulaire adaptatif](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html).
+* Si possible, convertissez des tableaux complexes dans les documents XDP en tableaux simples. Un tableau comportant des champs de formulaire dans des cellules de tableau, des cellules de taille inégale, des cellules étendues de rangée ou de colonne, des cellules fusionnées, des bordures partielles ou aucune bordure visible est considéré comme un tableau complexe. Un tableau comportant l’un des éléments susmentionnés est considéré comme un tableau complexe.
 <!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
 
-### Avant d’ la conversion
+### Avant de commencer la conversion
 
-* Créez des modèles de formulaire adaptatif. Les modèles permettent de définir une structure uniforme pour les formulaires de votre organisation ou de votre service.
-* Spécifiez l’en-tête et le pied de page dans les modèles de formulaire adaptatif. Le service ignore l’en-tête et le pied de page du  source et utilise l’en-tête et le pied de page spécifiés dans le modèle de formulaire adaptatif.
-* Créez des  de formulaire adaptatif. Les  vous aident à donner une apparence uniforme aux formulaires de votre organisation ou de votre service.
-* Configurez le modèle de données de formulaire pour enregistrer et récupérer une source de données. Créez et configurez des services de lecture et d’écriture pour le modèle de données de formulaire.
+* Créez des modèles de formulaires adaptatifs. Les modèles permettent de spécifier une structure uniforme pour les formulaires de votre entreprise ou service.
+* Indiquez l’en-tête et le pied de page dans les modèles de formulaires adaptatifs. Le service ignore l’en-tête et le pied de page du  source et utilise l’en-tête et le pied de page spécifiés dans le modèle de formulaire adaptatif.
+* Créez des thèmes de formulaires adaptatifs. Les thèmes permettent d’uniformiser l’aspect des formulaires au sein de votre entreprise ou service.
+* Configurez le modèle de données de formulaire pour enregistrer et récupérer à partir d’une source de données. Créez et configurez des services de lecture et d’écriture pour le modèle de données de formulaire.
 * Créez des fragments de formulaire adaptatif et configurez le service pour utiliser vos fragments de formulaire adaptatif.
-* Préparez des modèles de processus courants pour les formulaires qui nécessitent l’automatisation des processus d’entreprise.
-* Configuration d’Adobe Analytics, le cas échéant
+* Préparez des modèles de processus courants pour les formulaires qui nécessitent une automatisation de la gestion commerciale.
+* Configurez Adobe Analytics, le cas échéant.
 
 
 ## Modèles complexes connus
 
-Le service de conversion automatisée AEM Forms utilise l’intelligence artificielle et des algorithmes d’apprentissage automatique pour comprendre la disposition et les champs du formulaire source. Chaque service d’apprentissage automatique tire sans cesse des enseignements des données sources et enregistre ainsi des résultats de plus en plus concluants. Ces services apprennent de l&#39;expérience comme les humains.
+AEM [!DNL Forms Automated Conversion service] uses artificial intelligence and machine learning algorithms to understand the layout and fields of the source form. Chaque service d’apprentissage automatique tire sans cesse des enseignements des données sources et enregistre ainsi des résultats de plus en plus concluants. Ces services apprennent de l&#39;expérience comme les humains.
 
-Le service de conversion automatisée de formulaires se base sur un large éventail de formulaires. Il identifie facilement les champs d’un formulaire source et génère des formulaires adaptatifs. Cependant, certains champs et styles des formulaires PDF, pourtant facilement visibles par l’œil humain, restent difficiles à comprendre pour le service. Le service peut affecter différents types de champs ou panneaux applicables à certains champs ou styles. Tous ces modèles de champ et de style sont répertoriés ci-dessous.
+[!DNL Automated Forms Conversion service] est formée sur un grand ensemble de formulaires. Il identifie facilement les champs d’un formulaire source et génère des formulaires adaptatifs. Cependant, certains champs et styles des formulaires PDF, pourtant facilement visibles par l’œil humain, restent difficiles à comprendre pour le service. Le service peut affecter différents types de champs ou panneaux applicables à certains champs ou styles. Tous ces modèles de champ et de style sont répertoriés ci-dessous.
 
 Le service commencerait à identifier et à attribuer à ces modèles des champs ou des panneaux adaptés tout en continuant à apprendre des données sources. Pour le moment, vous pouvez utiliser l’éditeur [de vérification et de correction](review-correct-ui-edited.md) pour résoudre ces problèmes. Avant de commencer à résoudre les problèmes ou de poursuivre votre lecture, familiarisez-vous avec les [composants de formulaires adaptatifs](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 
