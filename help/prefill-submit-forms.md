@@ -1,129 +1,129 @@
 ---
-title: Préremplissage et  d’envoi recommandés en fonction de la source de données pour les formulaires adaptatifs
-seo-title: Options de préremplissage et d’envoi pour les formulaires adaptatifs
-description: ' de préremplissage et d’envoi basés sur la source de données pour les formulaires adaptatifs générés à l’aide du service de conversion automatisée des formulaires.'
-seo-description: ' de préremplissage et d’envoi basés sur la source de données pour les formulaires adaptatifs générés à l’aide du service de conversion automatisée des formulaires.'
+title: Processus recommandés de préremplissage et d’envoi de formulaires adaptatifs sur la base de sources de données
+seo-title: Options de préremplissage et d’envoi de formulaires adaptatifs
+description: Processus de préremplissage et d’envoi de formulaires adaptatifs sur la base de sources de données générés à l’aide du service de conversion automatisée de formulaires.
+seo-description: Processus de préremplissage et d’envoi de formulaires adaptatifs sur la base de sources de données générés à l’aide du service de conversion automatisée de formulaires.
 uuid: 91409a82-141c-4233-82b1-1539a0b250f8
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: caccb547a5741eb0e70ddf75630a661f8fe75cb3
 
 ---
 
 
-# Préremplissage et  d’envoi recommandés en fonction de la source de données pour les formulaires adaptatifs {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
+# Processus recommandés de préremplissage et d’envoi de formulaires adaptatifs sur la base de sources de données {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
 
-Vous pouvez utiliser l’une des sources de données suivantes avec des formulaires adaptatifs convertis à l’aide du service de conversion automatisée de formulaires :
+Vous pouvez utiliser l’une des sources de données suivantes avec des formulaires adaptatifs convertis à l’aide du service de conversion automatisée de formulaires :
 
-* Modèle de données de formulaire, OData ou tout autre service tiers
-*  JSON
-*  de XSD
+* modèle de données de formulaire, OData, ou tout autre service tiers ;
+* schéma JSON ;
+* schéma XSD.
 
 Selon la source de données, vous pouvez choisir de générer un formulaire adaptatif avec ou sans modèle de données.
 
-Cet article décrit la  recommandée pour préremplir les valeurs de champ et les options d’envoi après avoir sélectionné une source de données et généré un formulaire adaptatif à l’aide du service de conversion.
+Cet article décrit les processus recommandés pour préremplir les valeurs de champ et les options d’envoi après avoir sélectionné une source de données et généré un formulaire adaptatif à l’aide du service de conversion.
 
 <table> 
  <tbody> 
   <tr> 
    <th><strong>Source de données</strong></th> 
-   <th><strong>Flux de travaux recommandé</strong></th> 
+   <th><strong>Processus recommandé</strong></th> 
   </tr> 
   <tr> 
-   <td><p>Modèle de données de formulaire, OData ou tout autre service tiers</p></td> 
+   <td><p>modèle de données de formulaire, OData, ou tout autre service tiers ;</p></td> 
    <td> 
-    <p><strong>Option 1</strong>: Vous sélectionnez le modèle de données de formulaire, OData ou tout autre service tiers comme source de données. Vous <a href="#generate-adaptive-forms-with-no-data-binding">générez un formulaire adaptatif sans liaison</a> de données à l’aide du service de conversion automatisée des formulaires. Vous liez manuellement les champs du formulaire adaptatif aux entités du modèle de données de formulaire et utilisez l’option Service de préremplissage du modèle de données de formulaire pour préremplir les valeurs des champs. Utilisez l’option Envoyer à l’aide du modèle de données de formulaire pour envoyer le formulaire adaptatif.</p></td> 
+    <p><strong>Option 1</strong> : vous sélectionnez le modèle de données de formulaire, OData, ou tout autre service tiers comme source de données. Vous <a href="#generate-adaptive-forms-with-no-data-binding">générez un formulaire adaptatif sans liaison de données</a> à l’aide du service de conversion automatisée de formulaires. Vous liez manuellement les champs de formulaire adaptatif aux entités de modèle de données de formulaire et utilisez l’option Form Data Model Prefill Service (Service de préremplissage de modèle de données de formulaire) pour préremplir les valeurs de champ. Vous utilisez l’option Submit using Form Data Model (Envoyer à l’aide du modèle de données de formulaire) pour envoyer le formulaire adaptatif.</p></td> 
   </tr>
   <tr> 
    <td></td> 
    <td> 
-   <p><strong>Option 2</strong>: Vous sélectionnez le modèle de données de formulaire, OData ou tout autre service tiers comme source de données. Vous <a href="#generate-adaptive-forms-with-no-data-binding">générez un formulaire adaptatif sans liaison</a> de données à l’aide du service de conversion automatisée des formulaires. Vous liez les champs du formulaire adaptatif à l’aide de l’éditeur de règles pour préremplir les valeurs de champ. Modifiez les valeurs de champ, si nécessaire, et envoyez les données au répertoire crx-repository.</p>
+   <p><strong>Option 2</strong> : vous sélectionnez le modèle de données de formulaire, OData, ou tout autre service tiers comme source de données. Vous <a href="#generate-adaptive-forms-with-no-data-binding">générez un formulaire adaptatif sans liaison de données</a> à l’aide du service de conversion automatisée de formulaires. Vous liez les champs de formulaire adaptatif à l’aide de l’éditeur de règles pour préremplir les valeurs de champs. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.</p>
     </td> 
   </tr>
   <tr> 
    <td></td> 
    <td> 
-    <p>Pour obtenir des instructions détaillées sur l’exécution de ces  de, voir <a href="#sqldatasource">Utilisation de la base de données, d’OData ou de tout service tiers en tant que source de données.</a></p> </td> 
+    <p>Pour obtenir des instructions détaillées sur l’exécution de ces processus, consultez la section <a href="#sqldatasource">Utiliser la base de données, OData, ou tout autre service tiers comme source de données</a>.</p> </td> 
   </tr>
   <tr>
   <td><p>Schéma JSON</p></td> 
    <td> 
-    <p>Vous sélectionnez  JSON comme source de données. Basé sur la source de données sélectionnée :</p></td> 
+    <p>Vous sélectionnez le schéma JSON comme source de données. Selon la source de données sélectionnée :</p></td> 
   </tr>
   <tr>
   <td></td> 
    <td> 
-    <p><strong>Option 1</strong>: Vous <a href="#generate-adaptive-forms-with-no-data-binding">générez un formulaire adaptatif sans liaison</a> de données à l’aide du service de conversion automatisée des formulaires et vous configurez le JSON comme source de données. Vous liez manuellement les champs du formulaire adaptatif au JSON et vous <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">utilisez l’un des protocoles</a> pris en charge pour préremplir les valeurs de champ. Modifiez les valeurs de champ, si nécessaire, et envoyez les données au répertoire crx-repository.</p></td> 
+    <p><strong>Option 1</strong> : vous <a href="#generate-adaptive-forms-with-no-data-binding">générez un formulaire adaptatif sans liaison de données</a> à l’aide du service de conversion automatisée de formulaires et configurez le schéma JSON comme source de données. Vous liez manuellement les champs de formulaire adaptatif au schéma JSON et <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">utilisez l’un des protocoles pris en charge</a> pour préremplir les valeurs de champ. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.</p></td> 
   </tr>
   <tr>
   <td></td> 
    <td> 
-    <p>Pour obtenir des instructions détaillées sur l’exécution du  de, voir <a href="#jsondatasource">Utilisation du JSON en tant que source de données.</p></td> 
+    <p>Pour obtenir des instructions détaillées sur l’exécution des processus, consultez la section <a href="#jsondatasource">Utiliser le schéma JSON comme source de données.</p></td> 
   </tr>
   <tr>
   <td></td> 
    <td> 
-    <p><strong>Option 2</strong>: Vous <a href="#generate-adaptive-forms-with-json-binding">générez un formulaire adaptatif avec liaison</a> de données JSON à l’aide du service de conversion automatisée des formulaires. Le service de préremplissage et la fonction d’envoi de formulaire fonctionnent de manière transparente. Vous n’avez pas besoin d’étapes de configuration.</p> </td> 
+    <p><strong>Option 2</strong> : vous <a href="#generate-adaptive-forms-with-json-binding">générez un formulaire adaptatif avec liaison de données JSON</a> à l’aide du service de conversion automatisée de formulaires. Le service de préremplissage et la fonction d’envoi de formulaire fonctionnent sans problème. Aucune étape de configuration n’est nécessaire.</p> </td> 
   </tr>
    <tr>
   <td></td> 
    <td> 
-    <p>Pour obtenir des instructions détaillées sur l’exécution du  de, voir <a href="#jsonwithdatabinding">Utilisation du JSON en tant que source de données.</a></p> </td> 
+    <p>Pour obtenir des instructions détaillées sur l’exécution des processus, consultez la section <a href="#jsonwithdatabinding">Utiliser le schéma JSON comme source de données</a>.</p> </td> 
   </tr>
   <tr>
-  <td><p> de XSD</p></td> 
+  <td><p>schéma XSD.</p></td> 
    <td> 
-    <p>Vous sélectionnez  XSD comme source de données. En fonction de la source de données sélectionnée, vous <a href="#generate-adaptive-forms-with-no-data-binding">générez un formulaire adaptatif sans liaison</a> de données à l’aide du service de conversion automatisée des formulaires et vous configurez le XSD comme source de données. Vous liez manuellement les champs du formulaire adaptatif au XSD et vous <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">utilisez l’un des protocoles</a> pris en charge pour préremplir les valeurs de champ. Modifiez les valeurs de champ, si nécessaire, et envoyez les données au répertoire crx-repository.</p>
+    <p>Vous sélectionnez le schéma XSD comme source de données. Selon la source de données sélectionnée, vous <a href="#generate-adaptive-forms-with-no-data-binding">générez un formulaire adaptatif sans liaison de données</a> à l’aide du service de conversion automatisée de formulaires et configurez le schéma XSD comme source de données. Vous liez manuellement les champs de formulaire adaptatif au schéma XSD et <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">utilisez l’un des protocoles pris en charge</a> pour préremplir les valeurs de champ. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.</p>
     </td> 
   </tr>
   <tr>
   <td></td> 
    <td> 
-    <p>Pour obtenir des instructions détaillées sur l’exécution du  de, reportez-vous à la section <a href="#xsddatasource">Utilisation du XSD en tant que source de données.</a></p>
+    <p>Pour obtenir des instructions détaillées sur l’exécution des processus, consultez la section <a href="#xsddatasource">Utiliser le schéma XSD comme source de données</a>.</p>
     </td> 
   </tr>
  </tbody> 
 </table>
 
 
-Pour plus d’informations sur le service de conversion automatisée des formulaires, voir les articles suivants :
+Pour plus d’informations sur le service de conversion automatisée de formulaires, consultez les articles suivants :
 
-* [Présentation du service de conversion automatisée des formulaires](introduction.md)
-* [Configuration du service de conversion de formulaires automatisés](configure-service.md)
-* [Conversion de formulaires d’impression en formulaires adaptatifs](convert-existing-forms-to-adaptive-forms.md)
-* [Vérification et correction des formulaires convertis](review-correct-ui-edited.md)
+* [Présentation du service de conversion automatisée de formulaires](introduction.md)
+* [Configurer le service de conversion automatisée de formulaires](configure-service.md)
+* [Convertir des formulaires imprimés en formulaires adaptatifs](convert-existing-forms-to-adaptive-forms.md)
+* [Vérifier et corriger les formulaires convertis](review-correct-ui-edited.md)
 
-Les informations fournies dans cet article partent du principe que quiconque le lit possède une connaissance de base des concepts de formulaires adaptatifs.
+Ces articles s’adressent à un public qui possède une connaissance de base des concepts liés aux formulaires adaptatifs.
 
 ## Conditions préalables {#pre-requisites}
 
-* Configure an [AEM author instance](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html)
-* Configuration du service de conversion [automatisée des formulaires sur l’instance d’auteur AEM](configure-service.md)
+* Configuration d’une [instance d’auteur AEM](https://helpx.adobe.com/fr/experience-manager/6-5/sites/deploying/using/deploy.html)
+* Configuration du [service de conversion automatisée de formulaires sur l’instance d’auteur AEM](configure-service.md)
 
 ## Exemple de formulaire adaptatif {#sample-adaptive-form}
 
-Pour exécuter les cas d’utilisation de préremplissage des valeurs de champ dans un formulaire adaptatif et les envoyer à la source de données, téléchargez l’exemple de fichier PDF suivant.
+Pour mettre en pratique les cas d’utilisation afin de préremplir les valeurs de champ dans un formulaire adaptatif et les envoyer à la source de données, téléchargez l’exemple de fichier PDF suivant.
 
 Exemple de formulaire de demande de prêt
 
 [Obtenir le fichier](assets/sample_loan_application_form.pdf)
 
-Le fichier PDF sert d’entrée au service de conversion automatisée des formulaires. Le service convertit ce fichier en formulaire adaptatif. L’image suivante illustre l’exemple de demande de prêt au format PDF.
+Le fichier PDF sert d’entrée au service de conversion automatisée de formulaires. Le service convertit ce fichier en un formulaire adaptatif. L’image suivante montre un exemple de formulaire de demande de prêt au format PDF.
 
-![formulaire de demande de prêt](assets/sample_form_new.png)
+![exemple de formulaire de demande de prêt](assets/sample_form_new.png)
 
-## Préparation des données pour le modèle de formulaire {#prepare-data-for-form-model}
+## Préparer les données pour le modèle de formulaire {#prepare-data-for-form-model}
 
-L’intégration de données AEM Forms permet de configurer des sources de données disparates et de s’y connecter. Après avoir généré un formulaire adaptatif à l’aide du processus de conversion, vous pouvez définir le modèle de formulaire en fonction d’un modèle de données de formulaire, d’un schéma XSD ou d’un  JSON. Vous pouvez utiliser une base de données, Microsoft Dynamics ou tout autre service tiers pour créer un modèle de données de formulaire.
+L’intégration de données AEM Forms permet de configurer des sources de données disparates et de s’y connecter. Après avoir généré un formulaire adaptatif à l’aide du processus de conversion, vous pouvez définir le modèle de formulaire en fonction d’un modèle de données de formulaire, XSD, ou d’un schéma JSON. Vous pouvez utiliser une base de données, Microsoft Dynamics, ou tout autre service tiers pour créer un modèle de données de formulaire.
 
-Ce didacticiel utilise la base de données MySQL comme source pour créer un modèle de données de formulaire. Créez un  de demande de **prêt** dans la base de données et ajoutez une table de **demandeur** au  en fonction des champs disponibles dans le formulaire adaptatif.
+Ce tutoriel utilise la base de données MySQL comme source pour créer un modèle de données de formulaire. Créez un schéma **loanapplication** dans la base de données et ajoutez-y un tableau **applicant** en fonction des champs disponibles dans le formulaire adaptatif.
 
-![Exemple de données mysql](assets/sample_data_mysql.png)
+![Exemples de données mysql](assets/sample_data_mysql.png)
 
-Vous pouvez utiliser l’instruction DDL suivante pour créer la table **candidat** dans la base de données.
+Vous pouvez utiliser l’instruction DDL suivante pour créer le tableau **applicant** dans la base de données.
 
 ```sql
 CREATE TABLE `applicant` (
@@ -138,7 +138,7 @@ CREATE TABLE `applicant` (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
 
-Si vous utilisez un XSD comme modèle de formulaire pour exécuter les cas d’utilisation, créez un fichier XSD avec le texte suivant :
+Si vous utilisez un schéma XSD comme modèle de formulaire pour mettre en pratique les cas d’utilisation, créez un fichier XSD avec le texte suivant :
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -163,15 +163,15 @@ Si vous utilisez un XSD comme modèle de formulaire pour exécuter les cas d’u
   </xs:schema>
 ```
 
-Vous pouvez également télécharger le XSD sur le système de fichiers local.
+Ou téléchargez le schéma XSD sur le système de fichiers local.
 
-Exemple de demande de prêt  XSD
+Exemple de schéma XSD de demande de prêt
 
 [Obtenir le fichier](assets/loanapplication.xsd)
 
-Pour plus d’informations sur l’utilisation du XSD en tant que modèle de formulaire dans les formulaires adaptatifs, voir [Création de formulaires adaptatifs à l’aide de](https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-xml-schema-form-model.html)XML.
+Pour plus d’informations sur l’utilisation du schéma XSD comme modèle de formulaire dans les formulaires adaptatifs, consultez [Créer des formulaires adaptatifs à l’aide du schéma XML](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/adaptive-form-xml-schema-form-model.html).
 
-Si vous utilisez un  JSON comme modèle de formulaire pour exécuter les cas d’utilisation, créez un fichier JSON avec le texte suivant :
+Si vous utilisez un schéma JSON comme modèle de formulaire pour mettre en pratique les cas d’utilisation, créez un fichier JSON avec le texte suivant :
 
 ```JSON
 {
@@ -213,193 +213,193 @@ Si vous utilisez un  JSON comme modèle de formulaire pour exécuter les cas d�
 }
 ```
 
-Vous pouvez également télécharger le  JSON sur le système de fichiers local.
+Ou téléchargez le schéma JSON sur le système de fichiers local.
 
-Exemple de demande de prêt  JSON
+Exemple de schéma JSON de demande de prêt
 
 [Obtenir le fichier](assets/demo_schema.json)
 
-Pour plus d’informations sur l’utilisation du JSON comme modèle de formulaire dans les formulaires adaptatifs, voir [Création de formulaires adaptatifs à l’aide du](https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html)JSON.
+Pour plus d’informations sur l’utilisation du schéma JSON comme modèle de formulaire dans les formulaires adaptatifs, consultez [Créer des formulaires adaptatifs à l’aide du schéma JSON](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html).
 
 ## Générer des formulaires adaptatifs sans liaison de données {#generate-adaptive-forms-with-no-data-binding}
 
-Utilisez le service de conversion [automatisée de formulaires pour convertir](convert-existing-forms-to-adaptive-forms.md) l’ [exemple de formulaire](#sample-adaptive-form) de demande de prêt en formulaire adaptatif sans liaison de données. Veillez à cocher la **[!UICONTROL Generate adaptive form(s) without data bindings]** case pour générer le formulaire adaptatif sans liaison de données.
+Utilisez le [service de conversion automatisée de formulaires pour convertir](convert-existing-forms-to-adaptive-forms.md) le [formulaire de demande de prêt](#sample-adaptive-form) en formulaire adaptatif sans liaison de données. Assurez-vous de cocher la case **[!UICONTROL Generate adaptive form(s) without data bindings]** (Générer un ou plusieurs formulaires adaptatifs sans liaison de données) afin de générer un formulaire adaptatif sans liaison de données.
 
 ![Formulaire adaptatif sans liaison de données](assets/generate_af_without_binding.png)
 
-Après avoir généré un formulaire adaptatif sans liaison de données, sélectionnez une source de données pour le formulaire adaptatif :
+Après avoir généré un formulaire adaptatif sans liaison de données, sélectionnez une source de données pour le formulaire adaptatif :
 
-* [Base de données, OData ou tout service tiers](#sqldatasource)
-* [JSON](#jsondatasource)
-* [de XSD](#xsddatasource)
+* [Base de données, OData, ou tout service tiers](#sqldatasource)
+* [Schéma JSON](#jsondatasource)
+* [Schéma XSD](#xsddatasource)
 
 >[!NOTE]
-> Si le formulaire adaptatif que vous convertissez à l’aide du service de conversion automatisée des formulaires contient plusieurs champs portant le même nom, assurez-vous que ces champs sont liés à des entités de source de données afin d’éviter une perte de données possible lors de l’envoi.
+> Si le formulaire adaptatif que vous convertissez à l’aide du service de conversion automatisée de formulaires contient plusieurs champs portant le même nom, assurez-vous que ces champs sont liés aux entités de source de données pour éviter une éventuelle perte de données lors de l’envoi.
 
 
-### Utiliser la base de données, OData ou tout service tiers comme source de données {#sqldatasource}
+### Utiliser la base de données, OData, ou tout autre service tiers comme source de données {#sqldatasource}
 
-Cas d’utilisation : Vous générez un formulaire adaptatif sans liaison de données à l’aide du service de conversion automatisée des formulaires et configurez la base de données MYSQL en tant que source de données. Vous liez manuellement les champs du formulaire adaptatif aux entités du modèle de données et utilisez l’ **[!UICONTROL Form Data Model Prefill Service]** option pour préremplir les valeurs de champ. Utilisez cette **[!UICONTROL Submit using Form Data Model]** option pour envoyer le formulaire adaptatif.
+Cas d’utilisation : vous générez un formulaire adaptatif sans liaison de données à l’aide du service de conversion automatisée de formulaires et configurez la base de données MYSQL comme source de données. Vous liez manuellement les champs de formulaire adaptatif aux entités de modèle de données de formulaire et utilisez l’option **[!UICONTROL Form Data Model Prefill Service]** (Service de préremplissage de modèle de données de formulaire) pour préremplir les valeurs de champ. Vous utilisez l’option **[!UICONTROL Submit using Form Data Model]** (Envoyer à l’aide du modèle de données de formulaire) pour envoyer le formulaire adaptatif.
 
-Avant d’exécuter le cas d’utilisation :
+Avant de mettre en pratique le cas d’utilisation, procédez aux étapes suivantes :
 
-* [Configuration de la base de données MySQL en tant que source de données](https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-data-sources.html#configurerelationaldatabase)
-* [Création du modèle de données de formulaire](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html)
+* [Configurer la base de données MySQL comme source de données](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/configure-data-sources.html#configurerelationaldatabase)
+* [Créer un modèle de données de formulaire](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/work-with-form-data-model.html)
 
-En fonction du cas d’utilisation, créez le modèle de données de formulaire de **demande** de prêt et liez l’argument de service de lecture à une **[!UICONTROL Literal]** valeur. La valeur littérale du numéro de téléphone doit correspondre à l’un des enregistrements configurés dans le **** candidatde la base de données MySQL. Les services utilisent la valeur comme argument pour récupérer les détails de la source de données. Vous pouvez également sélectionner [Attribut  utilisateur ou Attribut](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument) de requête dans le **[!UICONTROL Binding To]** déroulant 
+En fonction du cas d’utilisation, créez le modèle de données de formulaire **loanapplication** et liez l’argument de service de lecture à une valeur **[!UICONTROL Literal]**. La valeur littérale du numéro de téléphone doit correspondre à l’un des enregistrements configurés dans le schéma **applicant** de la base de données MySQL. Les services utilisent la valeur comme argument pour extraire les détails de la source de données. Vous pouvez également sélectionner [User Profile Attribute or Request Attribute](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument) (Attribut de profil utilisateur ou attribut de requête) dans la liste déroulante **[!UICONTROL Binding To]** (Liaison à).
 
 ![Configurer un modèle de données de formulaire](assets/configure_model_object.png)
 
 >[!NOTE]
 >
->Veillez à ajouter des services **get** et **insert** au modèle de données de formulaire, à configurer et à tester les services avant d’exécuter le cas d’utilisation.
+>Veillez à ajouter les services **get** (obtenir) et **insert** (insérer) au modèle de données de formulaire ainsi qu’à les configurer et les tester avant la mise en pratique du cas d’utilisation.
 
-Exécutez les étapes suivantes :
+Procédez comme suit :
 
-1. Sélectionnez l’ **exemple converti de formulaire** de demande de prêt disponible dans le **[!UICONTROL output]** dossier et appuyez sur **[!UICONTROL Properties]**.
-1. Appuyez sur l’ **[!UICONTROL Form Model]** onglet, sélectionnez **[!UICONTROL Form Data Model]** dans le **[!UICONTROL Select From]** déroulant, puis appuyez **[!UICONTROL Select Form Data Model]** sur pour sélectionner le modèle de données de formulaire de demande de **prêt** . Tap **[!UICONTROL Save & Close]** to save the form.
-1. Sélectionnez l’ **exemple de formulaire** de demande de prêt et appuyez sur **[!UICONTROL Edit]**.
-1. Dans l’ **[!UICONTROL Content]** onglet, appuyez sur l’icône Configurer :
+1. Sélectionnez l’**exemple de formulaire de demande de prêt** converti disponible dans le dossier **[!UICONTROL output]** (sortie) et appuyez sur **[!UICONTROL Properties]** (Propriétés).
+1. Appuyez sur l’onglet **[!UICONTROL Form Model]** (Modèle de formulaire), sélectionnez **[!UICONTROL Form Data Model]** (Modèle de données de formulaire) dans la liste déroulante **[!UICONTROL Select From]** (Sélectionner dans) et appuyez sur **[!UICONTROL Select Form Data Model]** (Sélectionner un modèle de données de formulaire) pour sélectionner le modèle de données de formulaire **loanapplication**. Appuyez sur **[!UICONTROL Save &amp; Close]** (Enregistrer et fermer) pour enregistrer le formulaire.
+1. Sélectionnez l’**exemple de formulaire de demande de prêt** et appuyez sur **[!UICONTROL Edit]** (Modifier).
+1. Dans l’onglet **[!UICONTROL Content]** (Contenu), appuyez sur l’icône de configuration :
 
-   ![configurer le de formulaires](assets/configure_form_container.png)
+   ![configurer le conteneur de formulaires](assets/configure_form_container.png)
 
-   1. Dans la **[!UICONTROL Basic]** section, sélectionnez **[!UICONTROL Form Data Model Prefill service]** dans le  **[!UICONTROL Prefill Service]** déroulant.
+   1. Dans la section **[!UICONTROL Basic]** (De base), sélectionnez **[!UICONTROL Form Data Model Prefill service]** (Service de préremplissage de modèle de données de formulaire) dans la liste déroulante **[!UICONTROL Prefill Service]** (Service de préremplissage).
 
-   1. Dans la **[!UICONTROL Submission]** section, sélectionnez **[!UICONTROL Submit using Form Data Model]** dans le  **[!UICONTROL Submit Action]** déroulant.
+   1. Dans la section **[!UICONTROL Submission]** (Envoi), sélectionnez **[!UICONTROL Submit using Form Data Model]** (Envoyer à l’aide du modèle de données de formulaire) dans la liste déroulante **[!UICONTROL Submit Action]** (Action d’envoi).
 
-   1. Sélectionnez le modèle de données à l’aide du **[!UICONTROL Data Model to submit]** champ.
-   1. Tap ![done icon](assets/save_icon.svg) to save the properties.
+   1. Sélectionnez le modèle de données à l’aide du champ **[!UICONTROL Data Model to submit]** (Modèle de données à envoyer).
+   1. Appuyez sur ![icône terminé](assets/save_icon.svg) pour enregistrer les propriétés.
 
-1. Appuyez sur la zone de texte Nom du demandeur et sélectionnez ![Configurer l’icône](assets/configure_icon.svg) (Configurer).
+1. Appuyez sur la zone de texte Applicant Name (Nom du demandeur) et sélectionnez ![icône de configuration](assets/configure_icon.svg) (Configurer).
 
-   1. Dans le champ Référence de liaison, sélectionnez **Demandeur** > **Nom**, puis appuyez sur l’icône ![](assets/save_icon.svg) Terminé pour enregistrer les propriétés. De même, créez une liaison de données pour l’ **adresse**, le numéro **de** téléphone, le **courriel**, le métier, le salaire annuel  (en dollars) et le **numéro d’.********des champs des membres** de famille dépendants avec les entités du modèle de données de formulaire.
-   ![Liaison de références](assets/bind_references.png)
+   1. Dans le champ Bind Reference (Référence de liaison), sélectionnez **Applicant** (Demandeur) > **Name** (Nom), puis appuyez sur ![icône terminé](assets/save_icon.svg) pour enregistrer les propriétés. De même, créez une liaison de données pour les champs **Address** (Adresse), **Phone Number** (Numéro de téléphone), **E-mail** (Adresse électronique), **Occupation** (Profession), **Annual Salary (in dollars)** (Salaire annuel (en dollars)) et **No. of dependent family members** (Nombre de personnes à charge) avec les entités de modèle de données de formulaire.
+   ![Lier les références](assets/bind_references.png)
 
-1. Appuyez **[!UICONTROL Preview]** sur pour les valeurs de champ de formulaire adaptatif préremplies.
-1. Modifiez les valeurs de champ, si nécessaire, et envoyez le formulaire adaptatif. Les valeurs de champ sont envoyées à la base de données MySQL. Vous pouvez actualiser la table **du demandeur** dans la base de données pour les valeurs mises à jour dans la table.
+1. Appuyez sur **[!UICONTROL Preview]** (Aperçu) pour afficher les valeurs de champs de formulaires adaptatifs préremplies.
+1. Si nécessaire, modifiez les valeurs de champ et envoyez le formulaire adaptatif. Les valeurs de champ sont envoyées à la base de données MySQL. Vous pouvez actualiser le tableau **applicant** dans la base de données pour afficher les valeurs mises à jour dans le tableau.
 
-**Cas d’utilisation :** Vous générez un formulaire adaptatif sans liaison de données à l’aide du service de conversion automatisée des formulaires et configurez la base de données MYSQL en tant que source de données. Vous liez les champs du formulaire adaptatif à l’aide de l’éditeur de règles pour préremplir les valeurs de champ. Modifiez les valeurs de champ, si nécessaire, et envoyez les données au répertoire crx-repository.
+**Cas d’utilisation :** vous générez un formulaire adaptatif sans liaison de données à l’aide du service de conversion automatisée de formulaires et configurez la base de données MYSQL comme source de données. Vous liez les champs de formulaire adaptatif à l’aide de l’éditeur de règles pour préremplir les valeurs de champs. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.
 
-Exécutez les étapes suivantes pour utiliser l’éditeur [de](https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html) règles afin d’appeler le service de modèle de données de formulaire pour lier des champs et des valeurs de préremplissage dans un formulaire adaptatif :
+Exécutez les étapes suivantes pour utiliser l’[éditeur de règles](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/rule-editor.html) afin d’amener le service de modèle de données de formulaire à lier les champs et à préremplir les valeurs dans un formulaire adaptatif :
 
-1. Sélectionnez l’ **exemple de formulaire** de demande de prêt dans le **[!UICONTROL output]** dossier et appuyez sur **[!UICONTROL Edit]**.
-1. Dans l’ **[!UICONTROL Content]** onglet, appuyez sur l’icône Configurer :
+1. Sélectionnez l’**exemple de formulaire de demande de prêt** dans le dossier **[!UICONTROL output]** (sortie) et appuyez sur **[!UICONTROL Edit]** (Modifier).
+1. Dans l’onglet **[!UICONTROL Content]** (Contenu), appuyez sur l’icône de configuration :
 
-   ![configurer le de formulaires](assets/configure_form_container.png)
+   ![configurer le conteneur de formulaires](assets/configure_form_container.png)
 
-   Dans la **[!UICONTROL Basic]** section, sélectionnez **[!UICONTROL Form Data Model Prefill service]** dans le  **[!UICONTROL Prefill Service]** déroulant.
+   Dans la section **[!UICONTROL Basic]** (De base), sélectionnez **[!UICONTROL Form Data Model Prefill service]** (Service de préremplissage de modèle de données de formulaire) dans la liste déroulante **[!UICONTROL Prefill Service]** (Service de préremplissage).
 
-1. Appuyez sur la **[!UICONTROL Applicant Name]** zone de texte et appuyez sur **[!UICONTROL Edit Rules]**.
+1. Appuyez sur la zone de texte **[!UICONTROL Applicant Name]** (Nom du demandeur) et appuyez sur **[!UICONTROL Edit Rules]** (Modifier les règles).
 
    ![Modifier les règles pour créer une liaison de données](assets/edit_rules_bind_reference.png)
 
-1. Appuyez **[!UICONTROL Create]** sur la page Editeur de règles.
-1. Sur la **[!UICONTROL Rule Editor]** page :
+1. Appuyez sur **[!UICONTROL Create]** (Créer) sur la page Rule Editor (Éditeur de règles).
+1. Sur la page **[!UICONTROL Rule Editor]** (Éditeur de règles) :
 
-   1. Sélectionnez un état pour la zone de texte Nom du demandeur. Par exemple, **[!UICONTROL is initialized]**, ce qui entraîne l’exécution de la **[!UICONTROL Then]** condition lorsque vous générez le formulaire en **[!UICONTROL Preview]** mode.
+   1. Sélectionnez un état pour la zone de texte Applicant Name (Nom du demandeur). Par exemple, **[!UICONTROL is initialized]** (est initialisé), ce qui entraîne l’exécution de la condition **[!UICONTROL Then]** (Alors) lorsque vous affichez le formulaire en mode **[!UICONTROL Preview]** (Aperçu).
 
-   1. Dans la **[!UICONTROL Then]** section, sélectionnez **[!UICONTROL Invoke Service]** dans le  **[!UICONTROL Select Action]** déroulant. Tous les services de votre instance Forms s’affichent dans le  déroulant.
+   1. Dans la section **[!UICONTROL Then]** (Alors), sélectionnez **[!UICONTROL Invoke Service]** (Appeler un service) dans la liste déroulante **[!UICONTROL Select Action]** (Sélectionner une action). Tous les services de votre instance de formulaires s’affichent dans la liste déroulante.
 
-   1. Sélectionnez un **[!UICONTROL Get]** service dans la section répertoriant les modèles de données de formulaire. Le champ Input affiche **le numéro** de téléphone, qui est la clé principale définie pour le modèle de données **demandeur** . Le système récupère et préremplit les valeurs du formulaire adaptatif pour les champs de la section Sortie en fonction de ce champ.
+   1. Sélectionnez un service **[!UICONTROL Get]** (Obtenir) dans la section répertoriant les modèles de données de formulaire. Le champ de saisie affiche **phonenumber** (numéro de téléphone), qui est la clé primaire définie pour le modèle de données **applicant** (demandeur). Le système récupère et préremplit les valeurs du formulaire adaptatif pour les champs de la section Output (Sortie) selon ce champ.
 
-   1. Créez une liaison pour les champs du formulaire adaptatif avec les entités du modèle de données de formulaire à l’aide de la section Sortie. Par exemple, liez le champ du formulaire **[!UICONTROL Applicant Name]** adaptatif à l’entité **name** .
+   1. Créez une liaison pour les champs de formulaires adaptatifs avec les entités de modèle de données de formulaire à l’aide de la section Output (Sortie). Par exemple, liez le champ de formulaire adaptatif **[!UICONTROL Applicant Name]** (Nom de demandeur) à l’entité **name** (nom).
 
-   1. Appuyer **[!UICONTROL Done]**. Appuyez de **[!UICONTROL Done]** nouveau sur la page Editeur de règles.
-   ![Editeur de règles pour lier des références](assets/rule_editor_bind_references.png)
+   1. Appuyez sur **[!UICONTROL Done]** (Terminé). Appuyez à nouveau sur **[!UICONTROL Done]** (Terminé) sur la page Rule Editor (Éditeur de règles).
+   ![Éditeur de règles pour lier les références](assets/rule_editor_bind_references.png)
 
-1. Appuyez **[!UICONTROL Preview]** sur pour les valeurs de champ de formulaire adaptatif préremplies.
+1. Appuyez sur **[!UICONTROL Preview]** (Aperçu) pour afficher les valeurs de champs de formulaires adaptatifs préremplies.
 
    >[!NOTE]
    >
-   >Assurez-vous que la propriété **[!UICONTROL Return Array]** est définie sur OFF pour la propriété de service **get** dans le modèle de données de formulaire associé au formulaire adaptatif.
+   >Assurez-vous que la propriété **[!UICONTROL Return Array]** (Revenir au tableau) est désactivée pour la propriété de service **get** (obtenir) dans le modèle de données de formulaire associé au formulaire adaptatif.
 
-1. Modifiez les valeurs de champ, si nécessaire, et envoyez le formulaire adaptatif. Les données envoyées sont disponibles à l’emplacement suivant dans le référentiel crx :
+1. Si nécessaire, modifiez les valeurs de champ et envoyez le formulaire adaptatif. Les données envoyées sont disponibles à l’emplacement suivant dans le référentiel crx-repository :
 
    `http://host name:port/crx/de/index.jsp#/content/forms/fp/admin/submit/data/latest file available in the folder`
 
-### Utiliser le JSON comme source de données {#jsondatasource}
+### Utiliser le schéma JSON comme source de données {#jsondatasource}
 
-**Cas d’utilisation :** Vous générez un formulaire adaptatif sans liaison de données à l’aide du service de conversion automatisée des formulaires et vous configurez le JSON comme source de données. Vous liez manuellement les champs du formulaire adaptatif au JSON et utilisez l’option **avec données** pour préremplir les valeurs de champ. Modifiez les valeurs de champ, si nécessaire, et envoyez les données au répertoire crx-repository.
+**Cas d’utilisation** : vous générez un formulaire adaptatif sans liaison de données à l’aide du service de conversion automatisée de formulaires et configurez le schéma JSON comme source de données. Vous liez manuellement les champs de formulaire adaptatif au schéma JSON et utilisez l’option **Preview with data** (Aperçu avec données) pour préremplir les valeurs de champ. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.
 
-Avant d’exécuter le cas d’utilisation, vérifiez que vous disposez des éléments suivants :
+Avant de mettre en pratique le cas d’utilisation, assurez-vous de disposer des éléments suivants :
 
-* [un JSON valide conforme à la structure de JSON](#prepare-data-for-form-model)
-* [un formulaire adaptatif sans liaison de données](#generate-adaptive-forms-with-no-data-binding)
+* [un schéma JSON valide conforme à la structure du schéma JSON](#prepare-data-for-form-model) ;
+* [un formulaire adaptatif sans liaison de données](#generate-adaptive-forms-with-no-data-binding).
 
-Exécutez les étapes suivantes :
+Procédez comme suit :
 
-1. Sélectionnez l’ **exemple converti de formulaire** de demande de prêt disponible dans le dossier de **sortie** et appuyez sur **[!UICONTROL Properties]**.
-1. Appuyez sur l’ **[!UICONTROL Form Model]** onglet, sélectionnez **[!UICONTROL Schema]** dans le **[!UICONTROL Select From]** déroulant, puis appuyez **[!UICONTROL Select Schema]** sur pour télécharger le **fichier JSON** JSONdemo.enregistré sur le système de fichiers local. Tap **[!UICONTROL Save & Close]** to save the form.
-1. Sélectionnez l’ **exemple de formulaire** de demande de prêt et appuyez sur **[!UICONTROL Edit]**.
-1. Appuyez sur la zone de texte Nom du demandeur et sélectionnez ![Configurer l’icône](assets/configure_icon.svg) (Configurer).
+1. Sélectionnez l’**exemple de formulaire de demande de prêt** converti disponible dans le dossier **output** (sortie) et appuyez sur **[!UICONTROL Properties]** (Propriétés).
+1. Appuyez sur l’onglet **[!UICONTROL Form Model]** (Modèle de formulaire), sélectionnez **[!UICONTROL Schema]** (Schéma) dans la liste déroulante **[!UICONTROL Select From]** (Sélectionner dans) et appuyez sur **[!UICONTROL Select Schema]** (Sélectionner un schéma) pour télécharger le schéma **demo.schema JSON** enregistré dans le système de fichiers local. Appuyez sur **[!UICONTROL Save &amp; Close]** (Enregistrer et fermer) pour enregistrer le formulaire.
+1. Sélectionnez l’**exemple de formulaire de demande de prêt** et appuyez sur **[!UICONTROL Edit]** (Modifier).
+1. Appuyez sur la zone de texte Applicant Name (Nom du demandeur) et sélectionnez ![icône de configuration](assets/configure_icon.svg) (Configurer).
 
-   Dans le champ Référence de liaison, sélectionnez **Demandeur** > **Nom**, puis appuyez sur l’icône ![](assets/save_icon.svg) Terminé pour enregistrer les propriétés. De même, créez une liaison de données pour l’ **adresse**, le numéro **de** téléphone, le **courriel**, le métier, le salaire annuel  (en dollars) et le **numéro d’.********des champs des membres** de la famille à charge avec les  JSON.
+   Dans le champ Bind Reference (Référence de liaison), sélectionnez **Applicant** (Demandeur) > **Name** (Nom), puis appuyez sur ![icône terminé](assets/save_icon.svg) pour enregistrer les propriétés. De même, créez une liaison de données pour les champs **Address** (Adresse), **Phone Number** (Numéro de téléphone), **E-mail** (Adresse électronique), **Occupation** (Profession), **Annual Salary (in dollars)** (Salaire annuel (en dollars)) et **No. of dependent family members** (Nombre de personnes à charge) avec les entités de schéma JSON.
 
-1. Sélectionnez à nouveau l’ **exemple de formulaire** de demande de prêt converti disponible dans le **[!UICONTROL output]** dossier et sélectionnez **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
+1. Sélectionnez à nouveau l’**exemple de formulaire de demande de prêt** converti disponible dans le dossier **[!UICONTROL output]** (sortie) et sélectionnez **[!UICONTROL Preview]** (Aperçu) >**[!UICONTROL Preview with Data]** (Aperçu avec données).</br>
 
-   Télécharger le fichier de données d’exemple</br>
+   Télécharger un exemple de fichier de données</br>
 
    [Obtenir le fichier](assets/json_data_file.txt)</br>
 
-1. Modifiez les valeurs de champ, si nécessaire, et envoyez le formulaire adaptatif. Les données envoyées sont disponibles à l’emplacement suivant dans le référentiel crx :
+1. Si nécessaire, modifiez les valeurs de champ et envoyez le formulaire adaptatif. Les données envoyées sont disponibles à l’emplacement suivant dans le référentiel crx-repository :
 
    `http://host name:port/crx/de/index.jsp#/content/forms/fp/admin/submit/data/latest file available in the folder`
 
-### Utiliser le XSD comme source de données {#xsddatasource}
+### Utiliser le schéma XSD comme source de données {#xsddatasource}
 
-**Cas d’utilisation :** Vous générez un formulaire adaptatif sans liaison de données à l’aide du service de conversion automatisée des formulaires et vous configurez le XSD comme source de données. Vous liez manuellement les champs du formulaire adaptatif au XSD et utilisez le **avec des données** pour préremplir les valeurs des champs. Modifiez les valeurs de champ, si nécessaire, et envoyez les données au répertoire crx-repository.
+**Cas d’utilisation** : vous générez un formulaire adaptatif sans liaison de données à l’aide du service de conversion automatisée de formulaires et configurez le schéma XSD comme source de données. Vous liez manuellement les champs de formulaire adaptatif au schéma XSD et utilisez l’option **Preview with data** (Aperçu avec données) pour préremplir les valeurs de champ. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.
 
-Avant d’exécuter le cas d’utilisation, vérifiez que vous disposez des éléments suivants :
+Avant de mettre en pratique le cas d’utilisation, assurez-vous de disposer des éléments suivants :
 
-* [un XSD valide conforme à la structure du XML](#prepare-data-for-form-model)
-* [un formulaire adaptatif sans liaison de données](#generate-adaptive-forms-with-no-data-binding)
+* [un schéma XSD valide conforme à la structure du schéma XML](#prepare-data-for-form-model) ;
+* [un formulaire adaptatif sans liaison de données](#generate-adaptive-forms-with-no-data-binding).
 
-Exécutez les étapes suivantes :
+Procédez comme suit :
 
-1. Sélectionnez l’ **exemple converti de formulaire** de demande de prêt disponible dans le **[!UICONTROL output]** dossier et appuyez sur **[!UICONTROL Properties]**.
-1. Appuyez sur l’ **[!UICONTROL Form Model]** onglet, sélectionnez **[!UICONTROL Schema]** dans le **[!UICONTROL Select From]** déroulant, puis appuyez **[!UICONTROL Select Schema]** pour télécharger le XSD de l’application de **prêt** enregistré sur le système de fichiers local. Sélectionnez l’élément racine pour le  XSD et appuyez **[!UICONTROL Save & Close]** sur pour enregistrer le formulaire.
-1. Sélectionnez l’ **exemple de formulaire** de demande de prêt et appuyez sur **[!UICONTROL Edit]**.
-1. Appuyez sur la zone de texte Nom du demandeur et sélectionnez ![Configurer l’icône](assets/configure_icon.svg) (Configurer).
-Dans le champ Référence de liaison, sélectionnez **Demandeur** > **Nom**, puis appuyez sur l’icône ![](assets/save_icon.svg) Terminé pour enregistrer les propriétés. De même, créez une liaison de données pour l’ **adresse**, le numéro **de** téléphone, le **courriel**, le métier, le salaire annuel  (en dollars) et le **numéro d’.********des champs des membres** de famille dépendants avec les entités de XSD.
+1. Sélectionnez l’**exemple de formulaire de demande de prêt** converti disponible dans le dossier **[!UICONTROL output]** (sortie) et appuyez sur **[!UICONTROL Properties]** (Propriétés).
+1. Appuyez sur l’onglet **[!UICONTROL Form Model]** (Modèle de formulaire), sélectionnez **[!UICONTROL Schema]** (Schéma) dans la liste déroulante **[!UICONTROL Select From]** (Sélectionner dans) et appuyez sur **[!UICONTROL Select Schema]** (Sélectionner un schéma) pour télécharger le schéma XSD **loanapplication** enregistré dans le système de fichiers local. Sélectionnez l’élément racine pour le schéma XSD et appuyez sur **[!UICONTROL Save &amp; Close]** (Enregistrer et fermer) pour enregistrer le formulaire.
+1. Sélectionnez l’**exemple de formulaire de demande de prêt** et appuyez sur **[!UICONTROL Edit]** (Modifier).
+1. Appuyez sur la zone de texte Applicant Name (Nom du demandeur) et sélectionnez ![icône de configuration](assets/configure_icon.svg) (Configurer).
+Dans le champ Bind Reference (Référence de liaison), sélectionnez **Applicant** (Demandeur) > **Name** (Nom), puis appuyez sur ![icône terminé](assets/save_icon.svg) pour enregistrer les propriétés. De même, créez une liaison de données pour les champs **Address** (Adresse), **Phone Number** (Numéro de téléphone), **E-mail** (Adresse électronique), **Occupation** (Profession), **Annual Salary (in dollars)** (Salaire annuel (en dollars)) et **No. of dependent family members** (Nombre de personnes à charge) avec les entités de schéma XSD.
 
-1. Sélectionnez à nouveau l’ **exemple de formulaire** de demande de prêt converti disponible dans le dossier de **sortie** et sélectionnez **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
+1. Sélectionnez à nouveau l’**exemple de formulaire de demande de prêt** converti disponible dans le dossier **output** (sortie) et sélectionnez **[!UICONTROL Preview]** (Aperçu) >**[!UICONTROL Preview with Data]** (Aperçu avec données).</br>
 
-   Télécharger le fichier de données d’exemple</br>
+   Télécharger un exemple de fichier de données</br>
 
    [Obtenir le fichier](assets/loan-application-data-xml-data.zip)</br>
 
 
-1. Modifiez les valeurs de champ, si nécessaire, et envoyez le formulaire adaptatif. Les données envoyées sont disponibles à l’emplacement suivant dans le référentiel crx :
+1. Si nécessaire, modifiez les valeurs de champ et envoyez le formulaire adaptatif. Les données envoyées sont disponibles à l’emplacement suivant dans le référentiel crx-repository :
 
    `http://host name:port/crx/de/index.jsp#/content/forms/fp/admin/submit/data/latest file available in the folder`
 
-## Générer des formulaires adaptatifs avec liaison JSON {#generate-adaptive-forms-with-json-binding}
+## Générer des formulaires adaptatifs avec la liaison JSON {#generate-adaptive-forms-with-json-binding}
 
-Utilisez le service de conversion [automatisée de formulaires pour convertir](convert-existing-forms-to-adaptive-forms.md) l’ [exemple de formulaire](#sample-adaptive-form) de demande de prêt en formulaire adaptatif avec liaison de données. Veillez à ne pas cocher la **[!UICONTROL Generate adaptive form(s) without data bindings]** case lors de la génération du formulaire adaptatif.
+Utilisez le [service de conversion automatisée de formulaires pour convertir](convert-existing-forms-to-adaptive-forms.md) le [formulaire de demande de prêt](#sample-adaptive-form) en formulaire adaptatif avec liaison de données. Assurez-vous de ne pas cocher la case **[!UICONTROL Generate adaptive form(s) without data bindings]** (Générer un ou plusieurs formulaires adaptatifs sans liaison de données) lors de la génération du formulaire adaptatif.
 
 ![Formulaire adaptatif avec liaison JSON](assets/generate_af_with_data_bindings.png)
 
-### Utiliser le JSON comme source de données {#jsonwithdatabinding}
+### Utiliser le schéma JSON comme source de données {#jsonwithdatabinding}
 
-**Cas d’utilisation :** Vous générez un formulaire adaptatif avec liaison de données JSON à l’aide du service de conversion automatisée des formulaires. Le service de préremplissage et la fonction d’envoi de formulaire fonctionnent de manière transparente. Vous n’avez pas besoin d’étapes de configuration.
+**Cas d’utilisation** : vous générez un formulaire adaptatif avec liaison de données JSON à l’aide du service de conversion automatisée de formulaires. Le service de préremplissage et la fonction d’envoi de formulaire fonctionnent sans problème. Aucune étape de configuration n’est nécessaire.
 
-Avant d’exécuter le cas d’utilisation, assurez-vous que vous disposez [d’un formulaire adaptatif avec liaison](#generate-adaptive-forms-with-json-binding)de données.
+Avant de mettre en pratique le cas d’utilisation, assurez-vous de disposer d’[un formulaire adaptatif avec liaison de données](#generate-adaptive-forms-with-json-binding).
 
-Exécutez les étapes suivantes :
+Procédez comme suit :
 
-1. Sélectionnez à nouveau l’ **exemple de formulaire** de demande de prêt converti disponible dans le **[!UICONTROL output]** dossier et sélectionnez **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**.</br>
+1. Sélectionnez à nouveau l’**exemple de formulaire de demande de prêt** converti disponible dans le dossier **[!UICONTROL output]** (sortie) et sélectionnez **[!UICONTROL Preview]** (Aperçu) >**[!UICONTROL Preview with Data]** (Aperçu avec données).</br>
 
-   Télécharger le fichier de données d’exemple</br>
+   Télécharger un exemple de fichier de données</br>
 
    [Obtenir le fichier](assets/loan_application_data_source_json_data_binding.txt)</br>
 
-1. Modifiez les valeurs de champ, si nécessaire, et envoyez le formulaire adaptatif. Les données envoyées sont disponibles à l’emplacement suivant dans le référentiel crx :
+1. Si nécessaire, modifiez les valeurs de champ et envoyez le formulaire adaptatif. Les données envoyées sont disponibles à l’emplacement suivant dans le référentiel crx-repository :
 
    `http://host name:port/crx/de/index.jsp#/content/forms/fp/admin/submit/data/latest file available in the folder`
 
-## Convertir les données JSON du formulaire adaptatif envoyé au format XML {#convert-submitted-adaptive-form-data-to-xml}
+## Convertir les données JSON du formulaire adaptatif envoyé au format XML {#convert-submitted-adaptive-form-data-to-xml}
 
-Lorsque vous saisissez des valeurs dans des champs de formulaire adaptatif et que vous les envoyez, les données sont disponibles au format JSON dans le référentiel crx. Vous pouvez convertir le format des données JSON au format XML à l’aide de l’API [org.apache.sling.commons.json.xml](https://sling.apache.org/apidocs/sling5/org/apache/sling/commons/json/xml/XML.html#toString) ou de l’exemple de code suivant :
+Lorsque vous saisissez des valeurs dans des champs de formulaire adaptatif et que vous l’envoyez, les données sont disponibles au format JSON dans le référentiel crx-repository. Vous pouvez convertir les données JSON au format XML à l’aide de l’API [org.apache.sling.commons.json.xml](https://sling.apache.org/apidocs/sling5/org/apache/sling/commons/json/xml/XML.html#toString) ou de l’exemple de code suivant :
 
 ```
 import org.apache.sling.commons.json.JSONException;
