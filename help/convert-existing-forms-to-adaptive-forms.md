@@ -1,39 +1,39 @@
 ---
-title: 'Conversion de formulaires PDF en formulaires adaptatifs '
-seo-title: 'Conversion de formulaires PDF en formulaires adaptatifs '
-description: Exécution du service de conversion de formulaires automatisés pour convertir des formulaires PDF en formulaires adaptatifs
-seo-description: Exécution du service de conversion de formulaires automatisés pour convertir des formulaires PDF en formulaires adaptatifs
+title: 'Convertir des formulaires PDF en formulaires adaptatifs  '
+seo-title: 'Convertir des formulaires PDF en formulaires adaptatifs  '
+description: Exécuter le service de conversion automatisée de formulaires pour convertir des formulaires PDF en formulaires adaptatifs
+seo-description: Exécuter le service de conversion automatisée de formulaires pour convertir des formulaires PDF en formulaires adaptatifs
 uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
 
 ---
 
 
-# Conversion de formulaires PDF en formulaires adaptatifs {#convert-print-forms-to-adaptive-forms}
+# Convertir des formulaires PDF en formulaires adaptatifs {#convert-print-forms-to-adaptive-forms}
 
-Le service de conversion automatisée des formulaires AEM Forms, proposé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs adaptés aux périphériques et réactifs. Que vous utilisiez des formulaires PDF non interactifs, des formulaires Acro Forms ou des formulaires PDF XFA, le service de conversion automatisée de formulaires peut facilement convertir ces formulaires en formulaires adaptatifs. Pour plus d’informations sur les fonctionnalités, le processus de conversion et les informations d’intégration, voir Service de conversion [](introduction.md) automatisée des formulaires.
+Le service de conversion automatisée de formulaires AEM Forms, optimisé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs compatibles avec divers appareils et réactifs. Que vous utilisiez des formulaires PDF non interactifs, des formulaires Acro ou des formulaires PDF basés sur XFA, le service de conversion automatisée de formulaires peut facilement convertir ces formulaires en formulaires adaptatifs. Pour plus d’informations sur les fonctionnalités, le processus de conversion et les informations d’intégration, consultez la page [Service de conversion automatisée de formulaires](introduction.md).
 
 ## Conditions préalables {#pre-requisites}
 
 * [**Configuration du service de conversion **](configure-service.md)
 
-* **Préparez les[modèles](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)à appliquer aux formulaires convertis :** L’utilisation d’un modèle vous permet d’appliquer une marque cohérente à tous les formulaires adaptatifs. De plus, le service de conversion automatisée des formulaires n’extrait pas et n’utilise pas l’en-tête et le pied de page des  PDF source. Vous pouvez utiliser des modèles de formulaire adaptatif pour spécifier l’en-tête et le pied de page. L’en-tête et le pied de page spécifiés dans le modèle sont appliqués au formulaire adaptatif pendant la conversion.
+* **Préparation des[modèles](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/template-editor.html)à appliquer aux formulaires convertis :** l’utilisation d’un modèle vous permet d’harmoniser l’identité graphique de tous les formulaires adaptatifs. De plus, le service de conversion automatisée de formulaires n’extrait et n’utilise pas l’en-tête et le pied de page des documents PDF sources. Vous pouvez utiliser des modèles de formulaires adaptatifs pour spécifier l’en-tête et le pied de page. L’en-tête et le pied de page spécifiés dans le modèle sont appliqués au formulaire adaptatif lors de la conversion.
 
-* **Préparez le[](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)à appliquer aux formulaires convertis :** L’utilisation d’un thème vous permet d’appliquer un style cohérent à tous les formulaires adaptatifs de votre organisation.
+* **Préparation des[thèmes](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/themes.html)à appliquer aux formulaires convertis :** l’utilisation d’un thème vous permet d’harmoniser le style de tous les formulaires adaptatifs de votre entreprise.
 
-##  le processus de conversion {#start-the-conversion-process}
+## Démarrer le processus de conversion {#start-the-conversion-process}
 
-Après avoir connecté votre instance AEM au service de conversion d’AEM Forms, vous pouvez convertir vos formulaires PDF en formulaires adaptatifs. Effectuez les étapes suivantes dans l’ordre répertorié pour convertir les formulaires :
+Après avoir connecté votre instance AEM au service de conversion AEM Forms, vous pouvez convertir vos formulaires PDF en formulaires adaptatifs. Pour convertir les formulaires, procédez aux étapes suivantes dans l’ordre indiqué :
 
-* [Téléchargement de formulaires PDF vers votre serveur AEM Forms](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
-* [Exécution de la conversion](convert-existing-forms-to-adaptive-forms.md#run-the-conversion)
-* [Vérification et correction des formulaires convertis](review-correct-ui-edited.md)
+* [Télécharger les formulaires PDF sur votre serveur AEM Forms](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
+* [Exécuter la conversion](convert-existing-forms-to-adaptive-forms.md#run-the-conversion)
+* [Vérifier et corriger les formulaires convertis](review-correct-ui-edited.md)
 
-### Téléchargement de formulaires PDF vers votre serveur AEM Forms {#upload-pdf-forms-to-your-aem-forms-server}
+### Télécharger les formulaires PDF sur votre serveur AEM Forms {#upload-pdf-forms-to-your-aem-forms-server}
 
 Le service de conversion convertit les formulaires PDF disponibles sur votre instance AEM Forms en formulaires adaptatifs. Vous pouvez télécharger tous les formulaires PDF en une seule ou en plusieurs fois, selon les besoins. Avant de télécharger les formulaires, tenez compte des éléments suivants :
 
@@ -42,34 +42,34 @@ Le service de conversion convertit les formulaires PDF disponibles sur votre in
 * Veillez à ce qu’un formulaire ne dépasse pas 15 pages.
 * Ne téléchargez pas de formulaires protégés. Le service ne convertit pas les formulaires protégés par mot de passe et sécurisés.
 * Ne téléchargez pas de formulaires PDF sources dont le nom comporte des espaces. Supprimez l’espace du nom du fichier avant de télécharger les formulaires.
-* Do not upload [PDF Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html). Le service ne convertit pas un portfolio PDF en formulaire adaptatif.
-* Lisez les sections Problèmes [connus et](known-issues.md) Meilleures pratiques et considérations [](styles-and-pattern-considerations-and-best-practices.md) et apportez les modifications suggérées aux formulaires.
+* Ne téléchargez pas de [portfolios PDF](https://helpx.adobe.com/fr/acrobat/using/overview-pdf-portfolios.html). Le service ne convertit pas un portfolio PDF en formulaire adaptatif.
+* Lisez les sections [Problèmes connus](known-issues.md) et [Bonnes pratiques et remarques](styles-and-pattern-considerations-and-best-practices.md), puis apportez les modifications suggérées aux formulaires.
 
-Effectuez les étapes suivantes pour télécharger les formulaires à convertir dans un dossier de votre instance AEM Forms :
+Pour télécharger les formulaires à convertir dans un dossier sur votre instance AEM Forms, procédez comme suit :
 
-1. Connectez-vous à l’instance AEM Forms.
+1. Connectez-vous à l’instance AEM Forms.
 
-1. Tap **[!UICONTROL Adobe Experience Manager]** ![](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** ![](assets/compass.png) > **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Appuyer **[!UICONTROL Create]**> **[!UICONTROL Folder]**. Indiquez **Titre** et **Nom** du dossier. Appuyer **[!UICONTROL Create]**. Un dossier est créé.
-1. Appuyez sur pour ouvrir le dossier nouvellement créé.
-1. Appuyer **[!UICONTROL Create]**> **[!UICONTROL File Upload]**. Sélectionnez les formulaires à télécharger, cliquez sur **[!UICONTROL Open]**, puis sur **[!UICONTROL Upload]**. Les formulaires sont téléchargés.
+1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** ![](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** ![](assets/compass.png) > **[!UICONTROL Forms]** (Formulaires) > **[!UICONTROL Forms &amp; Documents]** (Formulaires et documents).
+1. Appuyez sur **[!UICONTROL Create]** (Créer) > **[!UICONTROL Folder]** (Dossier). Remplissez les champs **Title** (Titre) et **Name** (Nom) du dossier. Appuyez sur **[!UICONTROL Create]** (Créer). Un dossier est alors créé.
+1. Appuyez sur le dossier nouvellement créé pour l’ouvrir.
+1. Appuyez sur **[!UICONTROL Create]** (Créer) > **[!UICONTROL File Upload]** (Téléchargement de fichier). Sélectionnez les formulaires à télécharger et cliquez sur **[!UICONTROL Open]** (Ouvrir), puis sur **[!UICONTROL Upload]** (Télécharger). Les formulaires sont alors téléchargés.
 
-### Exécution de la conversion {#run-the-conversion}
+### Exécuter la conversion {#run-the-conversion}
 
-Après avoir téléchargé les formulaires et configuré le service, procédez comme suit pour de la conversion :
+Après avoir téléchargé les formulaires et configuré le service, procédez comme suit pour démarrer la conversion :
 
-1. Sur votre instance AEM Forms, appuyez sur **[!UICONTROL Adobe Experience Manager]** Boîte de dialogue ![Paramètres de](assets/adobeexperiencemanager.png) conversion > **[!UICONTROL Navigation]** > ![](assets/compass.png) > **[!UICONTROL Forms]** **[!UICONTROL Forms & Documents]**.
-1. Sélectionnez un formulaire ou le dossier contenant des formulaires PDF (formulaires à convertir) et appuyez sur **[!UICONTROL Start Automated Conversion]**. The **[!UICONTROL Conversion Settings]** dialog appears.
+1. Sur votre instance AEM Forms, appuyez sur **[!UICONTROL Adobe Experience Manager]** ![Boîte de dialogue de paramètres de conversion](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** ![](assets/compass.png) > **[!UICONTROL Forms]** (Formulaires) > **[!UICONTROL Forms &amp; Documents]** (Formulaires et documents).
+1. Sélectionnez un formulaire ou le dossier contenant les formulaires PDF (formulaires à convertir) et appuyez sur **[!UICONTROL Start Automated Conversion]** (Démarrer la conversion automatisée). La boîte de dialogue **[!UICONTROL Conversion Settings]** (Paramètres de conversion) s’affiche.
 
-   ![Définition des configurations](assets/conversion-settings-dialog.png)
+   ![Spécifier les configurations](assets/conversion-settings-dialog.png)
 
-1. Dans l’ **[!UICONTROL Basic]** onglet de la boîte de dialogue Paramètres de conversion :
+1. Dans l’onglet **[!UICONTROL Basic]** (De base) de la boîte de dialogue Conversion Settings (Paramètres de conversion) :
 
-   * **[!UICONTROL Select a cloud configuration]**. Lorsque vous sélectionnez une configuration, le modèle et le thème par défaut sont déjà spécifiés. Vous pouvez spécifier un modèle ou un thème différent, si nécessaire.
-   * Spécifiez un emplacement pour enregistrer les formulaires adaptatifs générés et les  de correspondants. Vous pouvez utiliser des chemins par défaut ou spécifier des chemins personnalisés.
-   * Utilisez l’option **Générer des formulaires adaptatifs sans liaison** de modèle de données pour sélectionner si vous souhaitez générer un formulaire adaptatif avec ou sans liaison de modèle de données.
-Si vous ne sélectionnez pas cette option, le service de conversion associe automatiquement les formulaires adaptatifs à un  JSON et crée une liaison de données entre les champs disponibles dans le formulaire adaptatif et le JSON. Le **[!UICONTROL Save generated data model schema at]** champ affiche l’emplacement par défaut pour enregistrer le  JSON généré. Vous pouvez également personnaliser l’emplacement pour enregistrer le  de généré.
-Si vous sélectionnez cette option, le service de conversion génère un formulaire adaptatif sans liaisons de modèle de données. Après une conversion réussie, vous pouvez associer un formulaire adaptatif à un modèle de données de formulaire, à un  XML ou à un  JSON. For more information, see [Creating an adaptive form](https://helpx.adobe.com/experience-manager/6-5/forms/using/creating-adaptive-form.html).
+   * **[!UICONTROL Sélectionnez une configuration cloud]**. Lorsque vous sélectionnez une configuration, le modèle et le thème par défaut sont déjà spécifiés. Vous pouvez indiquer un modèle ou un thème différent, si nécessaire.
+   * Spécifiez un emplacement pour l’enregistrement des formulaires adaptatifs générés et du schéma correspondant. Vous pouvez utiliser des chemins par défaut ou indiquer des chemins personnalisés.
+   * Utilisez l’option **Generate adaptive forms without data model bindings** (Générer des formulaires adaptatifs sans liaison de modèle de données) pour choisir de générer un formulaire adaptatif avec ou sans liaison de modèle de données.
+Si vous ne sélectionnez pas cette option, le service de conversion associe automatiquement les formulaires adaptatifs à un schéma JSON et crée une liaison de données entre les champs disponibles dans le formulaire adaptatif et le schéma JSON. Le champ **[!UICONTROL Save generated data model schema at]** (Enregistrer le schéma de modèle de données généré sous) affiche l’emplacement par défaut pour l’enregistrement du schéma JSON généré. Vous pouvez également personnaliser l’emplacement pour l’enregistrement du schéma généré.
+Si vous sélectionnez cette option, le service de conversion génère un formulaire adaptatif sans liaison de modèle de données. Après la conversion, vous pouvez associer un formulaire adaptatif à un modèle de données de formulaire, un schéma XML ou un schéma JSON. Pour en savoir plus, consultez la page [Créer un formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/creating-adaptive-form.html).
    <!--
    Comment Type: draft
 
@@ -79,32 +79,32 @@ Si vous sélectionnez cette option, le service de conversion génère un formula
    </note>
    -->
 
-1. Dans l’ **[!UICONTROL Additional]** onglet de la boîte de dialogue Paramètres de conversion,
-   * Sélectionnez l’ **[!UICONTROL Extract fragment from adaptive forms]** option permettant au service de conversion d’identifier, d’extraire et de télécharger des fragments de formulaire pour les formulaires convertis. Lorsque vous sélectionnez l’ **[!UICONTROL Extract fragment from adaptive forms]** option, les options permettant de spécifier les chemins d’enregistrement des fragments de formulaire extraits et des fragments de formulaire correspondants  sont activées.
-   * Spécifiez l’emplacement de **[!UICONTROL existing adaptive form fragments]**, si vous avez des  JSON existants basés sur et des  moins de fragments de formulaire adaptatif et si vous prévoyez d’utiliser ces fragments dans des formulaires adaptatifs générés automatiquement. Le service de conversion correspond aux  JSON disponibles basés sur et aux  moins de fragments de formulaire adaptatif avec des formulaires PDF d’entrée (formulaires PDF non interactifs uniquement). S’il existe une correspondance, le fragment de formulaire adaptatif correspondant est utilisé dans les formulaires adaptatifs correspondants.
+1. Dans l’onglet **[!UICONTROL Additional]** (Plus) de la boîte de dialogue Conversion Settings (Paramètres de conversion),
+   * sélectionnez l’option **[!UICONTROL Extract fragment from adaptive forms]** (Extraire les fragments des formulaires adaptatifs) pour permettre au service de conversion d’identifier, d’extraire et de télécharger des fragments de formulaires pour les formulaires convertis. Lorsque vous sélectionnez l’option **[!UICONTROL Extract fragment from adaptive forms]** (Extraire les fragments des formulaires adaptatifs), les options permettant d’indiquer des chemins pour l’enregistrement des fragments de formulaires extraits et des schémas correspondants sont activées.
+   * Indiquez l’emplacement des **[!UICONTROL fragments de formulaires adaptatifs existants]**, si vous disposez de fragments de formulaires adaptatifs sans schéma ou basés sur des schémas JSON existants et que vous envisagez d’utiliser ces fragments dans des formulaires adaptatifs générés automatiquement. Le service de conversion met en correspondance les fragments de formulaires adaptatifs sans schéma ou basés sur des schémas JSON disponibles avec des formulaires PDF d’entrée (formulaires PDF non interactifs uniquement). En cas de correspondance, le fragment de formulaire adaptatif concerné est utilisé dans les formulaires adaptatifs correspondants.
    >[!NOTE]
    >
    >
-   > * Vous pouvez utiliser uniquement **[!UICONTROL  Extract Fragment]** ou **[!UICONTROL Use existing adaptive form fragments]** une option à la fois. Vous ne pouvez pas utiliser les deux options simultanément.
-   > * Vous pouvez utiliser cette **[!UICONTROL Use existing adaptive form fragments]** option uniquement avec les formulaires PDF non interactifs. Les autres types de formulaire ne sont pas encore pris en charge.
-   > * Vous pouvez utiliser uniquement des fragments non liés ou des fragments liés à un JSON avec le service de conversion automatisé. N’utilisez pas de fragments XFA. Les fragments XFA ne sont pas pris en charge.
+   > * Vous ne pouvez utiliser que l’une des deux options suivantes à la fois : **[!UICONTROL Extract Fragment]** (Extraire les fragments) ou **[!UICONTROL Use existing adaptive form fragments]** (Utiliser des fragments de formulaires adaptatifs existants). Vous ne pouvez pas utiliser les deux options en même temps.
+   > * Vous ne pouvez utiliser l’option **[!UICONTROL Use existing adaptive form fragments]** (Utiliser des fragments de formulaires adaptatifs existants) qu’avec des formulaires PDF non interactifs. Les autres types de formulaires ne sont pas encore pris en charge.
+   > * Vous ne pouvez utiliser que des fragments non liés ou des fragments liés à un schéma JSON avec le service de conversion automatisée. N’utilisez pas de fragments XFA. Les fragments XFA ne sont pas pris en charge.
 
 
-   * Sélectionnez l’ **[!UICONTROL Auto-detect multi-column layout of input forms]** option permettant de conserver la disposition du formulaire source pour les grands écrans tels que les ordinateurs de bureau et les ordinateurs portables. Cette option s’avère utile pour conserver la disposition à plusieurs colonnes des formulaires source. Par exemple, lorsqu’un fichier PDF source est doté d’une disposition à deux colonnes, le service génère un formulaire adaptatif de sortie avec une disposition à deux colonnes pour les grands écrans et une disposition à une seule colonne pour les périphériques de petit écran tels que les téléphones mobiles. Cette fonctionnalité présente des problèmes connus avec la structure  de la source de données. Pour plus d’informations, reportez-vous à l’article [known-issues](known-issues.md) .
-   * Par défaut, le service crée un panneau de niveau supérieur distinct pour chaque page d’un formulaire PDF. Désormais, vous pouvez utiliser l’ **[!UICONTROL Auto-detect logical sections]** option pour ne pas créer de panneaux de niveau page (panneaux basés sur le numéro de page) et créer uniquement des panneaux logiques. Il regroupe également les champs qui n’appartiennent à aucune section avec les sections logiques précédentes et les champs d’une section logique répartis sur deux pages adjacentes en une seule section logique. Par exemple, si certains champs d’une section logique se trouvent à la fin de la page 1 et que d’autres se trouvent au début de la page 2, tous ces champs sont regroupés en une seule section logique.
+   * Sélectionnez l’option **[!UICONTROL Auto-detect multi-column layout of input forms]** (Détection automatique d’une mise en page à plusieurs colonnes dans les formulaires d’entrée) afin de conserver la mise en page du formulaire source pour les grands écrans (par exemple, ordinateurs de bureau et ordinateurs portables). Cette option permet de préserver la mise en page à plusieurs colonnes des formulaires sources. Par exemple, lorsqu’un PDF source a une mise en page à deux colonnes, le service génère un formulaire adaptatif de sortie avec une mise en page à deux colonnes pour les grands écrans et une mise en page à une seule colonne pour les appareils à petit écran, tels que les téléphones mobiles. La fonctionnalité présente certains problèmes connus par rapport à la structure du schéma de la source de données. Pour en savoir plus, consultez l’article [Problèmes connus](known-issues.md).
+   * Par défaut, le service crée un panneau de niveau supérieur distinct pour chaque page d’un formulaire PDF. Vous pouvez désormais utiliser l’option **[!UICONTROL Auto-detect logical sections]** (Détection automatique de sections logiques) pour ne pas créer de panneaux au niveau de la page (panneaux basés sur le numéro de page), mais uniquement des panneaux logiques. Il regroupe également les champs qui n’appartiennent à aucune section avec la section logique précédente et les champs d’une section logique répartis sur deux pages adjacentes en une seule section logique. Par exemple, si certains champs d’une section logique se trouvent à la fin de la première page et d’autres au début de la deuxième page, tous ces champs sont regroupés en une seule section logique.
 
       >[!NOTE]
-      > Vous avez besoin du connecteur package 1.1.38 ou version ultérieure pour utiliser la **[!UICONTROL Auto-detect logical sections]** fonctionnalité.
+      > Le package connecteur 1.1.38 ou version ultérieure est nécessaire pour utiliser la fonctionnalité  **[!UICONTROL Auto-detect logical sections]** (Détection automatique de sections logiques).
 
 
 
-1. Appuyer **[!UICONTROL Start Conversion]**. La conversion est lancée. La progression de la conversion s’affiche dans le dossier ou le formulaire jusqu’à ce que la conversion soit en cours. Le message est remplacé par un autre message d’état (Converti, Partiellement converti ou Echec de conversion) une fois la conversion terminée. Un courrier électronique d’état est également envoyé à l’adresse électronique configurée à la fin de la conversion :
+1. Appuyez sur **[!UICONTROL Start Conversion]** (Démarrer la conversion). La conversion est alors lancée. La progression de la conversion s’affiche sur le dossier ou le formulaire tout au long de la conversion. Une fois la conversion terminée, le message est remplacé par un autre message d’état : Converted (Converti), Partially Converted (Partiellement converti) ou Conversion Failed (Échec de la conversion). À la fin de la conversion, un message est également envoyé à l’adresse électronique configurée :
 
-   * Lors d’une conversion réussie, le formulaire adaptatif converti et les  connexes sont téléchargés vers le chemin spécifié dans l’ **[!UICONTROL Basic]** onglet de la boîte de dialogue de conversion. Les fragments de formulaire et les  correspondants ne sont téléchargés que si l’option Extraire le fragment est sélectionnée avant de commencer la conversion.
-   * En cas d’échec de la conversion, le **[!UICONTROL Conversion Failed]** message s’affiche si tous les formulaires d’entrée ne sont pas convertis ou si le **[!UICONTROL Partially Failed]** message s’affiche lorsque seuls quelques-uns des formulaires d’entrée ne sont pas convertis. Un courrier électronique d’état est envoyé sur l’adresse [de courriel](configure-service.md#configureemailnotification) configurée et une erreur est consignée dans le fichier error.log.
-   Si vous convertissez un formulaire PDF XFA en formulaire adaptatif, le service de conversion associe automatiquement le formulaire PDF au formulaire adaptatif converti comme modèle de  d’enregistrement. Après la conversion, vous pouvez ouvrir les propriétés du formulaire adaptatif pour  modèle de d’enregistrement dans la **[!UICONTROL Document of Record Template Configuration]** section de **[!UICONTROL Form Model]** l’onglet. </br>
+   * En cas de conversion réussie, le formulaire adaptatif converti et le schéma associé sont téléchargés vers le chemin spécifié dans l’onglet **[!UICONTROL Basic]** (De base) de la boîte de dialogue de conversion. Les fragments de formulaire et le schéma correspondant ne sont téléchargés que si l’option Extract Fragment (Extraire les fragments) est sélectionnée avant le démarrage de la conversion.
+   * En cas d’échec de la conversion, le message **[!UICONTROL Conversion Failed]** (Échec de la conversion) s’affiche si aucun formulaire d’entrée n’est converti et le message **[!UICONTROL Partially Failed]** (Échec partiel) apparaît lorsque seuls quelques formulaires d’entrée ne sont pas parvenus à être convertis. Un message électronique est alors envoyé à l’[adresse de messagerie configurée](configure-service.md#configureemailnotification) et une erreur est signalée dans le fichier error.log.
+   Si vous convertissez un formulaire PDF basé sur XFA en un formulaire adaptatif, le service de conversion associe automatiquement le formulaire PDF au formulaire adaptatif converti en tant que modèle de document d’enregistrement. Après la conversion, vous pouvez ouvrir les propriétés du formulaire adaptatif pour afficher le modèle de document d’enregistrement dans la section **[!UICONTROL Document of Record Template Configuration]** (Configuration du modèle de document d’enregistrement) de l’onglet **[!UICONTROL Form Model]** (Modèle de formulaire). </br>
 
-   Le service de conversion télécharge automatiquement le formulaire PDF vers le formulaire adaptatif converti en tant que modèle de  d’enregistrement uniquement si vous activez l’option **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > **[!UICONTROL Properties of selected configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** .
+   Le service de conversion ne télécharge automatiquement le formulaire PDF vers le formulaire adaptatif converti en tant que modèle de document d’enregistrement que si vous activez l’option **[!UICONTROL Tools]** (Outils) > **[!UICONTROL Cloud Services]** (Services cloud) > **[!UICONTROL Automated Forms Conversion Configuration]** (Configuration de la conversion automatisée de formulaires) > **[!UICONTROL Properties of selected configuration]** (Propriétés de la configuration sélectionnée) > **[!UICONTROL Advanced]** (Avancé) > **[!UICONTROL Generate Document of Record]** (Générer un document d’enregistrement).
 
    <!--
    Comment Type: draft
@@ -129,8 +129,8 @@ Si vous sélectionnez cette option, le service de conversion génère un formula
 
    >[!NOTE]
    >
-   >Si le processus de conversion dure plus de 60 minutes et que le formulaire PDF n’est toujours pas converti en formulaire adaptatif, créez un dossier sur l’instance AEM Forms, téléchargez le formulaire PDF dans le dossier nouvellement créé, puis redémarrez la conversion.
+   >Si le processus de conversion prend plus de 60 minutes et que le formulaire PDF n’est toujours pas converti en formulaire adaptatif, créez un dossier sur l’instance AEM Forms, téléchargez le formulaire PDF dans le dossier nouvellement créé et redémarrez la conversion.
 
-## Vérification et correction des formulaires convertis {#review-and-correct-the-converted-forms}
+## Vérifier et corriger les formulaires convertis {#review-and-correct-the-converted-forms}
 
-Les formulaires du monde réel ont des exigences complexes en matière de capture de données. Une fois la conversion automatisée terminée, les clients peuvent vérifier la qualité de la conversion du formulaire et apporter les mises à jour nécessaires au formulaire. AEM Forms fournit un éditeur [de révision et correct](review-correct-ui-edited.md) pour effectuer les modifications requises. Il vous permet d’améliorer l’identification automatisée des champs de formulaire et de convertir les champs identifiés d’un type à un autre. Par exemple, vous pouvez identifier la disposition à deux colonnes d’un formulaire et modifier un champ automatiquement identifié comme bouton radio en champ de choix multiples.
+Les formulaires réels ont des exigences de capture de données complexes. Une fois la conversion automatisée terminée, les clients peuvent vérifier la qualité de conversion du formulaire et apporter les modifications nécessaires. AEM Forms fournit un éditeur [de vérification et de correction](review-correct-ui-edited.md) pour procéder aux changements nécessaires. Il vous permet d’améliorer l’identification automatisée des champs de formulaire et de convertir les champs identifiés d’un type à un autre. Par exemple, il peut vous aider à identifier la mise en page à deux colonnes d’un formulaire et modifier un champ identifié automatiquement comme un bouton radio en un champ à choix multiples.
