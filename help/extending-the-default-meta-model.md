@@ -6,7 +6,7 @@ seo-description: Étendez le métamodèle par défaut pour ajouter un modèle, d
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ffab4d916cbd545078f4b72b8de5c9968f23b0da
 
 ---
@@ -49,8 +49,8 @@ Le schéma du métamodèle dérive des entités de schéma figurant sur https://
 Pour télécharger le métamodèle par défaut sur le système de fichiers local, procédez comme suit :
 
 1. Connectez-vous à l’instance AEM Forms.
-1. Navigate to the **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** **>** **[!UICONTROL Meta Model]** folder.
-1. Select the **[!UICONTROL global.schema.json]** file and tap **[!UICONTROL Download]**. Une boîte de dialogue de téléchargement s’affiche. Sélectionnez l’ **[!UICONTROL Download asset(s) as binary files]** option. Pression **[!UICONTROL Download]**. Une archive est téléchargée.
+1. Accédez au dossier **[!UICONTROL Forms]** (Formulaires) > **[!UICONTROL Forms &amp; Documents]** (Formulaires et documents) **>** **[!UICONTROL Meta Model]** (Métamodèle).
+1. Sélectionnez le fichier **[!UICONTROL global.schema.json]** et appuyez sur **[!UICONTROL Download]** (Télécharger). Une boîte de dialogue de téléchargement s’affiche. Sélectionnez l’option **[!UICONTROL Download asset(s) as binary files]** (Télécharger le ou les actifs sous forme de fichiers binaires). Appuyez sur **[!UICONTROL Download]** (Télécharger). Une archive est téléchargée.
 
    <!--
    Comment Type: draft
@@ -191,7 +191,7 @@ Vous pouvez utiliser la propriété **aem:afProperties** dans le métamodèle po
   <tr> 
    <td><p>multiLine</p></td> 
    <td> 
-    <p>La propriété multiLine convertit un champ de formulaire source en champ multiligne dans le formulaire adaptatif après la conversion. Pour plus d’informations, voir <strong>Convertir un champ de chaîne en un champ multiligne</strong> dans <a href="#custommetamodelexamples">Exemples de métamodèles personnalisés</a>.</p> </td> 
+    <p>La propriété multiLine convertit un champ de formulaire source en un champ multiligne dans le formulaire adaptatif après la conversion. Pour plus d’informations, voir <strong>Convertir un champ de chaîne en un champ multiligne</strong> dans <a href="#custommetamodelexamples">Exemples de métamodèles personnalisés</a>.</p> </td> 
   </tr>
   <td><p>mandatory</p></td> 
    <td> 
@@ -228,12 +228,12 @@ Cependant, vous pouvez enregistrer un métamodèle personnalisé dans un dossier
 
 Pour utiliser un métamodèle personnalisé lors de la conversion, procédez comme suit :
 
-1. Create a folder in **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** and upload the custom meta-model JSON schema file to the folder.
+1. Créez un dossier dans **[!UICONTROL Forms]** (Formulaires) > **[!UICONTROL Forms &amp; Documents]** (Formulaires et documents) et téléchargez le fichier de schéma JSON de métamodèle personnalisé dans le dossier.
 1. Ouvrez les propriétés du service de conversion à l’aide de :
 
-   **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]**> **&lt;** Propriétés de la configuration **sélectionnée>**
+   **[!UICONTROL Tools]** (Outils) > **[!UICONTROL Cloud Services]** (Services cloud) > **[!UICONTROL Automated Forms Conversion Configuration]** (Configuration de la conversion automatisée de formulaires) > **&lt;** Properties of selected configuration **(Propriétés de la configuration sélectionnée) >**
 
-1. In the **[!UICONTROL Basic]** tab, specify the location of the custom meta-model in the **[!UICONTROL Custom Meta-model]** field and tap **[!UICONTROL Save & Close]**.
+1. Dans l’onglet **[!UICONTROL Basic]** (De base), spécifiez l’emplacement du métamodèle personnalisé dans le champ **[!UICONTROL Custom Meta-model]** (Métamodèle personnalisé) et appuyez sur **[!UICONTROL Save &amp; Close]** (Enregistrer et fermer).
 1. [Exécutez la conversion](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process) pour appliquer le métamodèle personnalisé au processus de conversion.
 
 ### Exemples de métamodèles personnalisés {#custommetamodelexamples}
@@ -449,7 +449,7 @@ Pour ajouter une option supplémentaire, mettez à jour la propriété **enum** 
 
 **Exemple :** remplacez le champ **Address** (Adresse) de type string par un champ multiligne dans le formulaire après la conversion.
 
-Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. After retrieving the **Address** text in the form, the service converts the text field to a multi-line field using the **multiLine** property defined in the **aem:afProperties** section.
+Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Address** (Adresse) dans le formulaire, le service remplace le champ de texte par un champ multiligne à l’aide de la propriété **multiLine** définie dans la section **aem:afProperties**.
 
 ```
 {
