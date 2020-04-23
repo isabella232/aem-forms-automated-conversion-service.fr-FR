@@ -1,67 +1,67 @@
 ---
-title: Envoyer les formulaires adaptatifs convertis avec un JSON à la base de données
-description: Envoyez les formulaires adaptatifs convertis avec un JSON à la base de données en créant un modèle de données de formulaire et en y faisant référence dans un processus AEM.
+title: Envoyer les formulaires adaptatifs convertis avec un schéma JSON à la base de données
+description: Envoyez les formulaires adaptatifs convertis avec un schéma JSON à la base de données en créant un modèle de données de formulaire et en y faisant référence dans un processus AEM.
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
 
 ---
 
 
-# Intégration d’un formulaire adaptatif à une base de données à l’aide du processus AEM {#submit-forms-to-database-using-forms-portal}
+# Intégrer un formulaire adaptatif à une base de données à l’aide du processus AEM {#submit-forms-to-database-using-forms-portal}
 
-Le service de conversion automatisée de formulaires vous permet de convertir un formulaire PDF non interactif, un formulaire Acro ou un formulaire PDF XFA en formulaire adaptatif. Lors du lancement du processus de conversion, vous avez la possibilité de générer un formulaire adaptatif avec ou sans liaisons de données.
+Le service de conversion automatisée de formulaires vous permet de convertir un formulaire PDF non interactif, un formulaire Acro ou un formulaire PDF basé sur XFA en un formulaire adaptatif. Lors du lancement du processus de conversion, vous avez la possibilité de générer un formulaire adaptatif avec ou sans liaison de données.
 
-Si vous choisissez de générer un formulaire adaptatif sans liaison de données, vous pouvez intégrer le formulaire adaptatif converti à un modèle de données de formulaire, un  XML ou un JSON  après la conversion. Pour le modèle de données de formulaire, vous devez lier manuellement les champs de formulaire adaptatif au modèle de données de formulaire. Cependant, si vous générez un formulaire adaptatif avec des liaisons de données, le service de conversion associe automatiquement le ou les formulaires adaptatifs à un  JSON et crée une liaison de données entre les champs disponibles dans le formulaire adaptatif et le  JSON. Vous pouvez ensuite intégrer le formulaire adaptatif à une base de données de votre choix, remplir les données du formulaire et les envoyer à la base de données. De même, après une intégration réussie à la base de données, vous pouvez configurer les champs du formulaire adaptatif converti pour récupérer les valeurs de la base de données et préremplir les champs du formulaire adaptatif.
+Si vous choisissez de générer un formulaire adaptatif sans liaison de données, vous pouvez incorporer le formulaire adaptatif converti à un modèle de données de formulaire, un schéma XML ou un schéma JSON après la conversion. Pour le modèle de données de formulaire, vous devez lier manuellement les champs de formulaires adaptatifs au modèle de données de formulaire. Toutefois, si vous générez un formulaire adaptatif avec des liaisons de données, le service de conversion associe automatiquement le ou les formulaires adaptatifs à un schéma JSON et crée une liaison de données entre les champs disponibles dans le formulaire adaptatif et le schéma JSON. Vous pouvez ensuite intégrer le formulaire adaptatif à une base de données de votre choix, remplir les données du formulaire et les envoyer à la base de données. De même, après une intégration réussie à la base de données, vous pouvez configurer les champs du formulaire adaptatif converti pour récupérer les valeurs de la base de données et préremplir les champs du formulaire adaptatif.
 
-La figure suivante illustre les différentes étapes de l’intégration d’un formulaire adaptatif converti à une base de données :
+Le schéma suivant illustre différentes étapes de l’intégration d’un formulaire adaptatif converti à une base de données :
 
-![intégration de base de données](assets/integrate-adaptive-form-with-database.png)
+![Intégration à une base de données](assets/integrate-adaptive-form-with-database.png)
 
-Cet article décrit les instructions étape par étape pour exécuter toutes ces étapes d’intégration.
+Cet article décrit les instructions détaillées pour réussir à exécuter toutes ces étapes d’intégration.
 
 ## Conditions préalables {#pre-requisites}
 
-* Configuration d’une instance d’auteur AEM 6.4 ou 6.5
-* Installer le Service Pack [](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) le plus récent pour votre instance AEM
-* Dernière version du module complémentaire AEM Forms
-* Configuration du service de conversion [automatisée des formulaires](configure-service.md)
-* Configurez une base de données. La base de données utilisée dans l’exemple d’implémentation est MySQL 5.6.24. Vous pouvez toutefois intégrer le formulaire adaptatif converti à n’importe quelle base de données de votre choix.
+* Configuration d’une instance d’auteur AEM 6.4 ou 6.5
+* Installation du [dernier Service Pack](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html) pour votre instance AEM
+* Dernière version du package de module complémentaire AEM Forms
+* Configuration du [service de conversion automatisée de formulaires](configure-service.md)
+* Configuration d’une base de données. La base de données utilisée dans l’exemple d’implémentation est MySQL 5.6.24. Cependant, vous pouvez intégrer le formulaire adaptatif converti à n’importe quelle base de données de votre choix.
 
 ## Exemple de formulaire adaptatif {#sample-adaptive-form}
 
-Pour exécuter le cas d’utilisation afin d’intégrer des formulaires adaptatifs convertis à la base de données à l’aide d’un processus AEM, téléchargez l’exemple de fichier PDF suivant.
+Pour mettre en pratique le cas d’utilisation afin d’intégrer des formulaires adaptatifs convertis à une base de données à l’aide d’un processus AEM, téléchargez l’exemple de fichier PDF suivant.
 
-Vous pouvez télécharger l’exemple de formulaire Contactez-nous à l’aide de :
+Pour télécharger l’exemple de formulaire de contact, cliquez sur le lien suivant :
 
 [Obtenir le fichier](assets/sample_contact_us_form.pdf)
 
-Le fichier PDF sert d’entrée au service de conversion automatisée des formulaires. Le service convertit ce fichier en formulaire adaptatif. L’image suivante illustre l’exemple de formulaire Nous contacter dans un format PDF.
+Le fichier PDF sert d’entrée au service de conversion automatisée de formulaires. Le service convertit ce fichier en un formulaire adaptatif. L’image suivante montre un exemple de formulaire de contact au format PDF.
 
-![formulaire de demande de prêt](assets/sample_contact_us_form.png)
+![exemple de formulaire de demande de prêt](assets/sample_contact_us_form.png)
 
-## Installez le fichier mysql-connector-java-5.1.39-bin.jar.{#install-mysql-connector-java-file}
+## Installer le fichier mysql-connector-java-5.1.39-bin.jar {#install-mysql-connector-java-file}
 
 Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publication, pour installer le fichier mysql-connector-java-5.1.39-bin.jar :
 
-1. Accédez au package com.mysql.jdbc `http://server:port/system/console/depfinder` et recherchez-le.
-1. Dans la colonne Exporté par, vérifiez si le package est exporté par un groupe. Continuez si le package n’est pas exporté par un groupe.
-1. Accédez à `http://server:port/system/console/bundles` et cliquez sur **[!UICONTROL Install/Update]**.
-1. Click **[!UICONTROL Choose File]** and browse to select the mysql-connector-java-5.1.39-bin.jar file. Sélectionnez également **[!UICONTROL Start Bundle]** et **[!UICONTROL Refresh Packages]** cochez les cases.
-1. Cliquez sur **[!UICONTROL Install]** ou **[!UICONTROL Update]**. Une fois cette opération effectuée, redémarrez le serveur.
+1. Accédez à `http://server:port/system/console/depfinder` et recherchez le package com.mysql.jdbc.
+1. Dans la colonne Exported by (Exporté par), vérifiez si le package est exporté par un groupe. Continuez si le package n’est pas exporté par un groupe.
+1. Accédez à `http://server:port/system/console/bundles` et cliquez sur **[!UICONTROL Install/Update]** (Installer/Mettre à jour).
+1. Cliquez sur **[!UICONTROL Choose File]** (Choisir un fichier) et accédez au chemin permettant de sélectionner le fichier mysql-connector-java-5.1.39-bin.jar. Cochez également les cases **[!UICONTROL Start Bundle]** (Démarrer le groupe) et **[!UICONTROL Refresh Packages]** (Actualiser les packages).
+1. Cliquez sur **[!UICONTROL Install]** (Installer) ou **[!UICONTROL Update]** (Mettre à jour). Une fois cette opération effectuée, redémarrez le serveur.
 1. (Windows uniquement) Désactivez le pare-feu système pour votre système d’exploitation.
 
-## Préparation des données pour le modèle de formulaire {#prepare-data-for-form-model}
+## Préparer les données pour le modèle de formulaire {#prepare-data-for-form-model}
 
-L’intégration de données AEM Forms permet de configurer des sources de données disparates et de s’y connecter. Après avoir généré un formulaire adaptatif à l’aide du processus de conversion, vous pouvez définir le modèle de formulaire en fonction d’un modèle de données de formulaire, d’un schéma XSD ou d’un  JSON. Vous pouvez utiliser une base de données, Microsoft Dynamics ou tout autre service tiers pour créer un modèle de données de formulaire.
+L’intégration de données AEM Forms permet de configurer des sources de données disparates et de s’y connecter. Après avoir généré un formulaire adaptatif à l’aide du processus de conversion, vous pouvez définir le modèle de formulaire en fonction d’un modèle de données de formulaire, XSD, ou d’un schéma JSON. Vous pouvez utiliser une base de données, Microsoft Dynamics, ou tout autre service tiers pour créer un modèle de données de formulaire.
 
-Ce didacticiel utilise la base de données MySQL comme source pour créer un modèle de données de formulaire. Créez un  dans la base de données et ajoutez la table **contact** au  en fonction des champs disponibles dans le formulaire adaptatif.
+Ce tutoriel utilise la base de données MySQL comme source pour créer un modèle de données de formulaire. Créez un schéma dans la base de données et ajoutez-y un tableau **contactus** en fonction des champs disponibles dans le formulaire adaptatif.
 
-![Exemple de données mysql](assets/db_entries_sample_form.png)
+![Exemples de données mysql](assets/db_entries_sample_form.png)
 
-Vous pouvez utiliser l’instruction DDL suivante pour créer la table **contactus** dans la base de données.
+Vous pouvez utiliser l’instruction DDL suivante pour créer le tableau **contactus** dans la base de données.
 
 ```sql
 CREATE TABLE `contactus` (
@@ -73,12 +73,12 @@ CREATE TABLE `contactus` (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
 
-## Configuration de la connexion entre l’instance AEM et la base de données {#configure-connection-between-aem-instance-and-database}
+## Configurer la connexion entre l’instance AEM et la base de données {#configure-connection-between-aem-instance-and-database}
 
-Effectuez les étapes de configuration suivantes pour créer une connexion entre l’instance AEM et la base de données MYSQL :
+Procédez aux étapes de configuration suivantes pour créer une connexion entre l’instance AEM et la base de données MYSQL :
 
-1. Go to AEM Web Console Configuration page at `http://server:port/system/console/configMgr`.
-1. Recherchez et cliquez pour ouvrir **[!UICONTROL Apache Sling Connection Pooled DataSource]** en mode d’édition dans la configuration de la console Web. Spécifiez les valeurs des propriétés comme décrit dans le tableau suivant :   
+1. Accédez à la page de configuration de la console Web AEM à l’adresse `http://server:port/system/console/configMgr`.
+1. Recherchez **[!UICONTROL Apache Sling Connection Pooled DataSource]** et cliquez dessus pour l’ouvrir en mode d’édition dans la configuration de la console Web. Spécifiez les valeurs des propriétés comme décrit dans le tableau suivant :
 
    <table> 
     <tbody> 
@@ -87,8 +87,8 @@ Effectuez les étapes de configuration suivantes pour créer une connexion entre
     <th><strong>Valeur</strong></th> 
     </tr> 
     <tr> 
-    <td><p>Nom de la source de données </p></td> 
-    <td><p>Un nom de source de données pour filtrer les pilotes du pool de la source de données .</p></td>
+    <td><p>Nom de la source de données</p></td> 
+    <td><p>Un nom de source de données pour filtrer les pilotes du pool de la source de données.</p></td>
     </tr>
     <tr> 
     <td><p>Classe de pilote JDBC </p></td> 
@@ -99,7 +99,7 @@ Effectuez les étapes de configuration suivantes pour créer une connexion entre
     <td><p>jdbc:mysql://[hôte]:[port]/[nom_schéma]</p></td>
     </tr>
     <tr> 
-    <td><p>username</p></td> 
+    <td><p>Nom d’utilisateur</p></td> 
     <td><p>Un nom d’utilisateur pour s’authentifier et effectuer des opérations sur les tableaux de base de données </p></td>
     </tr>
     <tr> 
@@ -151,41 +151,41 @@ Effectuez les étapes de configuration suivantes pour créer une connexion entre
 
 ## Créer un modèle de données de formulaire {#create-form-data-model}
 
-Une fois que vous avez configuré MYSQL en tant que source de données, exécutez les étapes suivantes pour créer un modèle de données de formulaire :
+Après avoir configuré MYSQL comme source de données, exécutez les étapes suivantes pour créer un modèle de données de formulaire :
 
-1. Dans l’instance d’auteur AEM, accédez à **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]**.
+1. Dans l’instance d’auteur AEM, accédez à **[!UICONTROL Forms]** (Formulaires) > **[!UICONTROL Data Integrations]** (Intégrations de données).
 
-1. Appuyer **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]**.
+1. Appuyez sur **[!UICONTROL Create]** (Créer) > **[!UICONTROL Form Data Model]** (Modèle de données de formulaire).
 
-1. Dans l’ **[!UICONTROL Create Form Data Model]** assistant, spécifiez **workflow_submit** comme nom du modèle de données de formulaire. Appuyer **[!UICONTROL Next]**.
+1. Dans l’assistant **[!UICONTROL Create Form Data Model]** (Créer un modèle de données de formulaire), nommez le modèle de données de formulaire **workflow_submit**. Appuyez sur **[!UICONTROL Next]** (Suivant).
 
-1. Sélectionnez la source de données MYSQL que vous avez configurée dans la section précédente et appuyez sur **[!UICONTROL Create]**.
+1. Sélectionnez la source de données MYSQL configurée dans la section précédente et appuyez sur **[!UICONTROL Create]** (Créer).
 
-1. Appuyez sur **[!UICONTROL Edit]** et développez la source de données répertoriée dans le volet de gauche pour sélectionner la table de **contacts** , **[!UICONTROL get]** les services et les **[!UICONTROL insert]** services, puis appuyez sur **[!UICONTROL Add Selected]**.
+1. Appuyez sur **[!UICONTROL Edit]** (Modifier) et développez la source de données répertoriée dans le volet de gauche pour sélectionner le tableau **contactus** ainsi que les services **[!UICONTROL get]** et **[!UICONTROL insert]**, puis appuyez sur **[!UICONTROL Add Selected]** (Ajouter la sélection).
 
-   ![Exemple de données mysql](assets/fdm_details_workfdlow_submit.png)
+   ![Exemples de données mysql](assets/fdm_details_workfdlow_submit.png)
 
-1. Sélectionnez l’objet de modèle de données dans le volet de droite et appuyez sur **[!UICONTROL Edit Properties]**. Sélectionnez **[!UICONTROL get]** et **[!UICONTROL insert]** dans les  de **[!UICONTROL Read Service]** et **[!UICONTROL Write Service]** déroulantes. Spécifiez les arguments du service de lecture et appuyez sur **[!UICONTROL Done]**.
+1. Sélectionnez l’objet de modèle de données dans le volet de droite et appuyez sur **[!UICONTROL Edit Properties]** (Modifier les propriétés). Sélectionnez **[!UICONTROL get]** et **[!UICONTROL insert]** dans les listes déroulantes **[!UICONTROL Read Service]** (Service de lecture) et **[!UICONTROL Write Service]** (Service d’écriture). Spécifiez les arguments du service de lecture et appuyez sur **[!UICONTROL Done]** (Terminé).
 
-1. Dans l’ **[!UICONTROL Services]** onglet, sélectionnez le **[!UICONTROL get]** service et appuyez sur **[!UICONTROL Edit Properties]**. Sélectionnez le **[!UICONTROL Output Model Object]**, désactivez la **[!UICONTROL Return array]** bascule et appuyez sur **[!UICONTROL Done]**.
+1. Dans l’onglet **[!UICONTROL Services]**, sélectionnez le service **[!UICONTROL get]** et appuyez sur **[!UICONTROL Edit Properties]** (Modifier les propriétés). Sélectionnez **[!UICONTROL Output Model Object]** (Objet de modèle de sortie), désactivez le bouton bascule **[!UICONTROL Return array]** (Revenir au tableau) et appuyez sur **[!UICONTROL Done]** (Terminé).
 
-1. Select the **[!UICONTROL Insert]** service and tap **[!UICONTROL Edit Properties]**. Select the **[!UICONTROL Input Model Object]** and tap **[!UICONTROL Done]**.
+1. Sélectionnez le service **[!UICONTROL Insert]** (Insérer) et appuyez sur **[!UICONTROL Edit Properties]** (Modifier les propriétés). Sélectionnez **[!UICONTROL Input Model Object]** (Objet de modèle d’entrée) et appuyez sur **[!UICONTROL Done]** (Terminé).
 
-1. Tap **[!UICONTROL Save]** to save the form data model.
+1. Appuyez sur **[!UICONTROL Save]** (Enregistrer) pour enregistrer le modèle de données de formulaire.
 
-Vous pouvez télécharger l’exemple de modèle de données de formulaire à l’aide de :
+Pour télécharger l’exemple de modèle de données de formulaire, cliquez sur le lien suivant :
 
 [Obtenir le fichier](assets/DownloadedFormsPackage_1497728018502500.zip)
 
-## Générer des formulaires adaptatifs avec liaison JSON {#generate-adaptive-forms-with-json-binding}
+## Générer des formulaires adaptatifs avec la liaison JSON {#generate-adaptive-forms-with-json-binding}
 
-Utilisez le service de conversion [automatisée des formulaires pour convertir](convert-existing-forms-to-adaptive-forms.md) le formulaire [Nous](#sample-adaptive-form) contacter en formulaire adaptatif avec liaison de données. Veillez à ne pas cocher la **[!UICONTROL Generate adaptive form(s) without data bindings]** case lors de la génération du formulaire adaptatif.
+Utilisez le [service de conversion automatisée de formulaires pour convertir](convert-existing-forms-to-adaptive-forms.md) le [formulaire de contact](#sample-adaptive-form) en formulaire adaptatif avec liaison de données. Assurez-vous de ne pas cocher la case **[!UICONTROL Generate adaptive form(s) without data bindings]** (Générer un ou plusieurs formulaires adaptatifs sans liaison de données) lors de la génération du formulaire adaptatif.
 
 ![Formulaire adaptatif avec liaison JSON](assets/generate_af_with_data_bindings.png)
 
-Sélectionnez le formulaire **** Nous contacter converti disponible dans le **[!UICONTROL output]** dossier **[!UICONTROL Forms & Documents]** et appuyez sur **[!UICONTROL Edit]**. Appuyez sur **[!UICONTROL Preview]**, saisissez des valeurs dans les champs du formulaire adaptatif et appuyez sur **[!UICONTROL Submit]**.
+Sélectionnez le **formulaire de contact** converti disponible dans le dossier **[!UICONTROL output]** (sortie), sous **[!UICONTROL Forms &amp; Documents]** (Formulaires et documents), puis appuyez sur **[!UICONTROL Edit]** (Modifier). Appuyez sur **[!UICONTROL Preview]** (Aperçu), saisissez des valeurs dans les champs du formulaire adaptatif et appuyez sur **[!UICONTROL Submit]** (Envoyer).
 
-Connectez-vous à **crx-repository** et accédez à */content/forms/fp/admin/submit/data* pour les valeurs envoyées au format JSON. Voici les exemples de données au format JSON lorsque vous envoyez le formulaire adaptatif **Contactez-nous** converti :
+Connectez-vous au référentiel **crx-repository** et accédez à */content/forms/fp/admin/submit/data* pour afficher les valeurs envoyées au format JSON. Voici les exemples de données au format JSON lorsque vous envoyez le formulaire adaptatif **de contact** converti :
 
 ```json
 {
@@ -212,62 +212,62 @@ Connectez-vous à **crx-repository** et accédez à */content/forms/fp/admin/sub
 }
 ```
 
-Vous devez maintenant créer un modèle de flux de travail capable de traiter ces données et de les envoyer à la base de données MYSQL à l’aide du modèle de données de formulaire que vous avez créé dans les sections précédentes.
+Vous devez créer un modèle de processus capable de traiter ces données et les envoyer à la base de données MYSQL à l’aide du modèle de données de formulaire créé dans les sections précédentes.
 
-## Création d’un modèle de processus pour traiter les données JSON {#create-workflow-model}
+## Créer un modèle de processus pour traiter les données JSON {#create-workflow-model}
 
-Exécutez les étapes suivantes pour créer un modèle de flux de travail afin d’envoyer les données de formulaire adaptatif à la base de données :
+Pour créer un modèle de processus permettant d’envoyer les données du formulaire adaptatif à la base de données, procédez comme suit :
 
 1. Ouvrez la console Modèles de processus. L’URL par défaut est `https://server:port/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`.
 
-1. Sélectionnez **[!UICONTROL Create]**, puis **[!UICONTROL Create Model]**. The **[!UICONTROL Add Workflow Model]** dialog appears.
+1. Sélectionnez **[!UICONTROL Create]** (Créer), puis **[!UICONTROL Creat Model]** (Créer un modèle). La boîte de dialogue **[!UICONTROL Add Workflow Model]** (Ajouter un modèle de processus) s’ouvre.
 
-1. Saisissez les champs **[!UICONTROL Title]** et **[!UICONTROL Name]** (facultatif). Par exemple, **workflow_json_submit**. Appuyez **[!UICONTROL Done]** sur pour créer le modèle.
+1. Saisissez **[!UICONTROL Title]** (Titre) et **[!UICONTROL Name]** (Nom) (facultatif). Par exemple, **workflow_json_submit**. Appuyez sur **[!UICONTROL Done]** (Terminé) pour créer le modèle.
 
-1. Sélectionnez le modèle de processus et appuyez sur **[!UICONTROL Edit]** pour ouvrir le modèle en mode d’édition. Appuyez sur + et ajoutez **[!UICONTROL Invoke Form Data Model Service]** une étape au modèle de processus.
+1. Sélectionnez le modèle de processus et appuyez sur **[!UICONTROL Edit]** (Modifier) pour ouvrir le modèle en mode d’édition. Appuyez sur + et ajoutez l’étape **[!UICONTROL Invoke Form Data Model Service]** (Invoquer le service de modèle de données de formulaire) au modèle de processus.
 
-1. Appuyez sur l’ **[!UICONTROL Invoke Form Data Model Service]** étape et appuyez sur ![Configurer](assets/configure_icon.png).
+1. Appuyez sur l’étape **[!UICONTROL Invoke Form Data Model Service]** (Invoquer le service de modèle de données de formulaire), puis sur ![Configurer](assets/configure_icon.png).
 
-1. Dans l’ **[!UICONTROL Form Data Model]** onglet, sélectionnez le modèle de données de formulaire que vous avez créé dans le **[!UICONTROL Form Data Model path]** champ et sélectionnez **[!UICONTROL insert]** dans le  **[!UICONTROL Service]** déroulant.
+1. Dans l’onglet **[!UICONTROL Form Data Model]** (Modèle de données de formulaire), sélectionnez le modèle de données de formulaire créé dans le champ **[!UICONTROL Form Data Model path]** (Chemin d’accès de modèle de données de formulaire) et sélectionnez **[!UICONTROL insert]** (insérer) dans la liste déroulante **[!UICONTROL Service]**.
 
-1. Dans l’ **[!UICONTROL Input for Service]** onglet **[!UICONTROL Provide input data using literal, variable, or a workflow metadata, and a JSON file]** , sélectionnez **[!UICONTROL Map input fields from input JSON]** dans le  déroulant, cochez la **[!UICONTROL Relative to payload]** case, sélectionnez **et indiquez** data.xml **[!UICONTROL Select input JSON document using]** comme valeur duchamp.
+1. Dans l’onglet **[!UICONTROL Input for Service]** (Entrée pour le service), sélectionnez **[!UICONTROL Provide input data using literal, variable, or a workflow metadata, and a JSON file]** (Fournir des données d’entrée à l’aide de métadonnées littérales, variables ou de processus et d’un fichier JSON) dans la liste déroulante, cochez la case **[!UICONTROL Map input fields from input JSON]** (Mapper des champs d’entrée à partir du fichier JSON d’entrée), sélectionnez **[!UICONTROL Relative to payload]** (Relatif à la charge) et indiquez la valeur **data.xml** pour le champ **[!UICONTROL Select input JSON document using]** (Sélectionner le document JSON d’entrée à l’aide de).
 
-1. Dans la **[!UICONTROL Service Arguments]** section, indiquez les valeurs suivantes pour les arguments de modèle de données de formulaire :
+1. Dans la section **[!UICONTROL Service Arguments]** (Arguments de service), indiquez les valeurs suivantes pour les arguments de modèle de données de formulaire :
 
-   ![Invoquer service de modèle de données de formul.](assets/invoke_form_data_model_service.png)
+   ![Invoquer service de modèle de données de formulaire](assets/invoke_form_data_model_service.png)
 
-   Vous remarquez que les champs du modèle de données de formulaire, par exemple, contactus dot name, sont mappés à **afData.afBoundData.data.name1**, qui fait référence aux liaisons  JSON pour le formulaire adaptatif envoyé.
+   Notez que les champs du modèle de données de formulaire (par exemple, contactus.name) sont mappés sur **afData.afBoundData.data.name1**, qui fait référence aux liaisons de schéma JSON pour le formulaire adaptatif envoyé.
 
-## Configuration de l’envoi de formulaire adaptatif {#configure-adaptive-form-submission}
+## Configurer l’envoi du formulaire adaptatif {#configure-adaptive-form-submission}
 
-Exécutez les étapes suivantes pour envoyer le formulaire adaptatif au modèle de processus que vous avez créé dans la section précédente :
+Pour envoyer le formulaire adaptatif au modèle de processus créé dans la section précédente, procédez comme suit :
 
-1. Sélectionnez le formulaire Nous contacter converti disponible dans le **[!UICONTROL output]** dossier **[!UICONTROL Forms & Documents]** et appuyez sur **[!UICONTROL Edit]**.
+1. Sélectionnez le formulaire de contact converti disponible dans le dossier **[!UICONTROL output]** (sortie), sous **[!UICONTROL Forms &amp; Documents]** (Formulaires et documents), puis appuyez sur **[!UICONTROL Edit]** (Modifier).
 
-1. Ouvrez les propriétés du formulaire adaptatif en appuyant sur **[!UICONTROL Form Container]** puis sur ![Configurer](assets/configure_icon.png).
+1. Ouvrez les propriétés du formulaire adaptatif en appuyant sur **[!UICONTROL Form Container]** (Conteneur de formulaires), puis sur ![Configurer](assets/configure_icon.png).
 
-1. Dans la **[!UICONTROL Submission]** section, sélectionnez **[!UICONTROL Invoke an AEM workflow]** dans le **[!UICONTROL Submit Action]** déroulant, sélectionnez le modèle de flux de travail que vous avez créé dans la section précédente, puis spécifiez **data.xml** dans le **[!UICONTROL Data File Path]** champ.
+1. Dans la section **[!UICONTROL Submission]** (Envoi), sélectionnez **[!UICONTROL Invoke an AEM workflow]** (Invoquer un processus AEM) dans la liste déroulante **[!UICONTROL Submit Action]** (Action d’envoi), sélectionnez le modèle de processus créé dans la section précédente et spécifiez **data.xml** dans le champ **[!UICONTROL Data File Path]** (Chemin d’accès au fichier de données).
 
-1. Appuyez sur ![Enregistrer](assets/save_icon.png) pour enregistrer les propriétés.
+1. Appuyez sur ![Save](assets/save_icon.png) (Enregistrer) pour enregistrer les propriétés.
 
-1. Appuyez sur **[!UICONTROL Preview]**, saisissez des valeurs dans les champs du formulaire adaptatif et appuyez sur **[!UICONTROL Submit]**. Les valeurs envoyées s’affichent désormais dans la table de base de données MYSQL au lieu de **crx-repository**.
+1. Appuyez sur **[!UICONTROL Preview]** (Aperçu), saisissez des valeurs dans les champs du formulaire adaptatif et appuyez sur **[!UICONTROL Submit]** (Envoyer). Les valeurs envoyées s’affichent désormais dans le tableau de la base de données MYSQL au lieu du référentiel **crx-repository**.
 
-## Configuration d’un formulaire adaptatif pour préremplir les valeurs de la base de données
+## Configurer le formulaire adaptatif pour préremplir les valeurs de la base de données
 
-Exécutez les étapes suivantes pour configurer le formulaire adaptatif afin de préremplir les valeurs de la base de données MYSQL en fonction de la clé principale définie dans le tableau (Courriel dans ce cas) :
+Pour configurer le formulaire adaptatif afin de préremplir les valeurs de la base de données MYSQL en fonction de la clé principale définie dans le tableau (adresse électronique dans le cas présent), procédez comme suit :
 
-1. Appuyez sur le champ **E-mail** dans le formulaire adaptatif et appuyez sur ![Modifier la règle](assets/edit-rules.png).
+1. Appuyez sur le champ **Email** (Adresse électronique) dans le formulaire adaptatif, puis sur ![Modifier la règle](assets/edit-rules.png).
 
-1. Appuyez sur **[!UICONTROL Create]** puis sélectionnez **[!UICONTROL is changed]** dans le  **[!UICONTROL Select State]** déroulant de la **[!UICONTROL When]** section.
+1. Appuyez sur **[!UICONTROL Create]** (Créer), puis sélectionnez **[!UICONTROL is changed]** (est modifiée) dans la liste déroulante **[!UICONTROL Select State]** (Sélectionner un état) dans la section **[!UICONTROL When]** (Lorsque).
 
-1. Dans la **[!UICONTROL Then]** section, sélectionnez **[!UICONTROL Invoke Service]** et **obtenez** le service du modèle de données de formulaire que vous avez créé dans une section précédente de cet article.
+1. Dans la section **[!UICONTROL Then]** (Alors), sélectionnez **[!UICONTROL Invoke Service]** (Invoquer le service) et **get** (obtenir) comme service pour le modèle de données de formulaire créé dans une section précédente de cet article.
 
-1. Sélectionnez **E-mail** dans la **[!UICONTROL Input]** section et les trois autres champs du modèle de données de formulaire, **Nom**, Numéro **** de téléphone et Description de la publication dans la section . ******[!UICONTROL Output]** Tap **[!UICONTROL Done]** to save the settings.
+1. Sélectionnez **E-mail** (Adresse électronique) dans la section **[!UICONTROL Input]** (Entrée) et les trois champs restants du modèle de données de formulaire, **Name** (Nom), **Phone Number** (Numéro de téléphone) et **Issue Description** (Description du problème) dans la section **[!UICONTROL Output]** (Sortie). Pour enregistrer les paramètres, appuyez sur **[!UICONTROL Done]** (Terminé).
 
-   ![Configuration des paramètres de préremplissage de courrier électronique](assets/email_prefill_settings.png)
+   ![Configurer les paramètres de préremplissage des adresses électroniques](assets/email_prefill_settings.png)
 
-   En conséquence, en fonction des entrées de courrier électronique existantes dans la base de données MYSQL, vous pouvez préremplir les valeurs des trois autres champs en mode **[!UICONTROL Preview]** du formulaire adaptatif. Si, par exemple, vous indiquez aya.tan@xyz.com dans le champ **E-mail** (en fonction des données existantes dans la section [Préparer le modèle](#prepare-data-for-form-model) de données de formulaire de cet article) et que vous sortez du champ, les trois autres champs, **Nom**, Numéro **de téléphone et Description s’affichent automatiquement dans le formulaire adaptatif.******
+   Par conséquent, en fonction des entrées d’adresse électronique existantes dans la base de données MYSQL, vous pouvez préremplir les valeurs des trois champs restants dans le mode **[!UICONTROL Preview]** (Aperçu) du formulaire adaptatif. Par exemple, si vous indiquez aya.tan@xyz.com dans le champ et l’onglet **E-mail** (Adresse électronique) (selon les données existantes de la section [Préparer le modèle de données de formulaire](#prepare-data-for-form-model) de cet article), les trois champs restants **Name** (Nom), **Phone Number** (Numéro de téléphone) et **Issue Description** (Description du problème) s’affichent automatiquement dans le formulaire adaptatif.
 
-Vous pouvez télécharger l’exemple de formulaire adaptatif converti à l’aide de :
+Pour télécharger l’exemple de formulaire adaptatif converti, cliquez sur le lien suivant :
 
 [Obtenir le fichier](assets/DownloadedFormsPackage_1498226829041200.zip)
