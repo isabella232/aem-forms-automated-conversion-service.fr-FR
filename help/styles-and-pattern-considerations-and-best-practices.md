@@ -6,7 +6,7 @@ seo-description: Liste des styles et des modèles dans les formulaires PDF sourc
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fa3b365b9762a044fddb3820ad3c091d211e0ae6
 
 ---
@@ -14,18 +14,18 @@ source-git-commit: fa3b365b9762a044fddb3820ad3c091d211e0ae6
 
 # Bonnes pratiques et modèles complexes connus {#Best-practices-and-considerations2}
 
-This document provides guidelines and recommendations that forms administrator, authors, and developers can benefit from when working with [!DNL Automated Forms Conversion service]. Il décrit les bonnes pratiques, de la préparation des formulaires sources à la correction des modèles complexes qui nécessitent un effort supplémentaire pour la conversion automatisée. These best practices collectively contribute to the overall performance and output of the [!DNL Automated Forms Conversion service].
+Ce document fournit des instructions et des recommandations dont peuvent bénéficier l’administrateur, les auteurs et les développeurs de formulaires au moment d’utiliser [!DNL Automated Forms Conversion service]. Il décrit les bonnes pratiques, de la préparation des formulaires sources à la correction des modèles complexes qui nécessitent un effort supplémentaire pour la conversion automatisée. Ces bonnes pratiques contribuent globalement aux performances globales et au rendement de [!DNL Automated Forms Conversion service].
 
 ## Bonnes pratiques
 
-The conversion service converts PDF forms available on your AEM [!DNL Forms] instance to adaptive forms. Les bonnes pratiques répertoriées ci-dessous vous aident à améliorer la vitesse et la précision de conversion. Elles vous permettent également de gagner du temps sur les activités après conversion.
+Le service de conversion convertit les formulaires PDF disponibles sur votre instance AEM [!DNL Forms] en formulaires adaptatifs. Les bonnes pratiques répertoriées ci-dessous vous aident à améliorer la vitesse et la précision de conversion. Elles vous permettent également de gagner du temps sur les activités après conversion.
 
 ### Avant de télécharger la source
 
 Vous pouvez télécharger tous les formulaires PDF en une seule ou en plusieurs fois, selon les besoins. Avant de télécharger les formulaires, tenez compte des éléments suivants :
 
 * N’enregistrez pas plus de 15 formulaires dans un dossier et veillez à ce que le nombre total de pages dans un dossier ne dépasse pas 50.
-* Conservez la taille du dossier inférieure à 10 Mo. Ne conservez pas les formulaires dans un sous-dossier.
+* Veillez à ce que la taille du dossier ne dépasse pas 10 Mo. Ne conservez pas les formulaires dans un sous-dossier.
 * Veillez à ce qu’un formulaire ne dépasse pas 15 pages.
 * Regroupez les documents sources dans un lot de 8 à 15 documents. Conservez les formulaires sources avec des fragments de formulaires adaptatifs courants dans un seul lot.
 * Ne téléchargez pas de formulaires protégés. Le service ne convertit pas les formulaires protégés par mot de passe et sécurisés.
@@ -35,16 +35,16 @@ Vous pouvez télécharger tous les formulaires PDF en une seule ou en plusieurs
 
 Lorsque vous utilisez un formulaire XDP pour la conversion, effectuez les étapes suivantes avant de télécharger les formulaires XDP sources :
 
-* Analysez le formulaire XDP et corrigez les problèmes visuels. Assurez-vous que le source utilise les contrôles et les structures prévus. Par exemple, le formulaire source peut comporter des cases à cocher au lieu de boutons radio pour une seule sélection. Remplacez les cases à cocher par des boutons radio pour produire un formulaire adaptatif avec les composants prévus.
+* Analysez le formulaire XDP et corrigez les problèmes visuels. Assurez-vous que le document source utilise les structures et les contrôles prévus. Par exemple, le formulaire source peut comporter des cases à cocher au lieu de boutons radio pour une seule sélection. Remplacez les cases à cocher par des boutons radio pour produire un formulaire adaptatif avec les composants prévus.
 * [Ajoutez des liaisons au formulaire XDP](http://www.adobe.com/go/learn_aemforms_designer_65_fr) avant de démarrer la conversion. Lorsque des liaisons sont disponibles dans le formulaire XDP source, le service applique automatiquement des liaisons aux champs de formulaires adaptatifs correspondants lors de la conversion. Ainsi, vous ne perdrez pas de temps à appliquer manuellement les liaisons.
 * [Ajoutez des balises Adobe Sign](https://helpx.adobe.com/fr/sign/using/text-tag.html) au fichier XDP. Le service convertit automatiquement les balises Adobe Sign en champs de formulaires adaptatifs correspondants. Les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign. Pour obtenir la liste complète des champs pris en charge, consultez la documentation [Utilisation d’Adobe Sign dans un formulaire adaptatif](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html).
-* Si possible, convertissez des tableaux complexes dans les documents XDP en tableaux simples. Un tableau comportant des champs de formulaire dans des cellules de tableau, des cellules de taille inégale, des cellules étendues de rangée ou de colonne, des cellules fusionnées, des bordures partielles ou aucune bordure visible est considéré comme un tableau complexe. Un tableau comportant l’un des éléments susmentionnés est considéré comme un tableau complexe.
+* Si possible, convertissez les tableaux complexes dans les documents XDP en tableaux simples. Un tableau comportant des champs de formulaire dans des cellules de tableau, des cellules de taille inégale, des cellules étendues sur des lignes ou colonnes, des cellules fusionnées, des bordures partielles ou aucune bordure visible est considéré comme un tableau complexe. Un tableau comportant l’un des éléments susmentionnés est considéré comme un tableau complexe.
 <!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
 
 ### Avant de commencer la conversion
 
 * Créez des modèles de formulaires adaptatifs. Les modèles permettent de spécifier une structure uniforme pour les formulaires de votre entreprise ou service.
-* Indiquez l’en-tête et le pied de page dans les modèles de formulaires adaptatifs. Le service ignore l’en-tête et le pied de page du  source et utilise l’en-tête et le pied de page spécifiés dans le modèle de formulaire adaptatif.
+* Indiquez l’en-tête et le pied de page dans les modèles de formulaires adaptatifs. Le service ignore l’en-tête et le pied de page des documents sources et utilise l’en-tête et le pied de page spécifiés dans le modèle de formulaire adaptatif.
 * Créez des thèmes de formulaires adaptatifs. Les thèmes permettent d’uniformiser l’aspect des formulaires au sein de votre entreprise ou service.
 * Configurez le modèle de données de formulaire pour enregistrer et récupérer à partir d’une source de données. Créez et configurez des services de lecture et d’écriture pour le modèle de données de formulaire.
 * Créez des fragments de formulaire adaptatif et configurez le service pour utiliser vos fragments de formulaire adaptatif.
@@ -54,9 +54,9 @@ Lorsque vous utilisez un formulaire XDP pour la conversion, effectuez les étap
 
 ## Modèles complexes connus
 
-AEM [!DNL Forms Automated Conversion service] uses artificial intelligence and machine learning algorithms to understand the layout and fields of the source form. Chaque service d’apprentissage automatique tire sans cesse des enseignements des données sources et enregistre ainsi des résultats de plus en plus concluants. Ces services apprennent de l&#39;expérience comme les humains.
+AEM [!DNL Forms Automated Conversion service] utilise des algorithmes d’intelligence artificielle et d’apprentissage automatique pour comprendre la disposition et les champs du formulaire source. Chaque service d’apprentissage automatique tire sans cesse des enseignements des données sources et enregistre ainsi des résultats de plus en plus concluants. Tout comme les humains, ces services apprennent par l’expérience.
 
-[!DNL Automated Forms Conversion service] est formée sur un grand ensemble de formulaires. Il identifie facilement les champs d’un formulaire source et génère des formulaires adaptatifs. Cependant, certains champs et styles des formulaires PDF, pourtant facilement visibles par l’œil humain, restent difficiles à comprendre pour le service. Le service peut affecter différents types de champs ou panneaux applicables à certains champs ou styles. Tous ces modèles de champ et de style sont répertoriés ci-dessous.
+[!DNL Automated Forms Conversion service] se base sur un large éventail de formulaires. Il identifie facilement les champs d’un formulaire source et génère des formulaires adaptatifs. Cependant, certains champs et styles des formulaires PDF, pourtant facilement visibles par l’œil humain, restent difficiles à comprendre pour le service. Le service peut affecter des types de champs ou des panneaux différents de ceux applicables à certains champs ou styles. Tous ces modèles de champ et de style sont répertoriés ci-dessous.
 
 Le service commencerait à identifier et à attribuer à ces modèles des champs ou des panneaux adaptés tout en continuant à apprendre des données sources. Pour le moment, vous pouvez utiliser l’éditeur [de vérification et de correction](review-correct-ui-edited.md) pour résoudre ces problèmes. Avant de commencer à résoudre les problèmes ou de poursuivre votre lecture, familiarisez-vous avec les [composants de formulaires adaptatifs](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
 
@@ -64,17 +64,17 @@ Le service commencerait à identifier et à attribuer à ces modèles des champs
 
 | Modèle | Exemple |
 |--- |--- |
-| **Le service de modèle** <br> ne convertit pas les formulaires PDF colorés en formulaire adaptatif. <br><br>**Résolution **<br>Utilisez des formulaires PDF en noir et blanc ou en niveaux de gris. | ![Formulaire coloré](assets/best-practice-coloured-forms.png) |
-| **Le** service de modèles <br>ne convertit pas les formulaires PDF remplis en formulaire adaptatif. <br><br>**Résolution **<br>Utilisez des formulaires adaptatifs vides. | ![Formulaire rempli](assets/best-practice-filled-forms.png) |
+| **Modèle** <br> Le service ne convertit pas les formulaires PDF colorés en formulaires adaptatifs. <br><br>**Résolution **<br>Utilisez des formulaires PDF en noir et blanc ou en niveaux de gris. | ![Formulaire coloré](assets/best-practice-coloured-forms.png) |
+| **Modèle** <br> Le service ne convertit pas les formulaires PDF remplis en formulaires adaptatifs. <br><br>**Résolution **<br>Utilisez des formulaires adaptatifs vides. | ![Formulaire rempli](assets/best-practice-filled-forms.png) |
 | **Modèle** <br>Le service peut ne pas reconnaître le texte et les champs denses. <br><br>**Résolution **<br>Laissez davantage d’espace entre le texte et les champs denses avant de débuter la conversion. |  |
 | **Modèle** <br>Le service ne prend pas en charge les formulaires numérisés. <br><br>**Résolution **<br>N’utilisez pas de formulaires numérisés. | ![Formulaire numérisé](assets/scanned-forms.png) |
 | **Modèle** <br>Le service n’extrait pas d’images et de texte figurant dans les images. <br><br>**Résolution **<br>Ajoutez manuellement des images ou du texte aux formulaires convertis. | ![Formulaire avec image contenant du texte](assets/best-practice-image-with-text.png) |
 | **Modèle** <br>Les tableaux dont les bordures sont en pointillés ou ne sont pas clairement définies ne sont pas convertis. <br><br>**Résolution **<br>Utilisez des tableaux dont les bordures sont clairement définies. pris en charge. | ![Formulaire avec tableau non clair](assets/best-practice-table-dotted-non-clear.png) |
-| **Modèles** <br> Les formulaires adaptatifs ne prennent pas en charge le texte vertical prêt à l’emploi. Ainsi, le service ne convertit pas le texte vertical en texte de formulaires adaptatifs correspondant. <br><br>**Résolution **<br>Utilisez l’éditeur de formulaire adaptatif pour ajouter du texte vertical, si nécessaire. | ![Formulaire avec tableau non clair](assets/vertical-text.png) |
+| **Modèle** <br> Les formulaires adaptatifs ne prennent pas en charge le texte vertical en dehors de la case. Ainsi, le service ne convertit pas le texte vertical en texte de formulaires adaptatifs correspondant. <br><br>**Résolution **<br>Utilisez l’éditeur de formulaire adaptatif pour ajouter du texte vertical, si nécessaire. | ![Formulaire avec tableau non clair](assets/vertical-text.png) |
 
 
 
-### Choice group  {#choice-group}
+### Groupe de choix  {#choice-group}
 
 | Modèle | Résolution |
 |--- |--- |
@@ -86,7 +86,7 @@ Le service commencerait à identifier et à attribuer à ces modèles des champs
 |--- |--- |
 | **Modèle** <br> Le service n’identifie pas les champs dont les bordures ne sont pas clairement définies. <br><br>**Résolution **<br>Utilisez l’éditeur de vérification et de correction pour identifier ces champs. | ![champs dont les bordures ne sont pas clairement définies](assets/best-practice-fields-without-clear-borders.png) |
 | **Modèle** <br> Le service peut ne pas identifier certains champs de formulaire de groupe de choix avec des légendes en bas ou à droite d’un formulaire. <br><br>**Résolution **<br>Utilisez l’éditeur de vérification et de correction pour identifier ces champs | ![Champs de choix](assets/best-practice-caption-bottom-right.png) |
-| **Le service de modèle** <br> fusionne ou affecte un type incorrect à certains champs de formulaire qui sont placés très près les uns des autres ou dont les bordures ne sont pas claires. <br><br>**Résolution **<br>Utilisez l’éditeur de vérification et de correction pour identifier ces champs. | ![Champs de choix](assets/best-practice-placed-very-near.png) |
+| **Modèle** <br> Le service fusionne ou attribue un type incorrect à certains champs de formulaire placés très près les uns des autres ou dont les bordures ne sont pas clairement définies. <br><br>**Résolution **<br>Utilisez l’éditeur de vérification et de correction pour identifier ces champs. | ![Champs de choix](assets/best-practice-placed-very-near.png) |
 | **Modèle** <br> Le service peut ne pas reconnaître les champs dont les légendes sont éloignées ou avec une ligne pointillée entre la légende et le champ d’entrée. <br><br>**Résolution **<br>Utilisez des champs de formulaire avec des bordures clairement définies ou utilisez l’éditeur de vérification et de correction pour corriger ces problèmes. | ![Champs éloignés ou ligne pointillée entre le champ et la légende](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
 
 ### Listes {#lists}
