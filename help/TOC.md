@@ -4,8 +4,8 @@ product: experience manager
 sub-product: service de conversion de formulaires
 audience: end-user
 user-guide-title: Service de conversion automatisée de formulaires Adobe Experience Manager
-translation-type: ht
-source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
+translation-type: tm+mt
+source-git-commit: 41fb68ef566f5bd44d6f47f31de0b0edeeb978f2
 
 ---
 
@@ -14,6 +14,7 @@ source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
 
 + [Notes de mise à jour](release-notes.md)
 + [Présentation](introduction.md)
++ [Bonnes pratiques et remarques](styles-and-pattern-considerations-and-best-practices.md)
 + [Configurer le service](configure-service.md)
 + [Convertir des formulaires imprimés en formulaires adaptatifs](convert-existing-forms-to-adaptive-forms.md)
 + [Vérifier et corriger les formulaires convertis](review-correct-ui-edited.md)
@@ -22,6 +23,5 @@ source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
 + [Processus recommandés pour activer la génération d’un document d’enregistrement pour les formulaires adaptatifs](enable-document-of-record-generation.md)
 + [Intégrer un formulaire adaptatif à une base de données à l’aide du processus AEM](submit-converted-adaptive-form-to-database.md)
 + [Questions fréquemment posées](frequently-asked-questions.md)
-+ [Bonnes pratiques et remarques](styles-and-pattern-considerations-and-best-practices.md)
 + [Problèmes connus](known-issues.md)
 + [Résolution des problèmes](troubleshoot-afcs.md)
