@@ -1,8 +1,11 @@
 ---
 title: Configurer le service de conversion automatisée de formulaires
 description: Préparez votre instance AEM à utiliser le service de conversion automatisée de formulaires
-translation-type: ht
-source-git-commit: 68824c2f398d00141d67996121f7b758af16d2e4
+translation-type: tm+mt
+source-git-commit: e1ef5be14fd3f1ec7e6ccf569c8d76518dfc5c6b
+workflow-type: tm+mt
+source-wordcount: '2648'
+ht-degree: 91%
 
 ---
 
@@ -17,9 +20,9 @@ Cette aide décrit comment un administrateur AEM peut configurer le service de 
 
 * configuration des serveurs de messagerie SMTP.
 
->[!VIDEO](https://video.tv.adobe.com/v/29267/?captions=fre_fr)
+<!--- >[!VIDEO](https://video.tv.adobe.com/v/29267/) 
 
-**Regardez la vidéo ou lisez l’article pour configurer le service de conversion automatisée de formulaires**
+**Watch the video or read the article to configure Automated Forms Conversion service** -->
 
 ## Intégration{#onboarding}
 
@@ -71,10 +74,7 @@ Une instance AEM contient des fonctionnalités de formulaires de base. Le servic
 
 ### (Facultatif) Télécharger et installer le package connecteur  {#installConnectorPackage}
 
-Installez le package connecteur 1.1.38 ou version ultérieure pour utiliser les fonctionnalités et améliorations [Auto-detect logical sections](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) (Détection automatique de sections logiques) proposées dans la version AFC-2020.03.1. Vous pouvez [télécharger le package connecteur depuis le partage de package AEM](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
-
->[!NOTE]
-> Si vous disposez déjà d’un environnement de service de conversion automatisée de formulaires opérationnel, installez les derniers Service Pack, module complémentaire AEM Forms et package connecteur dans cet ordre pour en utiliser les dernières fonctionnalités.
+Le module Connector permet d’accéder rapidement aux fonctionnalités et améliorations des sections [logiques de détection](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) automatique fournies dans la version AFC-2020.03.1. N’installez pas le module si vous ne souhaitez pas que les fonctionnalités et améliorations fournies dans AFC-2020.03.1 soient incluses. Vous pouvez [télécharger le module Connector depuis le partage](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1)de modules AEM.
 
 
 ### Créer des thèmes et des modèles personnalisés {#referencepackage}
@@ -183,27 +183,26 @@ Un certificat public permet d’authentifier votre profil sur Adobe I/O.
 
 Pour utiliser le service de conversion automatisée de formulaires, créez une intégration dans Adobe I/O. L’intégration génère la clé API, le secret client, la charge utile (JWT).
 
-1. Connectez-vous à [https://console.adobe.io/](https://console.adobe.io/). Utilisez votre Adobe ID et le compte de développeur que votre administrateur a mis à votre disposition pour vous connecter à la console Adobe I/O.
-
-1. Appuyez sur **[!UICONTROL View Integrations]** (Afficher les intégrations). Un écran avec toutes les intégrations disponibles apparaît.
-1. Sélectionnez votre entreprise dans la liste déroulante sous **[!UICONTROL Integrations]** (Intégrations). Appuyez sur **[!UICONTROL New Integration]** (Nouvelle intégration), sélectionnez **[!UICONTROL Access an API]** (Accéder à une API) et appuyez sur **[!UICONTROL Continue]** (Continuer).
-1. Sélectionnez **[!UICONTROL Experience Cloud]** > **[!UICONTROL Automated Forms Conversion]** (Conversion automatisée de formulaires) et appuyez sur **[!UICONTROL Continue]** (Continuer). Si l’option de conversion automatisée de formulaires est désactivée, assurez-vous d’avoir sélectionné la bonne entreprise dans la liste déroulante au-dessus de l’option **[!UICONTROL Adobe Services]** (Services Adobe). Si vous ne connaissez pas le nom de votre entreprise, contactez votre administrateur.
-
-   ![Sélectionner la conversion automatisée de formulaires](assets/create-new-integration.png)
-
-1. Fournissez le nom et la description de l’intégration. Appuyez sur **[!UICONTROL Select a File from your computer]** (Sélectionner un fichier sur votre ordinateur) et téléchargez le fichier AEM-Adobe-IMS.crt téléchargé dans la section [Obtenir des certificats publics](#obtainpubliccertificates).
-1. Sélectionnez le profil créé tout en [accordant l’accès aux développeurs de votre entreprise](#adduseranddevs) et appuyez sur **[!UICONTROL Create Integration]** (Créer l’intégration). L’intégration est alors créée.
-1. Appuyez sur **[!UICONTROL Continue to integration details]** (Continuer vers les détails d’intégration) pour afficher les informations d’intégration. La page contient la clé API, le secret client et d’autres informations nécessaires pour connecter votre instance AEM locale au service de conversion automatisée de formulaires. Les informations de la page sont utilisées pour créer la configuration IMS sur votre ordinateur local.
-
-   ![Clé API, secret client et informations de charge utile d’une intégration](assets/integration-details.png)
+1. Connectez-vous à https://console.adobe.io/. Utilisez votre Adobe ID et le compte de développeur que votre administrateur a mis à votre disposition pour vous connecter à la console Adobe I/O.
+1. Sélectionnez votre organisation dans le coin supérieur droit. Si vous ne connaissez pas le nom de votre entreprise, contactez votre administrateur.
+1. Tap **[!UICONTROL Create new project]**. Un écran de démarrage du nouveau projet s’affiche. Appuyez sur **[!UICONTROL Ajouter API]**. Un écran contenant la liste de toutes les API activées pour votre compte s’affiche.
+1. Sélectionnez Service **[!UICONTROL de conversion]** automatisée des formulaires et appuyez sur **[!UICONTROL Suivant]**. Un écran de configuration de l’API s’affiche.
+1. Sélectionnez l’option [!UICONTROL Télécharger votre clé] publique, téléchargez le fichier AEM-Adobe-IMS.crt téléchargé dans la section [Obtention des certificats](#obtainpubliccertificates) publics et appuyez sur **[!UICONTROL Suivant]**. L’option Créer un compte de service (JWT) d’informations d’identification s’affiche. Appuyez sur **[!UICONTROL Next]** (Suivant).
+1. Sélectionnez un Profil de produit et appuyez sur **[!UICONTROL Enregistrer l’API]** configurée. Select the profile created while [granting access to developers of your organization](#adduseranddevs). Si vous ne connaissez pas le profil à sélectionner, contactez votre administrateur.
+1. Appuyez sur Compte **[!UICONTROL de service (JWT)]** pour vue la clé d’API, la clé secrète client et d’autres informations requises pour connecter votre instance locale AEM au service de conversion automatisée des formulaires. Les informations de la page sont utilisées pour créer la configuration IMS sur votre ordinateur local.
 
 1. Ouvrez la page de configuration IMS sur votre instance locale. Vous avez gardé la page ouverte à la fin de la section [Obtenir des certificats publics](#obtainpubliccertificates).
 
    ![Spécifier le titre, la clé API, le secret client et la charge utile ](assets/ims-configuration-details.png)
 
-1. Sur la page technique d’Adobe IMS, spécifiez la clé API et le secret client. Utilisez les valeurs spécifiées sur la page d’intégration.
+1. Sur la page technique d’Adobe IMS, spécifiez la clé API et le secret client. Utilisez les valeurs spécifiées sur le compte de service (JWT) de la page de la console Adobe Developer.
 
-   **Pour la charge utile, utilisez le code fourni dans l’onglet JWT de la page d’intégration.** Appuyez sur  **[!UICONTROL Save]** (Enregistrer). La configuration IMS est alors créée. Fermez la page d’intégration.
+   >[!NOTE]
+   >
+   >
+   >Pour la charge utile, utilisez le code fourni dans l’onglet Générer JWT de la page Compte de service (JWT) d’Adobe Developer Console.
+
+1. Appuyez sur **[!UICONTROL Enregistrer]**. La configuration IMS est alors créée.
 
    ![Utiliser les valeurs du champ JWT pour le champ de charge utile](assets/jwt.png)
 
