@@ -2,10 +2,10 @@
 title: Configurer le service de conversion automatisée de formulaires
 description: Préparez votre instance AEM à utiliser le service de conversion automatisée de formulaires
 translation-type: tm+mt
-source-git-commit: e1ef5be14fd3f1ec7e6ccf569c8d76518dfc5c6b
+source-git-commit: 7e94acb29f30603d9b22fbee9dc8052fafa5704b
 workflow-type: tm+mt
-source-wordcount: '2648'
-ht-degree: 91%
+source-wordcount: '2657'
+ht-degree: 89%
 
 ---
 
@@ -123,7 +123,7 @@ Une fois qu’un administrateur vous a accordé un accès en tant que développe
 * [Configurer les notifications par courrier électronique](configure-service.md#configureemailnotification)
 * [Ajouter un utilisateur au groupe forms-users](#adduserstousergroup)
 * [Obtenir des certificats publics](#obtainpubliccertificates)
-* [Créer l’intégration Adobe I/O](#createintegration)
+* [Configuration des API de service sur Adobe Developer Console](#createintegration)
 * [Configurer le service cloud](configure-service.md#configure-the-cloud-service)
 
 #### Configurer les notifications par courrier électronique {#configureemailnotification}
@@ -159,12 +159,12 @@ Un certificat public permet d’authentifier votre profil sur Adobe I/O.
 
 1. Cochez la case **[!UICONTROL Create new certificate]** (Créer un nouveau certificat) et indiquez un alias. L’alias sert de nom à la boîte de dialogue. Appuyez sur **[!UICONTROL Create certificate]** (Créer un certificat). Une boîte de dialogue s’affiche. Cliquez sur **[!UICONTROL OK]**. Le certificat est alors créé.
 
-1. Appuyez sur **[!UICONTROL Download Public Key]** (Télécharger la clé publique) et enregistrez le fichier de certificat *AEM-Adobe-IMS.crt* sur votre ordinateur. Le fichier de certificat est utilisé pour [créer l’intégration sur la console Adobe I/O](#createintegration). Appuyez sur **[!UICONTROL Next]** (Suivant).
+1. Appuyez sur **[!UICONTROL Download Public Key]** (Télécharger la clé publique) et enregistrez le fichier de certificat *AEM-Adobe-IMS.crt* sur votre ordinateur. Le fichier de certificat est utilisé pour [configurer les API de service sur Adobe Developer Console](#createintegration). Appuyez sur **[!UICONTROL Next]** (Suivant).
 
 1. Indiquez les informations suivantes :
 
    * Titre : indiquez un titre.
-   * Serveur d’autorisation : [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)
+   * Serveur d’autorisation : [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)\
    Laissez les autres champs vides pour l’instant (pour les remplir ultérieurement). Gardez la page ouverte.
 
    <!--
@@ -179,9 +179,9 @@ Un certificat public permet d’authentifier votre profil sur Adobe I/O.
    <li>Step text</li>
    -->
 
-#### Créer l’intégration Adobe I/O {#createintegration}
+#### Configuration des API de service sur Adobe Developer Console {#createintegration}
 
-Pour utiliser le service de conversion automatisée de formulaires, créez une intégration dans Adobe I/O. L’intégration génère la clé API, le secret client, la charge utile (JWT).
+Pour utiliser le service de conversion automatisée des formulaires, créez un projet et ajoutez l’API Service de configuration automatisée des formulaires au projet sur Adobe Developer Console. L’intégration génère la clé d’API, la clé secrète client, la charge utile (JWT).
 
 1. Connectez-vous à https://console.adobe.io/. Utilisez votre Adobe ID et le compte de développeur que votre administrateur a mis à votre disposition pour vous connecter à la console Adobe I/O.
 1. Sélectionnez votre organisation dans le coin supérieur droit. Si vous ne connaissez pas le nom de votre entreprise, contactez votre administrateur.
@@ -203,8 +203,6 @@ Pour utiliser le service de conversion automatisée de formulaires, créez une i
    >Pour la charge utile, utilisez le code fourni dans l’onglet Générer JWT de la page Compte de service (JWT) d’Adobe Developer Console.
 
 1. Appuyez sur **[!UICONTROL Enregistrer]**. La configuration IMS est alors créée.
-
-   ![Utiliser les valeurs du champ JWT pour le champ de charge utile](assets/jwt.png)
 
    >[!CAUTION]
    >
