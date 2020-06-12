@@ -6,8 +6,11 @@ seo-description: Étendez le métamodèle par défaut pour ajouter un modèle, d
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-translation-type: ht
-source-git-commit: ffab4d916cbd545078f4b72b8de5c9968f23b0da
+translation-type: tm+mt
+source-git-commit: 77bdb4e88194bd634dea125852ff2a897bc24678
+workflow-type: tm+mt
+source-wordcount: '2401'
+ht-degree: 99%
 
 ---
 
@@ -22,9 +25,7 @@ Le métamodèle est un schéma JSON. Avant de commencer, assurez-vous de bien m
 
 ## Métamodèle par défaut {#default-meta-model}
 
-Le service de conversion automatisée de formulaires comprend un métamodèle par défaut. Il s’agit d’un schéma JSON qui se trouve sur Adobe Cloud avec d’autres composants du service de conversion automatisée de formulaires. Une copie du métamodèle est disponible sur votre serveur AEM local à l’adresse suivante :
-
-http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json.
+Le service de conversion automatisée de formulaires comprend un métamodèle par défaut. Il s’agit d’un schéma JSON qui se trouve sur Adobe Cloud avec d’autres composants du service de conversion automatisée de formulaires. Une copie du métamodèle est disponible sur votre serveur AEM local à l’adresse suivante : http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json. Vous pouvez également [cliquer ici](assets/global.schema.json) pour accéder au schéma par défaut ou le télécharger.
 
 Le schéma du métamodèle dérive des entités de schéma figurant sur https://schema.org/docs/schemas.html. Il inclut notamment les entités Person, PostalAddress et LocalBusiness définies sur https://schema.org. Chaque entité du métamodèle correspond au type d’objet de schéma JSON. Le code suivant représente un exemple de structure de métamodèle :
 
