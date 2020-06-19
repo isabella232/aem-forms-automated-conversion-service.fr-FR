@@ -7,10 +7,10 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: b1df14a331dc4aef7ce6383dec0091fa6db1fd7b
+source-git-commit: 3b3bb98352e23544d32c39f0bfb5f0d9b7ae99cf
 workflow-type: tm+mt
-source-wordcount: '1721'
-ht-degree: 98%
+source-wordcount: '1722'
+ht-degree: 97%
 
 ---
 
@@ -107,7 +107,7 @@ Les raisons les plus courantes de l’échec de la conversion sont les suivantes
    Vous pouvez utiliser le métamodèle pour mapper les objets de formulaire au composant de formulaire adaptatif de votre choix et préconfigurer les validations, les règles, les modèles de données, le texte d’aide et les propriétés d’accessibilité des composants. Toutes les propriétés spécifiées sont appliquées lors de la conversion. Vous pouvez utiliser un métamodèle pour appliquer des propriétés communes aux champs. Cela peut vous aider à réduire le nombre de problèmes récurrents dans les formulaires.<br/><br/>
 
 1. **Quelles sont les options disponibles pour les formulaires contenant des données sensibles, telles que des informations d’identification personnelles ?**
-Le service ne prend en charge que les formulaires vierges ou non remplis. Ne téléchargez pas de formulaires remplis ou de formulaires contenant des informations d’identification personnelles. Supprimez également les données préremplies, les informations d’identification personnelles en marque blanche et les informations confidentielles des formulaires sources. 
+Le service ne prend en charge que les formulaires vierges ou non remplis. Ne téléchargez pas de formulaires remplis ou de formulaires contenant des informations d’identification personnelles. En outre, supprimez les données préremplies, les informations d’identification personnelle, les informations confidentielles et les informations propriétaires dans les formulaires source. 
 <br/>
 
 1. **Où placer les en-têtes et pieds de page ?**
