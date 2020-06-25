@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 3b3bb98352e23544d32c39f0bfb5f0d9b7ae99cf
 workflow-type: tm+mt
 source-wordcount: '1722'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
 1. **Le service peut-il être installé sur site ?**
 
    <p>Adobe forme régulièrement les algorithmes d’intelligence artificielle et d’apprentissage automatique du service de conversion automatisée de formulaires avec de nouveaux ensembles de données pour améliorer la précision de la conversion. Les algorithmes mis à jour sont périodiquement déployés sur le service de conversion exécuté sur Adobe Cloud. Tous les clients du service bénéficient des algorithmes mis à jour. Ainsi, le déploiement central hébergé dans le cloud est le mieux adapté au service de conversion automatisée de formulaires afin d’améliorer l’apprentissage et, par extension, les services proposés aux clients.</p> 
-    <p>Le service convertit les formulaires vierges en formulaires adaptatifs. Le service ne prend pas en charge les formulaires remplis et l’extraction de données à partir de formulaires remplis. Supprimez les données des formulaires remplis et supprimez ou placez sur l'liste autorisée les informations propriétaires des formulaires avant d’envoyer les formulaires en service pour conversion.</p> <br>
+    <p>Le service convertit les formulaires vierges en formulaires adaptatifs. Le service ne prend pas en charge les formulaires remplis et l’extraction de données à partir de formulaires remplis. Supprimez les données des formulaires remplis et supprimez ou mettez sur liste blanche les informations confidentielles des formulaires avant de les envoyer au service de conversion.</p> <br>
 
 1. **Le service prend-il en charge tous les formats de formulaires PDF ? Quelles sont toutes les langues prises en charge ?**
 
