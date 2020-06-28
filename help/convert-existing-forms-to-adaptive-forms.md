@@ -8,10 +8,10 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 019ae541117f037f11703a88162ec3ab4cb67947
+source-git-commit: 5fdf997fdde07cc4546accebddb85a248f36e057
 workflow-type: tm+mt
-source-wordcount: '1587'
-ht-degree: 98%
+source-wordcount: '1586'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ Le service de conversion automatisée de formulaires AEM Forms, optimisé par A
 
 * [**Configuration du service de conversion **](configure-service.md)
 
-* **Préparation des[modèles](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/template-editor.html)à appliquer aux formulaires convertis :** l’utilisation d’un modèle vous permet d’harmoniser l’identité graphique de tous les formulaires adaptatifs. De plus, le service de conversion automatisée de formulaires n’extrait et n’utilise pas l’en-tête et le pied de page des documents PDF sources. Vous pouvez utiliser des modèles de formulaires adaptatifs pour spécifier l’en-tête et le pied de page. L’en-tête et le pied de page spécifiés dans le modèle sont appliqués au formulaire adaptatif lors de la conversion. Lorsque vous créez un dossier pour les modèles, sélectionnez l’option **[!UICContrôler la configuration]** de la navigation pour tous.
+* **Préparation des[modèles](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/template-editor.html)à appliquer aux formulaires convertis :** l’utilisation d’un modèle vous permet d’harmoniser l’identité graphique de tous les formulaires adaptatifs. De plus, le service de conversion automatisée de formulaires n’extrait et n’utilise pas l’en-tête et le pied de page des documents PDF sources. Vous pouvez utiliser des modèles de formulaires adaptatifs pour spécifier l’en-tête et le pied de page. L’en-tête et le pied de page spécifiés dans le modèle sont appliqués au formulaire adaptatif lors de la conversion. Lorsque vous créez un dossier pour les modèles, sélectionnez l’option **[!UICONTROL Parcourir les configurations]** pour tous les utilisateurs.
 
 * **Préparation des[thèmes](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/themes.html)à appliquer aux formulaires convertis :** l’utilisation d’un thème vous permet d’harmoniser le style de tous les formulaires adaptatifs de votre entreprise.
 
