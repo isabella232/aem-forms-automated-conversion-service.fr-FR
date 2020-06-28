@@ -7,11 +7,11 @@ uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
-translation-type: ht
-source-git-commit: 5031050795a558795c151e9f3c26a16736566adf
-workflow-type: ht
-source-wordcount: '1571'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 019ae541117f037f11703a88162ec3ab4cb67947
+workflow-type: tm+mt
+source-wordcount: '1587'
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ Le service de conversion automatisée de formulaires AEM Forms, optimisé par A
 
 * [**Configuration du service de conversion **](configure-service.md)
 
-* **Préparation des[modèles](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/template-editor.html)à appliquer aux formulaires convertis :** l’utilisation d’un modèle vous permet d’harmoniser l’identité graphique de tous les formulaires adaptatifs. De plus, le service de conversion automatisée de formulaires n’extrait et n’utilise pas l’en-tête et le pied de page des documents PDF sources. Vous pouvez utiliser des modèles de formulaires adaptatifs pour spécifier l’en-tête et le pied de page. L’en-tête et le pied de page spécifiés dans le modèle sont appliqués au formulaire adaptatif lors de la conversion.
+* **Préparation des[modèles](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/template-editor.html)à appliquer aux formulaires convertis :** l’utilisation d’un modèle vous permet d’harmoniser l’identité graphique de tous les formulaires adaptatifs. De plus, le service de conversion automatisée de formulaires n’extrait et n’utilise pas l’en-tête et le pied de page des documents PDF sources. Vous pouvez utiliser des modèles de formulaires adaptatifs pour spécifier l’en-tête et le pied de page. L’en-tête et le pied de page spécifiés dans le modèle sont appliqués au formulaire adaptatif lors de la conversion. Lorsque vous créez un dossier pour les modèles, sélectionnez l’option **[!UICContrôler la configuration]** de la navigation pour tous.
 
 * **Préparation des[thèmes](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/themes.html)à appliquer aux formulaires convertis :** l’utilisation d’un thème vous permet d’harmoniser le style de tous les formulaires adaptatifs de votre entreprise.
 
@@ -73,6 +73,7 @@ Après avoir téléchargé les formulaires et configuré le service, procédez c
    * Utilisez l’option **Generate adaptive forms without data model bindings** (Générer des formulaires adaptatifs sans liaison de modèle de données) pour choisir de générer un formulaire adaptatif avec ou sans liaison de modèle de données.
 Si vous ne sélectionnez pas cette option, le service de conversion associe automatiquement les formulaires adaptatifs à un schéma JSON et crée une liaison de données entre les champs disponibles dans le formulaire adaptatif et le schéma JSON. Le champ **[!UICONTROL Save generated data model schema at]** (Enregistrer le schéma de modèle de données généré sous) affiche l’emplacement par défaut pour l’enregistrement du schéma JSON généré. Vous pouvez également personnaliser l’emplacement pour l’enregistrement du schéma généré.
 Si vous sélectionnez cette option, le service de conversion génère un formulaire adaptatif sans liaison de modèle de données. Après la conversion, vous pouvez associer un formulaire adaptatif à un modèle de données de formulaire, un schéma XML ou un schéma JSON. Pour en savoir plus, consultez la page [Créer un formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/creating-adaptive-form.html).
+
    <!--
    Comment Type: draft
 
@@ -85,6 +86,7 @@ Si vous sélectionnez cette option, le service de conversion génère un formula
 1. Dans l’onglet **[!UICONTROL Additional]** (Plus) de la boîte de dialogue Conversion Settings (Paramètres de conversion),
    * sélectionnez l’option **[!UICONTROL Extract fragment from adaptive forms]** (Extraire les fragments des formulaires adaptatifs) pour permettre au service de conversion d’identifier, d’extraire et de télécharger des fragments de formulaires pour les formulaires convertis. Lorsque vous sélectionnez l’option **[!UICONTROL Extract fragment from adaptive forms]** (Extraire les fragments des formulaires adaptatifs), les options permettant d’indiquer des chemins pour l’enregistrement des fragments de formulaires extraits et des schémas correspondants sont activées.
    * Indiquez l’emplacement des **[!UICONTROL fragments de formulaires adaptatifs existants]**, si vous disposez de fragments de formulaires adaptatifs sans schéma ou basés sur des schémas JSON existants et que vous envisagez d’utiliser ces fragments dans des formulaires adaptatifs générés automatiquement. Le service de conversion met en correspondance les fragments de formulaires adaptatifs sans schéma ou basés sur des schémas JSON disponibles avec des formulaires PDF d’entrée (formulaires PDF non interactifs uniquement). En cas de correspondance, le fragment de formulaire adaptatif concerné est utilisé dans les formulaires adaptatifs correspondants.
+
    >[!NOTE]
    >
    >
@@ -105,6 +107,7 @@ Si vous sélectionnez cette option, le service de conversion génère un formula
 
    * En cas de conversion réussie, le formulaire adaptatif converti et le schéma associé sont téléchargés vers le chemin spécifié dans l’onglet **[!UICONTROL Basic]** (De base) de la boîte de dialogue de conversion. Les fragments de formulaire et le schéma correspondant ne sont téléchargés que si l’option Extract Fragment (Extraire les fragments) est sélectionnée avant le démarrage de la conversion.
    * En cas d’échec de la conversion, le message **[!UICONTROL Conversion Failed]** (Échec de la conversion) s’affiche si aucun formulaire d’entrée n’est converti et le message **[!UICONTROL Partially Failed]** (Échec partiel) apparaît lorsque seuls quelques formulaires d’entrée ne sont pas parvenus à être convertis. Un message électronique est alors envoyé à l’[adresse de messagerie configurée](configure-service.md#configureemailnotification) et une erreur est signalée dans le fichier error.log.
+
    Si vous convertissez un formulaire PDF basé sur XFA en un formulaire adaptatif, le service de conversion associe automatiquement le formulaire PDF au formulaire adaptatif converti en tant que modèle de document d’enregistrement. Après la conversion, vous pouvez ouvrir les propriétés du formulaire adaptatif pour afficher le modèle de document d’enregistrement dans la section **[!UICONTROL Document of Record Template Configuration]** (Configuration du modèle de document d’enregistrement) de l’onglet **[!UICONTROL Form Model]** (Modèle de formulaire). </br>
 
    Le service de conversion ne télécharge automatiquement le formulaire PDF vers le formulaire adaptatif converti en tant que modèle de document d’enregistrement que si vous activez l’option **[!UICONTROL Tools]** (Outils) > **[!UICONTROL Cloud Services]** (Services cloud) > **[!UICONTROL Automated Forms Conversion Configuration]** (Configuration de la conversion automatisée de formulaires) > **[!UICONTROL Properties of selected configuration]** (Propriétés de la configuration sélectionnée) > **[!UICONTROL Advanced]** (Avancé) > **[!UICONTROL Generate Document of Record]** (Générer un document d’enregistrement).
