@@ -7,10 +7,10 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: 902131e27d458b88f7f5c5f85c90de89f77e4bd7
+source-git-commit: 1c48cc1b271bfea19ac2394eaf40be21060a349e
 workflow-type: tm+mt
-source-wordcount: '791'
-ht-degree: 96%
+source-wordcount: '780'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Avant de commencer à utiliser le service de conversion automatisée de formulai
    * Aucune prise en charge des panneaux répétables pour les formulaires basés sur XFA.
    * Si vous modifiez une liste dans un tableau à l’aide de l’éditeur de vérification et de correction, la largeur des rangées ne s’ajuste pas automatiquement et le texte risque de déborder sur la rangée suivante du tableau.
    * La fonctionnalité **[!UICONTROL Auto-detect multi-column layout from input forms]** (Détection automatique d’une mise en page à plusieurs colonnes dans les formulaires d’entrée) ne fonctionne pas avec l’éditeur de vérification et de correction et les fragments de formulaire.
-   * Échec du chargement de la signature tactile créée avec l’éditeur de révision et de correction dans les formulaires adaptatifs publiés. Les utilisateurs ne peuvent pas signer un formulaire adaptatif à l’aide de tels composants de signature tactile.
+   * La signature tactile créée avec l’éditeur de révision et de correction ne se charge pas pour les formulaires adaptatifs publiés.
 
 
 * Pour les formulaires basés sur XFA :
