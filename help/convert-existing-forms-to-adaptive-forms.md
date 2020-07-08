@@ -7,11 +7,11 @@ uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5fdf997fdde07cc4546accebddb85a248f36e057
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1586'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
