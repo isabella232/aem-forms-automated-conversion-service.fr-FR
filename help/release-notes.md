@@ -2,7 +2,7 @@
 title: 'Nouveautés Notes de mise à jour : service de conversion automatisée de formulaires'
 description: 'En savoir plus sur les dernières fonctionnalités et le bogue corrigé pour le service de conversion automatisée de formulaires '
 translation-type: tm+mt
-source-git-commit: 054b6cb03843c28cea19cdbc68e439f86cb1625f
+source-git-commit: 9fe3de9decbebc66c07d99b21424e3183599c64a
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 94%
@@ -24,7 +24,7 @@ Le service de conversion automatisée de formulaires est continuellement amélio
 * Changements prévus
 
 
-## 16 juillet 2020 (AFC-2020.07.1)
+## 16 juillet 2020 (AFC-2020.07.0)
 
 ### Améliorations
 
