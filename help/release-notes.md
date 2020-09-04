@@ -24,7 +24,7 @@ Le service de conversion automatisée de formulaires est continuellement amélio
 * Changements prévus
 
 
-## 16 juillet 2020 (AFC-2020.07.0)
+## 16 juillet 2020 (AFC-2020.07.0)
 
 ### Améliorations
 
@@ -46,7 +46,7 @@ Le service détecte désormais plus efficacement les listes à puces et numérot
 
 ### Instructions spéciales
 
-**Installation du package du connecteur du service de conversion de formulaires automatisé**
+**Installation du package du connecteur du service de conversion Forms automatisé**
 
 Le package connecteur 1.1.38 ou version ultérieure est nécessaire pour utiliser les dernières fonctionnalités et améliorations proposées dans la version AFC-2020.03.1. Vous pouvez télécharger le package connecteur depuis le [partage de package AEM](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
