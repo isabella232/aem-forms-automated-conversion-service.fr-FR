@@ -2,10 +2,10 @@
 title: 'Nouveautés Notes de mise à jour : service de conversion automatisée de formulaires'
 description: 'En savoir plus sur les dernières fonctionnalités et le bogue corrigé pour le service de conversion automatisée de formulaires '
 translation-type: tm+mt
-source-git-commit: 1c6bdd03d5a3ac37a11a31e5c7948c28412b67aa
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 92%
+source-wordcount: '346'
+ht-degree: 88%
 
 ---
 
@@ -26,9 +26,14 @@ Le service de conversion automatisée de formulaires est continuellement amélio
 
 ## 16 juillet 2020 (AFC-2020.07.0)
 
+### Nouveautés
+
+Vous pouvez désormais utiliser le service pour convertir également des formulaires PDF colorés en formulaires adaptatifs.
+
 ### Améliorations
 
 Améliorations de la conversion automatisée des champs de texte, de formulaire et de groupe de choix en composants de formulaire adaptatif correspondants.
+
 
 ## 20 mars 2020 (AFC-2020.03.1)
 
