@@ -6,8 +6,11 @@ seo-description: Liste des styles et des modèles dans les formulaires PDF sourc
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
-translation-type: ht
-source-git-commit: fa3b365b9762a044fddb3820ad3c091d211e0ae6
+translation-type: tm+mt
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+workflow-type: tm+mt
+source-wordcount: '1259'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +33,7 @@ Vous pouvez télécharger tous les formulaires PDF en une seule ou en plusieurs
 * Regroupez les documents sources dans un lot de 8 à 15 documents. Conservez les formulaires sources avec des fragments de formulaires adaptatifs courants dans un seul lot.
 * Ne téléchargez pas de formulaires protégés. Le service ne convertit pas les formulaires protégés par mot de passe et sécurisés.
 * Ne téléchargez pas de [portfolios PDF](https://helpx.adobe.com/fr/acrobat/using/overview-pdf-portfolios.html). Le service ne convertit pas un portfolio PDF en formulaire adaptatif.
-* Ne téléchargez pas de formulaires remplis, numérisés, en couleurs et dans une langue autre que l’anglais. Ces types de formulaires ne sont pas pris en charge.
+* Ne téléchargez pas de formulaires scannés, en langue autre que l’anglais, ni remplis. Ces types de formulaires ne sont pas pris en charge.
 * Ne téléchargez pas de formulaires PDF sources dont le nom comporte des espaces. Supprimez l’espace du nom du fichier avant de télécharger les formulaires.
 
 Lorsque vous utilisez un formulaire XDP pour la conversion, effectuez les étapes suivantes avant de télécharger les formulaires XDP sources :
@@ -64,13 +67,12 @@ Le service commencerait à identifier et à attribuer à ces modèles des champs
 
 | Modèle | Exemple |
 |--- |--- |
-| **Modèle** <br> Le service ne convertit pas les formulaires PDF colorés en formulaires adaptatifs. <br><br>**Résolution **<br>Utilisez des formulaires PDF en noir et blanc ou en niveaux de gris. | ![Formulaire coloré](assets/best-practice-coloured-forms.png) |
-| **Modèle** <br> Le service ne convertit pas les formulaires PDF remplis en formulaires adaptatifs. <br><br>**Résolution **<br>Utilisez des formulaires adaptatifs vides. | ![Formulaire rempli](assets/best-practice-filled-forms.png) |
-| **Modèle** <br>Le service peut ne pas reconnaître le texte et les champs denses. <br><br>**Résolution **<br>Laissez davantage d’espace entre le texte et les champs denses avant de débuter la conversion. |  |
-| **Modèle** <br>Le service ne prend pas en charge les formulaires numérisés. <br><br>**Résolution **<br>N’utilisez pas de formulaires numérisés. | ![Formulaire numérisé](assets/scanned-forms.png) |
-| **Modèle** <br>Le service n’extrait pas d’images et de texte figurant dans les images. <br><br>**Résolution **<br>Ajoutez manuellement des images ou du texte aux formulaires convertis. | ![Formulaire avec image contenant du texte](assets/best-practice-image-with-text.png) |
-| **Modèle** <br>Les tableaux dont les bordures sont en pointillés ou ne sont pas clairement définies ne sont pas convertis. <br><br>**Résolution **<br>Utilisez des tableaux dont les bordures sont clairement définies. pris en charge. | ![Formulaire avec tableau non clair](assets/best-practice-table-dotted-non-clear.png) |
-| **Modèle** <br> Les formulaires adaptatifs ne prennent pas en charge le texte vertical en dehors de la case. Ainsi, le service ne convertit pas le texte vertical en texte de formulaires adaptatifs correspondant. <br><br>**Résolution **<br>Utilisez l’éditeur de formulaire adaptatif pour ajouter du texte vertical, si nécessaire. | ![Formulaire avec tableau non clair](assets/vertical-text.png) |
+| **Modèle** <br> Le service ne convertit pas les formulaires PDF remplis en formulaires adaptatifs. <br><br>**Résolution** <br>Utilisez des formulaires adaptatifs vides. | ![Formulaire rempli](assets/best-practice-filled-forms.png) |
+| **Modèle** <br>Le service peut ne pas reconnaître le texte et les champs denses. <br><br>**Résolution** <br> Laissez davantage d’espace entre le texte et les champs denses avant de débuter la conversion. |  |
+| **Modèle** <br>Le service ne prend pas en charge les formulaires numérisés. <br><br>**Résolution** <br>N’utilisez pas de formulaires numérisés. | ![Formulaire numérisé](assets/scanned-forms.png) |
+| **Modèle** <br>Le service n’extrait pas d’images et de texte figurant dans les images. <br><br>**Résolution** <br> Ajoutez manuellement des images ou du texte aux formulaires convertis. | ![Formulaire avec image contenant du texte](assets/best-practice-image-with-text.png) |
+| **Modèle** <br>Les tableaux dont les bordures sont en pointillés ou ne sont pas clairement définies ne sont pas convertis. <br><br>**Résolution** <br>Utilisez des tableaux dont les bordures sont clairement définies. pris en charge. | ![Formulaire avec tableau non clair](assets/best-practice-table-dotted-non-clear.png) |
+| **Modèle** <br> Les formulaires adaptatifs ne prennent pas en charge le texte vertical en dehors de la case. Ainsi, le service ne convertit pas le texte vertical en texte de formulaires adaptatifs correspondant. <br><br>**Résolution** <br> Utilisez l’éditeur de formulaire adaptatif pour ajouter du texte vertical, si nécessaire. | ![Formulaire avec tableau non clair](assets/vertical-text.png) |
 
 
 
@@ -78,24 +80,24 @@ Le service commencerait à identifier et à attribuer à ces modèles des champs
 
 | Modèle | Résolution |
 |--- |--- |
-| **Modèle** <br> Les options de groupe de choix sous d’autres formes que des cases ou des cercles ne sont pas converties en composants de formulaires adaptatifs correspondants. <br><br>**Résolution **<br>Donnez aux options de choix la forme de cases ou de cercles ou utilisez l’éditeur de vérification et de correction pour identifier les formes. | ![Champs de choix ](assets/best-practice-choice-group-options.png) |
+| **Modèle** <br> Les options de groupe de choix sous d’autres formes que des cases ou des cercles ne sont pas converties en composants de formulaires adaptatifs correspondants. <br><br>**Résolution** <br> Donnez aux options de choix la forme de cases ou de cercles ou utilisez l’éditeur de vérification et de correction pour identifier les formes. | ![Champs de choix ](assets/best-practice-choice-group-options.png) |
 
 ### Champs de formulaire {#form-fields}
 
 | Modèle | Résolution |
 |--- |--- |
-| **Modèle** <br> Le service n’identifie pas les champs dont les bordures ne sont pas clairement définies. <br><br>**Résolution **<br>Utilisez l’éditeur de vérification et de correction pour identifier ces champs. | ![champs dont les bordures ne sont pas clairement définies](assets/best-practice-fields-without-clear-borders.png) |
-| **Modèle** <br> Le service peut ne pas identifier certains champs de formulaire de groupe de choix avec des légendes en bas ou à droite d’un formulaire. <br><br>**Résolution **<br>Utilisez l’éditeur de vérification et de correction pour identifier ces champs | ![Champs de choix](assets/best-practice-caption-bottom-right.png) |
-| **Modèle** <br> Le service fusionne ou attribue un type incorrect à certains champs de formulaire placés très près les uns des autres ou dont les bordures ne sont pas clairement définies. <br><br>**Résolution **<br>Utilisez l’éditeur de vérification et de correction pour identifier ces champs. | ![Champs de choix](assets/best-practice-placed-very-near.png) |
-| **Modèle** <br> Le service peut ne pas reconnaître les champs dont les légendes sont éloignées ou avec une ligne pointillée entre la légende et le champ d’entrée. <br><br>**Résolution **<br>Utilisez des champs de formulaire avec des bordures clairement définies ou utilisez l’éditeur de vérification et de correction pour corriger ces problèmes. | ![Champs éloignés ou ligne pointillée entre le champ et la légende](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
+| **Modèle** <br> Le service n’identifie pas les champs dont les bordures ne sont pas clairement définies. <br><br>**Résolution** <br> Utilisez l’éditeur de vérification et de correction pour identifier ces champs. | ![champs dont les bordures ne sont pas clairement définies](assets/best-practice-fields-without-clear-borders.png) |
+| **Modèle** <br> Le service peut ne pas identifier certains champs de formulaire de groupe de choix avec des légendes en bas ou à droite d’un formulaire. <br><br>**Résolution** <br> Utilisez l’éditeur de vérification et de correction pour identifier ces champs | ![Champs de choix](assets/best-practice-caption-bottom-right.png) |
+| **Modèle** <br> Le service fusionne ou attribue un type incorrect à certains champs de formulaire placés très près les uns des autres ou dont les bordures ne sont pas clairement définies. <br><br>**Résolution** <br> Utilisez l’éditeur de vérification et de correction pour identifier ces champs. | ![Champs de choix](assets/best-practice-placed-very-near.png) |
+| **Modèle** <br> Le service peut ne pas reconnaître les champs dont les légendes sont éloignées ou avec une ligne pointillée entre la légende et le champ d’entrée. <br><br>**Résolution** <br> Utilisez des champs de formulaire avec des bordures clairement définies ou utilisez l’éditeur de vérification et de correction pour corriger ces problèmes. | ![Champs éloignés ou ligne pointillée entre le champ et la légende](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
 
 ### Listes {#lists}
 
 | Modèle | Résolution |
 |--- |--- |
-| **Modèle** <br>Les listes contenant des champs de formulaire sont fusionnées ou ne sont pas converties en composants de formulaires adaptatifs correspondants <br><br>**Résolution **<br>Utilisez des champs de formulaire avec des bordures clairement définies ou utilisez l’éditeur de vérification et de correction pour corriger ces problèmes. | ![listes contenant des groupes de choix](assets/best-practice-lists-containing-form-fields.png) |
-| **Modèle** <br>Le service peut ne pas identifier quelques listes imbriquées <br><br>**Résolution **<br>Utilisez l’éditeur de vérification et de correction pour résoudre ces problèmes. | ![listes contenant des groupes de choix](assets/best-practice-nested-lists.png) |
-| **Modèle** <br> Le service fusionne certaines listes contenant des groupes de choix <br><br>**Résolution **<br>Utilisez l’éditeur de vérification et de correction pour résoudre ces problèmes. | ![listes contenant des groupes de choix](assets/best-practice-check-box-in-table-cells.png) |
+| **Modèle** <br>Les listes contenant des champs de formulaire sont fusionnées ou ne sont pas converties en composants de formulaires adaptatifs correspondants <br><br>**Résolution** <br>Utilisez des champs de formulaire avec des bordures clairement définies ou utilisez l’éditeur de vérification et de correction pour corriger ces problèmes. | ![listes contenant des groupes de choix](assets/best-practice-lists-containing-form-fields.png) |
+| **Modèle** <br>Le service peut ne pas identifier quelques listes imbriquées <br><br>**Résolution** <br> Utilisez l’éditeur de vérification et de correction pour résoudre ces problèmes. | ![listes contenant des groupes de choix](assets/best-practice-nested-lists.png) |
+| **Modèle** <br> Le service fusionne certaines listes contenant des groupes de choix <br><br>**Résolution** <br> Utilisez l’éditeur de vérification et de correction pour résoudre ces problèmes. | ![listes contenant des groupes de choix](assets/best-practice-check-box-in-table-cells.png) |
 
 <!--
 Comment Type: draft
