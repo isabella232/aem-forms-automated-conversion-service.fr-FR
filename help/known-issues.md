@@ -6,11 +6,11 @@ seo-description: Avant de commencer à utiliser le service de conversion automat
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '774'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -69,12 +69,12 @@ Avant de commencer à utiliser le service de conversion automatisée de formulai
 
 ## Restrictions {#limitations}
 
-* Les PDF forms avec une disposition dynamique complexe, des champs avec contour en pointillé ou des champs remplis ne sont pas pris en charge.
+* Les formulaires PDF avec une mise en page dynamique complexe, des champs avec un contour en pointillés ou des champs remplis ne sont pas pris en charge.
 * Les images et le texte dans les images ne sont pas identifiés. Ajoutez manuellement des images aux formulaires convertis.
 * Les documents d’illustration XDP ne sont pas pris en charge.
 * Les formulaires PDF de plus de 15 pages ne sont pas pris en charge.
 * Les documents chiffrés, protégés par mot de passe et sécurisés ne sont pas convertis. Supprimez le chiffrement ou les mots de passe avant d’exécuter la conversion.
-* Les tableaux complexes tels que les tableaux sans bordure, les tableaux imbriqués et les tableaux avec des valeurs d’espace réservé ne sont pas pris en charge. Utilisez l’éditeur de formulaire adaptatif pour ajouter ou modifier des tableaux complexes après la conversion. Seuls les tableaux simples, avec des champs vides, des en-têtes appropriés et des bordures clairement définies sont pris en charge.
+* Les tableaux complexes (par exemple, les tableaux sans bordure, les tableaux imbriqués et les tableaux avec des valeurs d’espace réservé) ne sont pas pris en charge. Utilisez l’éditeur de formulaire adaptatif pour ajouter ou modifier des tableaux complexes après la conversion. Seuls les tableaux simples, avec des champs vides, des en-têtes appropriés et des bordures clairement définies sont pris en charge.
 * Le service convertit uniquement les formulaires en anglais en formulaires adaptatifs. Vous pouvez traduire des formulaires adaptatifs convertis dans une autre langue à l’aide du [Processus de traduction AEM](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * AEM 6.4 Forms ne prend pas en charge la détection automatique de la mise en page à plusieurs colonnes des formulaires d’entrée.
 
