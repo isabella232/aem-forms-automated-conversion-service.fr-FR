@@ -6,11 +6,11 @@ seo-description: questions fréquemment posées relatives au service de conversi
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1723'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 99%
 1. **Le service peut-il être installé sur site ?**
 
    <p>Adobe forme régulièrement les algorithmes d’intelligence artificielle et d’apprentissage automatique du service de conversion automatisée de formulaires avec de nouveaux ensembles de données pour améliorer la précision de la conversion. Les algorithmes mis à jour sont périodiquement déployés sur le service de conversion exécuté sur Adobe Cloud. Tous les clients du service bénéficient des algorithmes mis à jour. Ainsi, le déploiement central hébergé dans le cloud est le mieux adapté au service de conversion automatisée de formulaires afin d’améliorer l’apprentissage et, par extension, les services proposés aux clients.</p> 
-    <p>Le service convertit les formulaires vierges en formulaires adaptatifs. Le service ne prend pas en charge les formulaires remplis et l’extraction de données à partir de formulaires remplis. Supprimez les données des formulaires remplis et supprimez ou mettez sur liste blanche les informations confidentielles des formulaires avant de les envoyer au service de conversion.</p> <br>
+    <p>Le service convertit les formulaires vierges en formulaires adaptatifs. Le service ne prend pas en charge les formulaires remplis et l’extraction de données à partir de formulaires remplis. Supprimez les données des formulaires remplis et supprimez ou mettez sur liste d’autorisation les informations confidentielles des formulaires avant de les envoyer au service de conversion.</p> <br>
 
 1. **Le service prend-il en charge tous les formats de formulaires PDF ? Quelles sont toutes les langues prises en charge ?**
 
@@ -57,7 +57,7 @@ ht-degree: 99%
 
 1. **Le service peut-il convertir des formulaires papier numérisés et des formulaires en couleurs en formulaires adaptatifs ?**
 
-   <p>Le service peut convertir des PDF forms de couleur en formulaires adaptatifs. Le service ne prend pas en charge les formulaires numérisés ou remplis. Pour connaître les autres restrictions, consultez l’article <a href="known-issues.md">Problèmes connus</a>.</p> <br>
+   <p>Le service peut convertir les formulaires PDF colorés en formulaires adaptatifs. Le service ne prend pas en charge les formulaires numérisés ou remplis. Pour connaître les autres restrictions, consultez l’article <a href="known-issues.md">Problèmes connus</a>.</p> <br>
 
 1. **Le service peut-il convertir un formulaire numérisé ou uniquement l’image d’un formulaire en un formulaire adaptatif ?**
 
