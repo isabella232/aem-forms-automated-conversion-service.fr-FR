@@ -1,11 +1,11 @@
 ---
 title: 'Nouveautés Notes de mise à jour : service de conversion automatisée de formulaires'
 description: 'En savoir plus sur les dernières fonctionnalités et le bogue corrigé pour le service de conversion automatisée de formulaires '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9b904622fcf421d82a183569d915926a2761d3f5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Le service de conversion automatisée de formulaires est continuellement amélio
 
 ### Nouveautés
 
-Prise en charge Ajoutée de la conversion de PDF forms colorés en formulaires adaptatifs.
+Ajout de la prise en charge de la conversion des formulaires PDF colorés en formulaires adaptatifs.
 
 ### Améliorations
 
