@@ -3,20 +3,20 @@ cloud: experience-cloud
 product: experience manager
 sub-product: service de conversion de formulaires
 audience: end-user
-user-guide-title: Service de conversion automatisée de formulaires Adobe Experience Manager
+user-guide-title: Service de conversion automatisée pour Adobe Experience Manager Forms
 user-guide-description: Speed up the conversion of print forms to adaptive forms.
 breadcrumb-title: Forms Automated Conversion Guide
 breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 09f609f3a634e33270b94bd09da50f08d0ea0a6e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '77'
 ht-degree: 100%
 
 ---
 
 
-# Service de conversion automatisée de formulaires Adobe Experience Manager {#using}
+# Service de conversion automatisée pour Adobe Experience Manager Forms {#using}
 
 + [Notes de mise à jour](release-notes.md)
 + [Présentation](introduction.md)
