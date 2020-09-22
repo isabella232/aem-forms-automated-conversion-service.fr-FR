@@ -1,6 +1,5 @@
 ---
-title: '[NE PAS PUBLIER] Bonnes pratiques et remarques '
-seo-title: '[NE PAS PUBLIER] Bonnes pratiques et remarques '
+title: 'Bonnes pratiques et remarques '
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -9,16 +8,20 @@ topic-tags: introduction
 discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
-translation-type: ht
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
-workflow-type: ht
-source-wordcount: '555'
+translation-type: tm+mt
+source-git-commit: bc7a0a86a211214d6e43e7c95809f6f40fe267f8
+workflow-type: tm+mt
+source-wordcount: '542'
 ht-degree: 100%
 
 ---
 
 
-# [NE PAS PUBLIER] Bonnes pratiques et remarques {#do-not-publish-best-practices-and-considerations}
+# Bonnes pratiques et remarques {#do-not-publish-best-practices-and-considerations}
+
+<!--
+[DO NOT PUBLISH]
+-->
 
 Le service de conversion automatisée AEM Forms convertit un formulaire PDF en un formulaire adaptatif. Le service utilise des algorithmes d’intelligence artificielle et d’apprentissage automatique pour comprendre la disposition et les champs du formulaire source. Chaque service d’apprentissage automatique tire sans cesse des enseignements des données sources et enregistre ainsi des résultats de plus en plus concluants. Tout comme les humains, ces services apprennent par l’expérience.
 
