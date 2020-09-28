@@ -8,10 +8,10 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 14e6d1fba9f27fde4fe24de83cb00c9847ea4e90
+source-git-commit: fa8a27021fbccdd1c6c0721a6e5c032db486e262
 workflow-type: tm+mt
-source-wordcount: '1688'
-ht-degree: 94%
+source-wordcount: '1694'
+ht-degree: 93%
 
 ---
 
@@ -30,8 +30,8 @@ Le service de conversion automatisée de formulaires AEM Forms, optimisé par A
 
 * **ajoutez les balises de texte Adobe Sign pour générer des documents PDF :** Lorsque le formulaire PDF source comporte des balises [de texte](https://helpx.adobe.com/fr/sign/using/text-tag.html)Adobe Sign, le service convertit automatiquement ces balises en champs de formulaire adaptatif correspondants et les détails du signataire sont automatiquement renseignés. Cette fonctionnalité est disponible uniquement pour les formulaires adaptatifs et les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign.
 
-
-   Pour la liste complète des balises prises en charge, ouvrez un formulaire dans l’éditeur de formulaires adaptatifs et ajoutez un bloc Adobe Sign. Utilisez le bloc Adobe Sign pour rechercher tous les champs Adobe Sign pris en charge. Il fournit une liste déroulante pour sélectionner tous les champs pris en charge.
+   </br>
+    Les formulaires adaptatifs ne prennent en charge que les champs suivants : signature, texte, numéro, date, liste déroulante, bouton radio, case à cocher, initial, bloc de signature, signature numérique, titre du signataire, courrier électronique du signataire, société du signataire, date de signature et champ Adobe Sign du nom complet du signataire. Par conséquent, le service convertit les balises de texte des champs susmentionnés uniquement en champs de formulaire adaptatif correspondants.
 
 ## Démarrer le processus de conversion {#start-the-conversion-process}
 
