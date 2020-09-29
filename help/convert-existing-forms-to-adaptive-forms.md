@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: fa8a27021fbccdd1c6c0721a6e5c032db486e262
 workflow-type: tm+mt
 source-wordcount: '1694'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -28,7 +28,7 @@ Le service de conversion automatisée de formulaires AEM Forms, optimisé par A
 
 * **Préparation des[thèmes](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/themes.html)à appliquer aux formulaires convertis :** l’utilisation d’un thème vous permet d’harmoniser le style de tous les formulaires adaptatifs de votre entreprise.
 
-* **ajoutez les balises de texte Adobe Sign pour générer des documents PDF :** Lorsque le formulaire PDF source comporte des balises [de texte](https://helpx.adobe.com/fr/sign/using/text-tag.html)Adobe Sign, le service convertit automatiquement ces balises en champs de formulaire adaptatif correspondants et les détails du signataire sont automatiquement renseignés. Cette fonctionnalité est disponible uniquement pour les formulaires adaptatifs et les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign.
+* **Ajout de balises de texte Adobe Sign pour générer des documents PDF :** lorsque le formulaire PDF source comporte des [balises de texte Adobe Sign](https://helpx.adobe.com/fr/sign/using/text-tag.html), le service convertit automatiquement ces balises en champs de formulaire adaptatif correspondants et les détails du signataire sont automatiquement renseignés. Cette fonctionnalité est disponible uniquement pour les formulaires Acro. Les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign.
 
    </br>
     Les formulaires adaptatifs ne prennent en charge que les champs suivants : signature, texte, numéro, date, liste déroulante, bouton radio, case à cocher, initial, bloc de signature, signature numérique, titre du signataire, courrier électronique du signataire, société du signataire, date de signature et champ Adobe Sign du nom complet du signataire. Par conséquent, le service convertit les balises de texte des champs susmentionnés uniquement en champs de formulaire adaptatif correspondants.
