@@ -6,11 +6,11 @@ seo-description: questions fréquemment posées relatives au service de conversi
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 14e6d1fba9f27fde4fe24de83cb00c9847ea4e90
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1836'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -135,8 +135,8 @@ L’erreur ci-dessus se produit lorsque Boot Delegation n’est pas configurée 
 
    <p>Vous pouvez utiliser l’éditeur de thèmes ou de styles de formulaires adaptatifs pour modifier la casse d’un champ. Par exemple, vous pouvez ouvrir l’éditeur de thèmes et définir la valeur de la propriété Casse de l’ensemble du texte du formulaire sur majuscules, minuscules ou casse mixte. Vous pouvez également utiliser l’option de remplacement de CSS dans l’éditeur de thèmes pour créer différents types de styles.</p>
 
-1. **Puis-je utiliser des balises texte Adobe Sign avec le service de conversion Forms automatisée ?**
+1. **Puis-je utiliser des balises de texte Adobe Sign avec le service de conversion automatisée de formulaires ?**
 
-   <p> Lorsque vous utilisez le service de conversion Forms automatisé pour convertir un formulaire PDF en formulaire adaptatif et que le formulaire PDF comporte des balises de texte Adobe Sign, ces balises sont converties en champs de formulaire adaptatif correspondants et les détails du signataire sont automatiquement renseignés.  Cette fonctionnalité est disponible uniquement pour Acro Forms et les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign.</p>  </br>
+   <p> Lorsque vous utilisez le service de conversion automatisée de formulaires pour convertir un formulaire PDF en formulaire adaptatif et que le formulaire PDF comporte des balises de texte Adobe Sign, ces balises sont converties en champs de formulaire adaptatif correspondants et les détails du signataire sont automatiquement renseignés.  Cette fonctionnalité est disponible uniquement pour les formulaires Acro. Les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign.</p>  </br>
 
-   <p> Pour la liste complète des balises prises en charge, ouvrez un formulaire dans l’éditeur de formulaires adaptatifs et ajoutez un bloc Adobe Sign. Utilisez le bloc Adobe Sign pour rechercher tous les champs Adobe Sign pris en charge. Il fournit une liste déroulante pour sélectionner tous les champs pris en charge.</p>
+   <p> Pour consulter la liste complète des balises prises en charge, ouvrez un formulaire dans l’éditeur de formulaires adaptatifs et ajoutez un bloc Adobe Sign. Utilisez le bloc Adobe Sign pour rechercher tous les champs Adobe Sign pris en charge. Il fournit une liste déroulante pour sélectionner tous les champs pris en charge.</p>
