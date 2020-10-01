@@ -7,11 +7,11 @@ uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fa8a27021fbccdd1c6c0721a6e5c032db486e262
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1694'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Le service de conversion automatisée de formulaires AEM Forms, optimisé par A
 * **Ajout de balises de texte Adobe Sign pour générer des documents PDF :** lorsque le formulaire PDF source comporte des [balises de texte Adobe Sign](https://helpx.adobe.com/fr/sign/using/text-tag.html), le service convertit automatiquement ces balises en champs de formulaire adaptatif correspondants et les détails du signataire sont automatiquement renseignés. Cette fonctionnalité est disponible uniquement pour les formulaires Acro. Les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign.
 
    </br>
-    Les formulaires adaptatifs ne prennent en charge que les champs suivants : signature, texte, numéro, date, liste déroulante, bouton radio, case à cocher, initial, bloc de signature, signature numérique, titre du signataire, courrier électronique du signataire, société du signataire, date de signature et champ Adobe Sign du nom complet du signataire. Par conséquent, le service convertit les balises de texte des champs susmentionnés uniquement en champs de formulaire adaptatif correspondants.
+    Les formulaires adaptatifs prennent uniquement en charge les champs Adobe Sign suivants : signature, texte, numéro, date, liste déroulante, bouton radio, case à cocher, initial, bloc de signature, signature numérique, titre du signataire, adresse électronique du signataire, entreprise du signataire, date de signature et nom complet du signataire. Ainsi, le service convertit les balises de texte des champs susmentionnés uniquement en champs de formulaire adaptatif correspondants.
 
 ## Démarrer le processus de conversion {#start-the-conversion-process}
 
