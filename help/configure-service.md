@@ -1,11 +1,11 @@
 ---
 title: Configurer le service de conversion automatisée de formulaires
 description: Préparez votre instance AEM à utiliser le service de conversion automatisée de formulaires
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 741ff89370a5215b70d90c49eea220171efe9339
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2676'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -97,7 +97,7 @@ Avant de procéder à la configuration du service et à la connexion de votre in
 
 Une fois qu’Adobe a autorisé l’accès de votre entreprise et octroyé les privilèges requis à l’administrateur, ce dernier peut se connecter à la console d’administration (voir les instructions détaillées ci-dessous), créer un profil et ajouter des développeurs au profil. Les développeurs peuvent connecter une instance locale d’AEM Forms au service de conversion automatisée de formulaires sur Adobe Cloud.
 
-Les développeurs sont des membres de votre entreprise désignés pour exécuter le service de conversion. Seuls les développeurs ajoutés au profil du service de conversion automatisée de formulaires Adobe sont autorisés à utiliser le service de conversion automatisée de formulaires. Suivez les étapes ci-dessous pour créer un profil et y ajouter des développeurs. Au moins un profil est nécessaire pour accorder l’accès requis aux développeurs de votre organisation :
+Les développeurs sont des membres de votre entreprise désignés pour exécuter le service de conversion. Seuls les développeurs ajoutés au profil du service de conversion automatisée de formulaires Adobe sont autorisés à utiliser le service de conversion automatisée de formulaires. Pour créer un profil et y ajouter des développeurs, procédez comme suit : Au moins un profil est nécessaire pour accorder l’accès requis aux développeurs de votre entreprise :
 
 1. Connectez-vous à la [console d’administration](https://adminconsole.adobe.com/). Utilisez l’**Adobe ID** d’administrateur fourni afin d’utiliser le service de conversion automatisée de formulaires pour vous connecter. N’utilisez aucun autre ID ou Federated ID pour vous connecter.
 1. Cliquez sur l’option **[!UICONTROL Automated Forms Conversion]** (Conversion automatisée de formulaires).
