@@ -7,11 +7,11 @@ uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
-translation-type: ht
-source-git-commit: fa8a27021fbccdd1c6c0721a6e5c032db486e262
-workflow-type: ht
-source-wordcount: '1694'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 19c688ae925774c008683be8b92afcbfb9f2bcdb
+workflow-type: tm+mt
+source-wordcount: '1708'
+ht-degree: 93%
 
 ---
 
@@ -24,14 +24,15 @@ Le service de conversion automatisée de formulaires AEM Forms, optimisé par A
 
 * [**Configuration du service de conversion**](configure-service.md)
 
-* **Préparation des[modèles](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/template-editor.html)à appliquer aux formulaires convertis :** l’utilisation d’un modèle vous permet d’harmoniser l’identité graphique de tous les formulaires adaptatifs. De plus, le service de conversion automatisée de formulaires n’extrait et n’utilise pas l’en-tête et le pied de page des documents PDF sources. Vous pouvez utiliser des modèles de formulaires adaptatifs pour spécifier l’en-tête et le pied de page. L’en-tête et le pied de page spécifiés dans le modèle sont appliqués au formulaire adaptatif lors de la conversion. Lorsque vous créez un dossier pour les modèles, sélectionnez l’option **[!UICONTROL Parcourir les configurations]** pour tous les utilisateurs.
+* **Préparation des [modèles](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/template-editor.html) à appliquer aux formulaires convertis :** l’utilisation d’un modèle vous permet d’harmoniser l’identité graphique de tous les formulaires adaptatifs. De plus, le service de conversion automatisée de formulaires n’extrait et n’utilise pas l’en-tête et le pied de page des documents PDF sources. Vous pouvez utiliser des modèles de formulaires adaptatifs pour spécifier l’en-tête et le pied de page. L’en-tête et le pied de page spécifiés dans le modèle sont appliqués au formulaire adaptatif lors de la conversion. Lorsque vous créez un dossier pour les modèles, sélectionnez l’option **[!UICONTROL Parcourir les configurations]** pour tous les utilisateurs.
 
-* **Préparation des[thèmes](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/themes.html)à appliquer aux formulaires convertis :** l’utilisation d’un thème vous permet d’harmoniser le style de tous les formulaires adaptatifs de votre entreprise.
+* **Préparation des [thèmes](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/themes.html) à appliquer aux formulaires convertis :** l’utilisation d’un thème vous permet d’harmoniser le style de tous les formulaires adaptatifs de votre entreprise.
 
-* **Ajout de balises de texte Adobe Sign pour générer des documents PDF :** lorsque le formulaire PDF source comporte des [balises de texte Adobe Sign](https://helpx.adobe.com/fr/sign/using/text-tag.html), le service convertit automatiquement ces balises en champs de formulaire adaptatif correspondants et les détails du signataire sont automatiquement renseignés. Cette fonctionnalité est disponible uniquement pour les formulaires Acro. Les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign.
+* **Ajoutez les balises de texte Adobe Sign pour générer des documents PDF :** Lorsqu’un formulaire PDF source comporte des balises [de texte](https://helpx.adobe.com/fr/sign/using/text-tag.html)Adobe Sign, le service conserve toutes les informations liées au signataire pendant la conversion. Le formulaire adaptatif généré renseigne tous les détails du signataire tout en envoyant le formulaire adaptatif au service Adobe Sign pour signature. Cette fonction est disponible uniquement pour AcroForms et les propriétés du formulaire adaptatif s’alignent exactement avec les propriétés AcroForm.
 
-   </br>
-    Les formulaires adaptatifs prennent uniquement en charge les champs Adobe Sign suivants : signature, texte, numéro, date, liste déroulante, bouton radio, case à cocher, initial, bloc de signature, signature numérique, titre du signataire, adresse électronique du signataire, entreprise du signataire, date de signature et nom complet du signataire. Ainsi, le service convertit les balises de texte des champs susmentionnés uniquement en champs de formulaire adaptatif correspondants.
+Pour ajouter des balises de texte Adobe Sign à vos documents PDF source, remplacez le nom du champ du document PDF source par une balise [de](https://helpx.adobe.com/fr/sign/using/text-tag.html) texte ou utilisez l’article Convertir en formulaire Adobe Sign décrit dans [Création de formulaires à l’aide de l’article Acrobat DC](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) .
+
+
 
 ## Démarrer le processus de conversion {#start-the-conversion-process}
 
