@@ -1,9 +1,16 @@
 ---
-source-git-commit: 5f945d77db476387159d342511b82691cf7708ee
+source-git-commit: 55bee52ffe5dce8f6fd43f6212a8b6d5772d2a31
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '520'
+ht-degree: 85%
 
 ---
 # Article relatif aux contributions
+
+| EXL-PR | EXL | Aperçu | Activer | Publié | Aide |
+|--- |--- |--- |--- |--- |--- |
+| [![État de la création](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_pr-exl/lastBuild/) | [![État de la création](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_exl/lastBuild/lastBuild) | [URL de la prévisualisation](https://experienceleague.corp.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [URL en direct](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/home.html?lang=en) | [Guide de création](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/introduction.html?lang=en) |
 
 Nous sommes ouverts aux contributions de notre communauté et des employés d’Adobe ne faisant pas partie des équipes de documentation.
 
@@ -33,9 +40,9 @@ Si vous faites partie de la communauté Adobe et souhaitez créer un article ou 
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). You must complete the online form before we can review your pull request.
 -->
 
-### Modifications majeures provenant d’employés d’Adobe
+### Modifications majeures provenant d&#39;employés d’Adobe
 
-Si vous êtes rédacteur technique, chef de programme ou développeur de l’équipe produit d’une solution [!UICONTROL Adobe Experience Cloud] et que votre rôle consiste à rédiger des articles techniques ou d’y contribuer, utilisez le référentiel privé à l’adresse `https://git.corp.adobe.com/AdobeDocs`. Consultez le [Guide de collaboration interne](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html).
+Si vous êtes rédacteur technique, chef de programme ou développeur de l’équipe produit d’une solution [!UICONTROL Adobe Experience Cloud] et que votre rôle consiste à rédiger des articles techniques ou d’y contribuer, vous devriez utiliser le référentiel privé à l’adresse `https://git.corp.adobe.com/AdobeDocs`. Consultez le [Guide de collaboration interne](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html).
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
