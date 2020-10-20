@@ -8,10 +8,10 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 773dae94d4e65b72de3518ebf5be4350db34fbb0
+source-git-commit: 1c4eb103b1d3b40ead4137f05e6af01d581365e5
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 93%
+source-wordcount: '1725'
+ht-degree: 92%
 
 ---
 
@@ -28,10 +28,8 @@ Le service de conversion automatisée de formulaires AEM Forms, optimisé par A
 
 * **Préparation des [thèmes](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/themes.html) à appliquer aux formulaires convertis :** l’utilisation d’un thème vous permet d’harmoniser le style de tous les formulaires adaptatifs de votre entreprise.
 
-* **Ajoutez les balises de texte Adobe Sign pour générer des documents PDF :** Lorsqu’un formulaire PDF source comporte des balises [de texte](https://helpx.adobe.com/fr/sign/using/text-tag.html)Adobe Sign, le service conserve toutes les informations liées à Adobe Sign pendant la conversion. Le formulaire adaptatif généré conserve intactes les informations du signataire relatives aux champs de formulaire adaptatif correspondants tout en envoyant le formulaire adaptatif au service Adobe Sign pour signature. Cette fonction est disponible uniquement pour AcroForms et les propriétés du formulaire adaptatif s’alignent exactement avec les propriétés AcroForm.
-
+* **Ajoutez les balises de texte Adobe Sign pour générer des documents PDF :** Lorsqu’un formulaire PDF source comporte des balises [de texte](https://helpx.adobe.com/fr/sign/using/text-tag.html)Adobe Sign, le service conserve toutes les informations liées à Adobe Sign pendant la conversion. Le formulaire adaptatif généré associe les informations du signataire présentes dans AcroForm aux champs du formulaire adaptatif et conserve intactes les données liées aux champs correspondants du formulaire adaptatif tout en envoyant le formulaire adaptatif au service de signature d’Adobe pour signature. Cette fonction est disponible uniquement pour AcroForms et les propriétés du formulaire adaptatif s’alignent exactement avec les propriétés AcroForm. <br>\
    Pour ajouter des balises de texte Adobe Sign à vos documents PDF source, remplacez le nom du champ du document PDF source par une balise [de](https://helpx.adobe.com/fr/sign/using/text-tag.html) texte ou utilisez l’article Convertir en formulaire Adobe Sign décrit dans [Création de formulaires à l’aide de l’article Acrobat DC](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) .
-
 
 
 ## Démarrer le processus de conversion {#start-the-conversion-process}
