@@ -7,7 +7,7 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: c4f0d07b38cdb6aa162a0b61abe12fe9d1677a8c
+source-git-commit: ac110cc2e8b29603fb7ff8b86c5d323f13bc204e
 workflow-type: tm+mt
 source-wordcount: '1880'
 ht-degree: 97%
@@ -142,4 +142,7 @@ L’erreur ci-dessus se produit lorsque Boot Delegation n’est pas configurée 
    <p> Pour consulter la liste complète des balises prises en charge, ouvrez un formulaire dans l’éditeur de formulaires adaptatifs et ajoutez un bloc Adobe Sign. Utilisez le bloc Adobe Sign pour rechercher tous les champs Adobe Sign pris en charge. Il fournit une liste déroulante pour sélectionner tous les champs pris en charge.</p>
 
 1. **Comment créer un formulaire PDF compatible Adobe Sign ?**
-Pour créer un formulaire PDF compatible Adobe Sign, ajoutez des balises [de texte](https://helpx.adobe.com/fr/sign/using/text-tag.html) Adobe Sign aux noms de champ ou utilisez l’option [Convertir en formulaire](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) Adobe Sign. </br>
+
+   </p>Pour créer un formulaire PDF compatible Adobe Sign :</p>
+
+   Ajoutez les balises [de texte](https://helpx.adobe.com/fr/sign/using/text-tag.html) Adobe Sign aux noms des champs ou utilisez l’option [Convertir en formulaire](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) Adobe Sign.
