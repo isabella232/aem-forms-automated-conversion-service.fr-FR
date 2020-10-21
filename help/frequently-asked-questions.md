@@ -6,11 +6,11 @@ seo-description: questions fréquemment posées relatives au service de conversi
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
-translation-type: ht
-source-git-commit: 14e6d1fba9f27fde4fe24de83cb00c9847ea4e90
-workflow-type: ht
-source-wordcount: '1836'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: c4f0d07b38cdb6aa162a0b61abe12fe9d1677a8c
+workflow-type: tm+mt
+source-wordcount: '1880'
+ht-degree: 97%
 
 ---
 
@@ -140,3 +140,6 @@ L’erreur ci-dessus se produit lorsque Boot Delegation n’est pas configurée 
    <p> Lorsque vous utilisez le service de conversion automatisée de formulaires pour convertir un formulaire PDF en formulaire adaptatif et que le formulaire PDF comporte des balises de texte Adobe Sign, ces balises sont converties en champs de formulaire adaptatif correspondants et les détails du signataire sont automatiquement renseignés.  Cette fonctionnalité est disponible uniquement pour les formulaires Acro. Les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign.</p>  </br>
 
    <p> Pour consulter la liste complète des balises prises en charge, ouvrez un formulaire dans l’éditeur de formulaires adaptatifs et ajoutez un bloc Adobe Sign. Utilisez le bloc Adobe Sign pour rechercher tous les champs Adobe Sign pris en charge. Il fournit une liste déroulante pour sélectionner tous les champs pris en charge.</p>
+
+1. **Comment créer un formulaire PDF compatible Adobe Sign ?**
+Pour créer un formulaire PDF compatible Adobe Sign, ajoutez des balises [de texte](https://helpx.adobe.com/fr/sign/using/text-tag.html) Adobe Sign aux noms de champ ou utilisez l’option [Convertir en formulaire](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) Adobe Sign. </br>
