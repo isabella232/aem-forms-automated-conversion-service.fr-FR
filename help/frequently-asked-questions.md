@@ -7,9 +7,9 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: 7b8e013af91430e86c0014c7a1695abb05c3c0f2
+source-git-commit: 92cd241915ef5818fb004a8982674b4f6753c171
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1839'
 ht-degree: 97%
 
 ---
@@ -138,8 +138,6 @@ L’erreur ci-dessus se produit lorsque Boot Delegation n’est pas configurée 
 1. **Puis-je utiliser des balises de texte Adobe Sign avec le service de conversion automatisée de formulaires ?**
 
    <p> Lorsque vous utilisez le service de conversion automatisée de formulaires pour convertir un formulaire PDF en formulaire adaptatif et que le formulaire PDF comporte des balises de texte Adobe Sign, ces balises sont converties en champs de formulaire adaptatif correspondants et les détails du signataire sont automatiquement renseignés.  Cette fonctionnalité est disponible uniquement pour les formulaires Acro. Les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign.</p>  </br>
-
-   <p> Pour consulter la liste complète des balises prises en charge, ouvrez un formulaire dans l’éditeur de formulaires adaptatifs et ajoutez un bloc Adobe Sign. Utilisez le bloc Adobe Sign pour rechercher tous les champs Adobe Sign pris en charge. Il fournit une liste déroulante pour sélectionner tous les champs pris en charge.</p>
 
 1. **Comment créer un formulaire PDF compatible Adobe Sign ?**
 
