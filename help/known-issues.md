@@ -7,10 +7,10 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: 589eacfd6200f4336b7a4a7708e10f3dfe08406d
+source-git-commit: 92cd241915ef5818fb004a8982674b4f6753c171
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 95%
+source-wordcount: '815'
+ht-degree: 94%
 
 ---
 
@@ -78,6 +78,6 @@ Avant de commencer à utiliser le service de conversion automatisée de formulai
 * Le service convertit uniquement les formulaires en anglais en formulaires adaptatifs. Vous pouvez traduire des formulaires adaptatifs convertis dans une autre langue à l’aide du [Processus de traduction AEM](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * AEM 6.4 Forms ne prend pas en charge la détection automatique de la mise en page à plusieurs colonnes des formulaires d’entrée.
 * Les informations codées à l’aide de couleurs dans le formulaire PDF source ne sont pas transférées vers le formulaire adaptatif.
-* Les couleurs du formulaire PDF source sont transférées vers les thèmes de formulaire adaptatif.
+* Les couleurs du formulaire PDF source ne sont pas transférées vers les thèmes de formulaire adaptatif.
 * Les PDF forms colorés sont traités comme des formulaires en niveaux de gris et les champs sont détectés en conséquence.
 
