@@ -7,11 +7,11 @@ uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4f0d07b38cdb6aa162a0b61abe12fe9d1677a8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1596'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Le service de conversion automatisée de formulaires AEM Forms, optimisé par A
 
 * **Préparation des [thèmes](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/themes.html) à appliquer aux formulaires convertis :** l’utilisation d’un thème vous permet d’harmoniser le style de tous les formulaires adaptatifs de votre entreprise.
 
-* **(Facultatif)** [**Convertir vos PDF forms sources en formulaire Adobe Sign**](frequently-asked-questions.md)
+* **(facultatif)** [**Convertir vos formulaires PDF sources en formulaire Adobe Sign**](frequently-asked-questions.md)
 
 
 ## Démarrer le processus de conversion {#start-the-conversion-process}
