@@ -6,9 +6,9 @@ seo-description: Vérifier et corriger les formulaires adaptatifs convertis par 
 uuid: 5a0a6d24-dff6-4732-b607-24848b07b26d
 topic-tags: forms
 discoiquuid: f45ab2d7-5234-42d6-aeb6-b2cb1a7ce3c2
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3c12751cad2b3c04ad66a98ac17f20f648530d0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2587'
 ht-degree: 100%
 
@@ -187,7 +187,7 @@ Appuyez sur le bouton **[!UICONTROL Save]** (Enregistrer) pour enregistrer les m
 
 Après avoir apporté toutes les modifications requises dans l’éditeur de vérification et de correction, vous pouvez convertir à nouveau le formulaire. Pour convertir le formulaire, appuyez sur **[!UICONTROL Save &amp; Convert]** (Enregistrer et convertir). Le libellé **[!UICONTROL Sent for conversion]** (Envoyé pour conversion) est ajouté au dossier contenant le document source et le formulaire source mis à jour est téléchargé vers le service de conversion exécuté sur Adobe I/O.
 
-Selon la complexité du formulaire, la conversion peut prendre un certain temps. Une fois la conversion terminée, le formulaire adaptatif converti et les ressources associées sont téléchargés sur votre ordinateur. Vous pouvez ensuite vérifier le formulaire dans l’éditeur et l’ouvrir dans l’[éditeur de formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/introduction-forms-authoring.html) pour apporter les dernières modifications nécessaires.
+Selon la complexité du formulaire, la conversion peut prendre un certain temps. Une fois la conversion terminée, le formulaire adaptatif converti et les ressources associées sont téléchargés sur votre ordinateur. Vous pouvez ensuite vérifier le formulaire dans l’éditeur et l’ouvrir dans l’[éditeur de formulaire adaptatif](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html) pour apporter les dernières modifications nécessaires.
 
 Si vous renvoyez un formulaire pour conversion après l’avoir mis à jour dans l’éditeur de formulaire adaptatif, toutes les modifications apportées au formulaire adaptatif seront perdues. Vous ne pouvez ouvrir un formulaire dans l’éditeur de vérification et de correction qu’après avoir effectué la conversion.
 
