@@ -8,8 +8,11 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: caccb547a5741eb0e70ddf75630a661f8fe75cb3
+workflow-type: tm+mt
+source-wordcount: '2596'
+ht-degree: 100%
 
 ---
 
@@ -76,7 +79,7 @@ Cet article décrit les processus recommandés pour préremplir les valeurs de c
   <tr>
   <td><p>schéma XSD.</p></td> 
    <td> 
-    <p>Vous sélectionnez le schéma XSD comme source de données. Selon la source de données sélectionnée, vous <a href="#generate-adaptive-forms-with-no-data-binding">générez un formulaire adaptatif sans liaison de données</a> à l’aide du service de conversion automatisée de formulaires et configurez le schéma XSD comme source de données. Vous liez manuellement les champs de formulaire adaptatif au schéma XSD et <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">utilisez l’un des protocoles pris en charge</a> pour préremplir les valeurs de champ. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.</p>
+    <p>Vous sélectionnez le schéma XSD comme source de données. Selon la source de données sélectionnée, vous <a href="#generate-adaptive-forms-with-no-data-binding">générez un formulaire adaptatif sans liaison de données</a> à l’aide du service de conversion automatisée de formulaires et configurez le schéma XSD comme source de données. Vous liez manuellement les champs de formulaire adaptatif au schéma XSD et <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">utilisez l’un des protocoles pris en charge</a> pour préremplir les valeurs de champ. Si nécessaire, modifiez les valeurs de champ et envoyez les données au référentiel crx-repository.</p>
     </td> 
   </tr>
   <tr>
@@ -273,6 +276,7 @@ Procédez comme suit :
 1. Appuyez sur la zone de texte Applicant Name (Nom du demandeur) et sélectionnez ![icône de configuration](assets/configure_icon.svg) (Configurer).
 
    1. Dans le champ Bind Reference (Référence de liaison), sélectionnez **Applicant** (Demandeur) > **Name** (Nom), puis appuyez sur ![icône terminé](assets/save_icon.svg) pour enregistrer les propriétés. De même, créez une liaison de données pour les champs **Address** (Adresse), **Phone Number** (Numéro de téléphone), **E-mail** (Adresse électronique), **Occupation** (Profession), **Annual Salary (in dollars)** (Salaire annuel (en dollars)) et **No. of dependent family members** (Nombre de personnes à charge) avec les entités de modèle de données de formulaire.
+
    ![Lier les références](assets/bind_references.png)
 
 1. Appuyez sur **[!UICONTROL Preview]** (Aperçu) pour afficher les valeurs de champs de formulaires adaptatifs préremplies.
@@ -305,6 +309,7 @@ Exécutez les étapes suivantes pour utiliser l’[éditeur de règles](https://
    1. Créez une liaison pour les champs de formulaires adaptatifs avec les entités de modèle de données de formulaire à l’aide de la section Output (Sortie). Par exemple, liez le champ de formulaire adaptatif **[!UICONTROL Applicant Name]** (Nom de demandeur) à l’entité **name** (nom).
 
    1. Appuyez sur **[!UICONTROL Done]** (Terminé). Appuyez à nouveau sur **[!UICONTROL Done]** (Terminé) sur la page Rule Editor (Éditeur de règles).
+
    ![Éditeur de règles pour lier les références](assets/rule_editor_bind_references.png)
 
 1. Appuyez sur **[!UICONTROL Preview]** (Aperçu) pour afficher les valeurs de champs de formulaires adaptatifs préremplies.
