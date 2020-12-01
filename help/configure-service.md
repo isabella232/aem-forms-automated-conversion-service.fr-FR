@@ -1,9 +1,9 @@
 ---
 title: Configurer le service de conversion automatisée de formulaires
 description: Préparez votre instance AEM à utiliser le service de conversion automatisée de formulaires
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 741ff89370a5215b70d90c49eea220171efe9339
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2676'
 ht-degree: 100%
 
