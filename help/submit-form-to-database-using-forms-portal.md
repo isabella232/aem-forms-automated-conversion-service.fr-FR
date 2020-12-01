@@ -4,9 +4,9 @@ description: Étendez le métamodèle par défaut pour ajouter un modèle, des v
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ead1b4ee177029c60f095dc596b1f3db5878760e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 100%
 
@@ -156,7 +156,7 @@ Procédez aux étapes de configuration suivantes pour créer une connexion entre
    <table> 
     <tbody> 
     <tr> 
-    <th><strong>Propriétés</strong></th> 
+    <th><strong>Propriété</strong></th> 
     <th><strong>Description</strong></th>
     <th><strong>Valeur</strong></th> 
     </tr> 
