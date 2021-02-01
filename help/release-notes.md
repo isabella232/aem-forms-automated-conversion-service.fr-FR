@@ -2,10 +2,10 @@
 title: 'Nouveautés Notes de mise à jour : service de conversion automatisée de formulaires'
 description: 'En savoir plus sur les dernières fonctionnalités et le bogue corrigé pour le service de conversion automatisée de formulaires '
 translation-type: tm+mt
-source-git-commit: 8808e2d9c762617ba67e2f1ab4e103f828e11c58
+source-git-commit: befed9c6221e473e86f3453e793744250909651c
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,6 +23,10 @@ Le service de conversion automatisée de formulaires est continuellement amélio
 * Instructions spéciales
 * Changements prévus
 
+
+## 28 janvier 2021 (AFC-2021.01)
+
+Amélioration des performances lors de l’organisation des champs de formulaire dans les panneaux et de la génération de titres pour les panneaux.
 
 ## 16 juillet 2020 (AFC-2020.07.0)
 
