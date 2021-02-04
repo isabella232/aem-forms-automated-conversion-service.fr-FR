@@ -4,8 +4,8 @@ description: 'En savoir plus sur les dernières fonctionnalités et le bogue cor
 translation-type: tm+mt
 source-git-commit: 765f7bd4126fe4b8f4dd92c4b3eb556dae4e9ff0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '366'
+ht-degree: 93%
 
 ---
 
