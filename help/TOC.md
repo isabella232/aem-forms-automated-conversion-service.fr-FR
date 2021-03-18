@@ -9,11 +9,13 @@ user-guide-title: Service de conversion automatisée pour Adobe Experience Manag
 user-guide-description: Convertissez des formulaires PDF en formulaires HTML dynamiques et compatibles avec les appareils mobiles.
 breadcrumb-title: Guide de conversion automatisée de Forms
 breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
+feature: Formulaires adaptatifs
+role: Professionnel
 translation-type: tm+mt
-source-git-commit: ab178dd8d1786c6c341d4a1a3da0aecebead31dd
+source-git-commit: b3946630c5180a600fe7acc25f1084601dec04ef
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 100%
+source-wordcount: '95'
+ht-degree: 97%
 
 ---
 
