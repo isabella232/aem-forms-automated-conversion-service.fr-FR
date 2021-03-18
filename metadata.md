@@ -1,17 +1,14 @@
 ---
 cloud: experience-cloud
-solution-title: Service de conversion de formulaires automatisé
-solution-hub-url: https://helpx.adobe.com/fr/support/experience-manager/6-5.html
-solution-icon: assets/experience-cloud-logo-24.png
-getting-started-title: Prise en main
-getting-started-url: https://helpx.adobe.com/experience-manager/tutorials.html
-tutorials-title: Tutoriels
-tutorials-url: https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-5-videos.html
 mini-toc-levels: 2
-git-repo: https://github.com/AdobeDocs/aem-forms-automated-conversion-service.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/aem-forms-automated-conversion-service.fr-FR
 index: y
+feature-set: Experience Manager Forms
 translation-type: tm+mt
-source-git-commit: cf97c1b8dabb36793ca05ddbc328a1a0ddba93eb
+source-git-commit: 9e931f3eeb3138345cfe0076652bdd3c300dbb35
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 96%
 
 ---
 
@@ -34,5 +31,5 @@ Dans le fichier TOC.md
 
 | metadata | effets |
 |--- |--- |
-| guide-utilisateur-titre | Utilisé dans l’en-tête de l’article en tant que lien. |
+| user-guide-title | Utilisé dans l’en-tête de l’article en tant que lien. |
 | user-guide-url | Ouvre la page hub helpx. |
