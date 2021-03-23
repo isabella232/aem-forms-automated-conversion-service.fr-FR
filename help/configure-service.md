@@ -1,12 +1,12 @@
 ---
 title: Configurer le service de conversion automatisée de formulaires
 description: Préparez votre instance AEM à utiliser le service de conversion automatisée de formulaires
-role: Professionnel, Administrateur
-translation-type: tm+mt
+role: Professionnel, administrateur
+translation-type: ht
 source-git-commit: 9baad788f3e871eb4ce2cbda4bbf4d2e2ac6dd95
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2679'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Cette aide décrit comment un administrateur AEM peut configurer le service de 
 
 **Watch the video or read the article to configure Automated Forms Conversion service** -->
 
-## Intégration{#onboarding}
+## Intégration {#onboarding}
 
 Le service est disponible gratuitement pour les clients sur site AEM 6.4 Forms et AEM 6.5 Forms et les clients d’entreprise Adobe Managed Services. Vous pouvez contacter l’équipe de ventes d’Adobe ou votre représentant Adobe pour demander l’accès au service.
 
@@ -96,11 +96,11 @@ Avant de procéder à la configuration du service et à la connexion de votre in
 
 ### (Pour les administrateurs uniquement) Accorder l’accès aux développeurs de votre entreprise {#adduseranddevs}
 
-Une fois qu’Adobe a autorisé l’accès de votre entreprise et octroyé les privilèges requis à l’administrateur, ce dernier peut se connecter à la console d’administration (voir les instructions détaillées ci-dessous), créer un profil et ajouter des développeurs au profil. Les développeurs peuvent connecter une instance locale d’AEM Forms au service de conversion automatisée de formulaires sur Adobe Cloud.
+Une fois qu’Adobe a autorisé l’accès de votre entreprise et octroyé les privilèges requis à l’administrateur, ce dernier peut se connecter à l’Admin Console (voir les instructions détaillées ci-dessous), créer un profil et ajouter des développeurs au profil. Les développeurs peuvent connecter une instance locale d’AEM Forms au service de conversion automatisée de formulaires sur Adobe Cloud.
 
 Les développeurs sont des membres de votre entreprise désignés pour exécuter le service de conversion. Seuls les développeurs ajoutés au profil du service de conversion automatisée de formulaires Adobe sont autorisés à utiliser le service de conversion automatisée de formulaires. Pour créer un profil et y ajouter des développeurs, procédez comme suit : Au moins un profil est nécessaire pour accorder l’accès requis aux développeurs de votre entreprise :
 
-1. Connectez-vous à la [console d’administration](https://adminconsole.adobe.com/). Utilisez l’**Adobe ID** d’administrateur fourni afin d’utiliser le service de conversion automatisée de formulaires pour vous connecter. N’utilisez aucun autre ID ou Federated ID pour vous connecter.
+1. Connectez-vous à l’[Admin Console](https://adminconsole.adobe.com/). Utilisez l’**Adobe ID** d’administrateur fourni afin d’utiliser le service de conversion automatisée de formulaires pour vous connecter. N’utilisez aucun autre ID ou Federated ID pour vous connecter.
 1. Cliquez sur l’option **[!UICONTROL Automated Forms Conversion]** (Conversion automatisée de formulaires).
 1. Cliquez sur **[!UICONTROL New Profile]** (Nouveau profil) dans l’onglet **[!UICONTROL Products]** (Produits).
 1. Renseignez les champs suivants dans le profil :**[!UICONTROL Name]** (Nom), **[!UICONTROL Display Name]** (Nom d’affichage) et **[!UICONTROL Description]**. Cliquez sur **[!UICONTROL Done]** (Terminé). Le profil est alors créé.
@@ -108,7 +108,7 @@ Les développeurs sont des membres de votre entreprise désignés pour exécuter
    ![Précisez les détails du nouveau profil.](assets/create-new-profile-details.png)
 
 1. Ajoutez un développeur au profil. Pour ajouter les développeurs :
-   1. Dans la [console d’administration](https://adminconsole.adobe.com/enterprise), accédez à l’onglet de présentation.
+   1. Dans l’[Admin Console](https://adminconsole.adobe.com/enterprise), accédez à l’onglet de présentation.
    1. Cliquez sur **[!UICONTROL Assign Developers]** (Attribuer des développeurs) sur la carte de produit requise.
    1. Saisissez les adresses électroniques des développeurs et éventuellement leurs noms et prénoms.
    1. Sélectionnez les profils de produits. Appuyez sur **[!UICONTROL Save]** (Enregistrer).
@@ -138,7 +138,7 @@ Le service de conversion automatisée de formulaires utilise le service de messa
 
 1. Ouvrez la configuration de **[!UICONTROL Day CQ Link Externalizer]**. Dans le champ **[!UICONTROL Domains]** (Domaines), spécifiez le nom de l’hôte ou l’adresse IP et le numéro de port réels pour les instances locales, de l’auteur et de publication. Cliquez sur **[!UICONTROL Save]** (Enregistrer).
 
-#### Ajouter un utilisateur au groupe forms-users{#adduserstousergroup}
+#### Ajouter un utilisateur au groupe forms-users {#adduserstousergroup}
 
 Indiquez une adresse électronique dans le profil de l’utilisateur AEM désigné pour exécuter le service. Assurez-vous que l’utilisateur est membre du groupe d’[utilisateurs de formulaires](https://helpx.adobe.com/fr/experience-manager/6-4/forms/using/forms-groups-privileges-tasks.html). Les courriers électroniques sont envoyés à l’adresse de l’utilisateur qui procède à la conversion. Pour indiquer l’adresse de l’utilisateur et ajouter un utilisateur au groupe d’utilisateurs de formulaires :
 
