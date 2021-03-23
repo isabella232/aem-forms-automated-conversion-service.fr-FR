@@ -11,11 +11,11 @@ breadcrumb-title: Guide de conversion automatisée de Forms
 breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
 feature: Formulaires adaptatifs
 role: Professionnel
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b3946630c5180a600fe7acc25f1084601dec04ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '95'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
