@@ -2,10 +2,10 @@
 title: Présentation
 description: 'Accélérer la conversion des formulaires imprimés en formulaires adaptatifs '
 translation-type: tm+mt
-source-git-commit: c4f0d07b38cdb6aa162a0b61abe12fe9d1677a8c
+source-git-commit: 53b88de185ed1b6669ecfc3c7c6649d5627741e9
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 100%
+source-wordcount: '685'
+ht-degree: 78%
 
 ---
 
@@ -17,22 +17,22 @@ Le service de conversion automatisée de formulaires permet d’accélérer la n
 * réduire les efforts manuels requis pour la conversion de formulaires imprimés en formulaires adaptatifs ;
 * appliquer des modèles et des validations adaptés lors de la conversion ;
 * générer un document d’enregistrement au cours de la conversion ;
-* regrouper les champs récurrents en fragments de formulaire réutilisables ;
+* Regrouper les champs courants dans des fragments de formulaire réutilisables
 * activer Adobe Analytics pendant la conversion.
 
-![C’est simple. Il vous suffit de nous fournir les formulaires sources. Nous nous occupons du reste. Vous obtiendrez des formulaires adaptatifs de qualité que vous pourrez bien évidemment modifier à votre convenance. ](assets/pdf-to-adaptive-form-gitx50.gif)
+![C’est simple. Vous nous fournissez les formulaires sources et nous laissez tout. Nous vous fournissons de superbes formulaires adaptatifs. Vous pouvez toujours bricoler avec la sortie à votre satisfaction. ](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## Intégration {#onboarding}
 
-Le service est disponible gratuitement pour les clients sur site AEM 6.4 Forms et AEM 6.5 Forms et les clients d’entreprise Adobe Managed Services. Vous pouvez contacter l’équipe de ventes d’Adobe ou votre représentant Adobe pour demander l’accès au service.
+Le service est disponible gratuitement pour AEM 6.4 Forms et AEM 6.5 Forms On-Premise clients et pour les clients d&#39;entreprise de services gérés par Adobe. Vous pouvez contacter l’équipe de ventes d’Adobe ou votre représentant Adobe pour demander l’accès au service. Le service est également disponible gratuitement et préactivé pour AEM Forms en tant que client Cloud Service.
 
 Adobe autorise l’accès de votre entreprise et fournit les privilèges requis à la personne désignée comme administrateur au sein de votre entreprise. L’administrateur peut autoriser les développeurs (utilisateurs) AEM Forms de votre entreprise à se connecter au service. Pour en savoir plus, consultez la page [Configurer le service de conversion automatisée de formulaires](configure-service.md).
 
-## Formulaires PDF et langues pris en charge {#supported-languages-and-pdf-forms}
+## PDF forms et langues pris en charge {#supported-languages-and-pdf-forms}
 
 Le service prend en charge les formulaires PDF non interactifs, les formulaires créés avec Adobe Acrobat (AcroForms) et les formulaires basés sur XFA créés à l’aide d’AEM Forms ou d’Adobe LiveCycle.
 
-Le service prend également en charge les formulaires PDF compatibles avec Adobe Sign. Si le formulaire PDF source contient des balises de texte Adobe Sign, le service conserve toutes les informations liées à Adobe Sign pendant la conversion et associe les informations du signataire présentes dans le PDF source aux champs de formulaire adaptatif correspondants. Cette fonction est disponible uniquement pour AcroForms.
+Le service prend également en charge les PDF forms activés pour Adobe Sign. Si le formulaire PDF source contient des balises de texte Adobe Sign, le service conserve toutes les informations liées à Adobe Sign pendant la conversion et associe les informations du signataire présentes dans le PDF source aux champs de formulaire adaptatif correspondants. Cette fonction est disponible uniquement pour AcroForms.
 
 Le service peut uniquement convertir les formulaires en anglais en formulaires adaptatifs. Vous pouvez traduire des formulaires adaptatifs générés dans une autre langue à l’aide du [Processus de traduction AEM](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
@@ -53,12 +53,12 @@ Une fois votre environnement AEM Forms configuré, pour convertir vos formulair
 * Ne téléchargez pas de formulaires sécurisés. Le service ne convertit pas les formulaires protégés par mot de passe et chiffrés.
 * Ne téléchargez pas de formulaires remplis, numérisés, en couleurs et dans une langue autre que l’anglais. Ces types de formulaires ne sont pas pris en charge.
 * Ne téléchargez pas de formulaires PDF dont le nom comporte des espaces.
-* Ne téléchargez pas de [portfolios PDF](https://helpx.adobe.com/fr/acrobat/using/overview-pdf-portfolios.html). Le service ne convertit pas les portfolios PDF en formulaires adaptatifs.
+* Ne téléchargez pas de [portfolios PDF](https://helpx.adobe.com/fr/acrobat/using/overview-pdf-portfolios.html). Le service ne convertit pas un portfolio PDF en formulaire adaptatif.
 * Apportez les modifications suggérées dans l’article [Bonnes pratiques et remarques](styles-and-pattern-considerations-and-best-practices.md) aux formulaires PDF.
 * Pour éviter les pièges, reportez-vous à l’article [Problèmes connus](known-issues.md).
 
 ### 3. Vérifier les formulaires convertis {#review-converted-forms}
 
-Les formulaires réels peuvent avoir des exigences de capture de données complexes en termes de disposition de champs ou de dénomination, ou encore des suggestions implicites qui peuvent ne pas être capturées avec précision par la logique de détection basée sur l’intelligence artificielle et l’apprentissage automatique. Une fois la conversion automatisée terminée, vous pouvez utiliser l’[éditeur de vérification et de correction](review-correct-ui-edited.md) pour vérifier le formulaire converti et apporter les modifications nécessaires afin d’obtenir le résultat souhaité. Après avoir apporté les modifications requises, renvoyez le formulaire pour conversion.
+Les formulaires du monde réel peuvent présenter des exigences complexes de capture de données en termes de disposition des champs, de nommage ou de suggestions implicites qui peuvent ne pas être capturées avec précision par la logique de détection basée sur IA/ML. Une fois la conversion automatisée terminée, vous pouvez utiliser l’[éditeur de vérification et de correction](review-correct-ui-edited.md) pour vérifier le formulaire converti et apporter les modifications nécessaires afin d’obtenir le résultat souhaité. Après avoir apporté les modifications requises, renvoyez le formulaire pour conversion.
 
-Le temps nécessaire à la conversion automatisée dépend de divers facteurs tels que la taille du formulaire d’entrée, la complexité du formulaire, la place dans la file d’attente de traitement du service. L’utilisateur est régulièrement informé de la progression via un indicateur d’état sur le dossier/fichier. Une fois la conversion terminée, une notification est également envoyée par courrier électronique à l’adresse configurée.
+Le temps nécessaire à la conversion automatisée dépend de divers facteurs tels que la taille du formulaire d’entrée, la complexité du formulaire, le prêt sur la file d’attente de traitement du service. L’utilisateur est régulièrement informé de la progression via un indicateur d’état sur le dossier/fichier. Une fois la conversion terminée, une notification est également envoyée par courrier électronique à l’adresse configurée.
