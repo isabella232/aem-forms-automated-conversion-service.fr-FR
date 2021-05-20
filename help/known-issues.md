@@ -6,8 +6,8 @@ seo-description: Avant de commencer à utiliser le service de conversion automat
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
-translation-type: tm+mt
-source-git-commit: 92cd241915ef5818fb004a8982674b4f6753c171
+exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
+source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 100%
@@ -80,4 +80,3 @@ Avant de commencer à utiliser le service de conversion automatisée de formulai
 * Les informations codées à l’aide de couleurs dans le formulaire PDF source ne sont pas transférées vers le formulaire adaptatif.
 * Les couleurs du formulaire PDF source ne sont pas transférées vers les thèmes de formulaire adaptatif.
 * Les formulaires PDF colorés sont traités comme des formulaires en niveaux de gris et les champs sont détectés en conséquence.
-
