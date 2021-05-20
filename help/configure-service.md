@@ -2,14 +2,13 @@
 title: Configurer le service de conversion automatisée de formulaires
 description: Préparez votre instance AEM à utiliser le service de conversion automatisée de formulaires
 role: Business Practitioner, Administrator
-translation-type: ht
-source-git-commit: a9bab62fbe5ecc4b233e9bc55b9e461a5967b471
-workflow-type: ht
-source-wordcount: '2802'
+exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
+source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+workflow-type: tm+mt
+source-wordcount: '2799'
 ht-degree: 100%
 
 ---
-
 
 # Configurer le service de conversion automatisée de formulaires {#about-this-help}
 
@@ -25,13 +24,13 @@ Cette aide décrit comment un administrateur AEM peut configurer le service de 
 
 **Watch the video or read the article to configure Automated Forms Conversion service** -->
 
-## Intégration {#onboarding}
+## Intégration{#onboarding}
 
 Le service est disponible gratuitement pour les clients AEM 6.4 Forms et AEM 6.5 Forms On-Premise et les clients d’entreprise Adobe Managed Services. Vous pouvez contacter l’équipe de ventes d’Adobe ou votre représentant Adobe pour demander l’accès au service. Le service est également disponible gratuitement et préactivé pour les clients AEM Forms as a Cloud Service.
 
 Adobe autorise l’accès de votre entreprise et fournit les privilèges requis à la personne désignée comme administrateur au sein de votre entreprise. L’administrateur peut autoriser les développeurs (utilisateurs) AEM Forms de votre entreprise à se connecter au service.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Pour utiliser le service de conversion automatisée de formulaires, les conditions suivantes doivent être remplies :
 
@@ -40,12 +39,12 @@ Pour utiliser le service de conversion automatisée de formulaires, les conditio
 * Une version opérationnelle d’instance d’auteur AEM 6.4, AEM 6.5 ou AEM Forms as a Cloud Service avec les dernières mises à jour ou le Service Pack le plus récent d’AEM ;
 * utilisateur AEM (sur votre instance AEM) membre du groupe d’utilisateurs de formulaires.
 
-## Configurer l’environnement {#setuptheservice}
+## Configuration de l’environnement {#setuptheservice}
 
 Avant d’utiliser le service, préparez votre instance d’auteur AEM à la connexion au service exécuté sur Adobe Cloud. Pour préparer votre instance à la connexion au service, procédez aux étapes suivantes dans l’ordre indiqué :
 
 1. [Télécharger et installer AEM 6.4 ou AEM 6.5, ou intégrer AEM Forms as a Cloud Service](#aemquickstart)
-1. [Télécharger et installer le dernier Service Pack AEM](#servicepack)
+1. [Téléchargez et installez le dernier Service Pack AEM](#servicepack)
 1. [Télécharger et installer le dernier module complémentaire AEM Forms](#downloadaemformsaddon)
 1. (facultatif) [Télécharger et installer le dernier package connecteur](#installConnectorPackage)
 1. [Créer des thèmes et des modèles personnalisés](#referencepackage)
@@ -67,7 +66,7 @@ Le service de conversion automatisée de formulaires s’exécute sur une instan
 
 Téléchargez et installez le dernier Service Pack AEM. Pour obtenir des instructions détaillées,  consultez [Notes de mise à jour du Service Pack AEM 6.4](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/sp-release-notes.html) ou [Notes de mise à jour du Service Pack AEM 6.5](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/sp-release-notes.html).
 
-### (Pour AEM 6.4 et AEM 6.5 uniquement) Téléchargement et installation du module complémentaire AEM Forms {#downloadaemformsaddon}
+### (Pour AEM 6.4 et AEM 6.5 uniquement) Téléchargement et installation du module complémentaire AEM Forms   {#downloadaemformsaddon}
 
 Une instance AEM contient des fonctionnalités de formulaires de base. Le service de conversion nécessite toutes les capacités d’AEM Forms. Téléchargez et installez le module complémentaire AEM Forms pour bénéficier de toutes les capacités d’AEM Forms. Le module est requis pour la configuration et l’exécution du service de conversion. Pour obtenir des instructions détaillées, consultez [Installer et configurer les fonctionnalités de capture de données](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html).
 
