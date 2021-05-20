@@ -6,14 +6,13 @@ seo-description: Étendez le métamodèle par défaut pour ajouter un modèle, d
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-translation-type: tm+mt
-source-git-commit: 77bdb4e88194bd634dea125852ff2a897bc24678
+exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
+source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
 workflow-type: tm+mt
 source-wordcount: '2401'
 ht-degree: 100%
 
 ---
-
 
 # Étendre le métamodèle par défaut {#extend-the-default-meta-model}
 
@@ -109,7 +108,7 @@ Le concept **allOf** dans le métamodèle permet l’héritage entre les entité
 Chaque propriété peut en outre inclure :
 
 * [ Propriétés du schéma JSON](#jsonschemaproperties)
-* [ Recherche par mots-clés pour appliquer des propriétés aux champs de formulaires adaptatifs générés](#keywordsearch)
+* [Recherche par mots-clés pour appliquer des propriétés aux champs de formulaires adaptatifs générés](#keywordsearch)
 * [Propriétés supplémentaires](#additionalproperties)
 
 ![Propriétés de métamodèle](assets/meta_model_elements.gif)
