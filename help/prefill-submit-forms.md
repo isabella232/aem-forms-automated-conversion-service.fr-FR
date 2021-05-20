@@ -8,14 +8,13 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
-translation-type: tm+mt
-source-git-commit: caccb547a5741eb0e70ddf75630a661f8fe75cb3
+exl-id: 5deef8f5-5098-47c1-b696-b2db59e92931
+source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
 workflow-type: tm+mt
 source-wordcount: '2596'
 ht-degree: 100%
 
 ---
-
 
 # Processus recommandés de préremplissage et d’envoi de formulaires adaptatifs sur la base de sources de données {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
 
@@ -233,8 +232,8 @@ Utilisez le [service de conversion automatisée de formulaires pour convertir](c
 Après avoir généré un formulaire adaptatif sans liaison de données, sélectionnez une source de données pour le formulaire adaptatif :
 
 * [Base de données, OData, ou tout service tiers](#sqldatasource)
-* [Schéma JSON](#jsondatasource)
-* [Schéma XSD](#xsddatasource)
+* [schéma JSON ;](#jsondatasource)
+* [schéma XSD.](#xsddatasource)
 
 >[!NOTE]
 > Si le formulaire adaptatif que vous convertissez à l’aide du service de conversion automatisée de formulaires contient plusieurs champs portant le même nom, assurez-vous que ces champs sont liés aux entités de source de données pour éviter une éventuelle perte de données lors de l’envoi.
@@ -328,8 +327,8 @@ Exécutez les étapes suivantes pour utiliser l’[éditeur de règles](https://
 
 Avant de mettre en pratique le cas d’utilisation, assurez-vous de disposer des éléments suivants :
 
-* [un schéma JSON valide conforme à la structure du schéma JSON](#prepare-data-for-form-model) ;
-* [un formulaire adaptatif sans liaison de données](#generate-adaptive-forms-with-no-data-binding).
+* [un schéma JSON valide conforme à la structure du schéma JSON ;](#prepare-data-for-form-model)
+* [un formulaire adaptatif sans liaison de données.](#generate-adaptive-forms-with-no-data-binding)
 
 Procédez comme suit :
 
@@ -356,8 +355,8 @@ Procédez comme suit :
 
 Avant de mettre en pratique le cas d’utilisation, assurez-vous de disposer des éléments suivants :
 
-* [un schéma XSD valide conforme à la structure du schéma XML](#prepare-data-for-form-model) ;
-* [un formulaire adaptatif sans liaison de données](#generate-adaptive-forms-with-no-data-binding).
+* [un schéma XSD valide conforme à la structure du schéma XML ;](#prepare-data-for-form-model)
+* [un formulaire adaptatif sans liaison de données.](#generate-adaptive-forms-with-no-data-binding)
 
 Procédez comme suit :
 
