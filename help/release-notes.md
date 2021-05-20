@@ -1,14 +1,13 @@
 ---
 title: 'Nouveautés Notes de mise à jour : service de conversion automatisée de formulaires'
-description: 'En savoir plus sur les dernières fonctionnalités et le bogue corrigé pour le service de conversion automatisée de formulaires '
-translation-type: ht
-source-git-commit: 70dc18347e072ccd7c1625f6831554ecfc13f2fb
-workflow-type: ht
+description: En savoir plus sur les dernières fonctionnalités et le bogue corrigé pour le service de conversion automatisée de formulaires
+exl-id: fccafbc9-28c1-4736-922c-24d675b25213
+source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 100%
 
 ---
-
 
 # Notes de mise à jour
 
@@ -31,17 +30,17 @@ Améliorations apportées à l’organisation du contenu de formulaire dans des 
 
 ## 2 février 2021 (AFC-2021.01.2) {#feb-2021}
 
-### Améliorations {#feb-2021-improvements}
+### Améliorations  {#feb-2021-improvements}
 
 Améliorations apportées à l’organisation du contenu du formulaire dans les panneaux et à la génération de titres pour les panneaux lors de la conversion d’un formulaire source en formulaire adaptatif.
 
-## 16 juillet 2020 (AFC-2020.07.2) {#jul-2020}
+## 16 juillet 2020 (AFC-2020.07.2)  {#jul-2020}
 
 ### Nouveautés {#whats-new-jul-2020-}
 
 Ajout de la prise en charge de la conversion des formulaires PDF colorés en formulaires adaptatifs.
 
-### Améliorations {#jul-2020-improvements}
+### Améliorations  {#jul-2020-improvements}
 
 Améliorations de la conversion automatisée des champs de texte, de formulaire et de groupe de choix vers des composants de formulaire adaptatif correspondants.
 
@@ -54,13 +53,13 @@ Améliorations de la conversion automatisée des champs de texte, de formulaire 
 
 Par défaut, le service crée un panneau de niveau supérieur distinct pour chaque page d’un formulaire PDF. Vous pouvez désormais utiliser l’option **[!UICONTROL Auto-detect logical sections]** (Détection automatique de sections logiques) pour abandonner les panneaux au niveau de la page (panneaux basés sur le numéro de page) et créer uniquement des panneaux logiques. Il regroupe également les champs qui n’appartiennent à aucune section avec la section logique précédente et les champs d’une section logique répartis sur deux pages adjacentes en une seule section logique. Par exemple, si certains champs d’une section logique se trouvent à la fin de la première page et d’autres au début de la deuxième page, tous ces champs sont regroupés en une seule section logique.
 
-### Améliorations {#mar-2020-improvements}
+### Améliorations  {#mar-2020-improvements}
 
 **Amélioration de la détection de listes**
 
 Le service détecte désormais plus efficacement les listes à puces et numérotées.
 
-### Instructions spéciales {#special-instructions}
+### Instructions spéciales  {#special-instructions}
 
 **Installation du package connecteur du service de conversion automatisée de formulaires**
 
