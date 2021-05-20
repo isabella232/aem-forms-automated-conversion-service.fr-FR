@@ -1,14 +1,13 @@
 ---
 title: Présentation
-description: 'Accélérer la conversion des formulaires imprimés en formulaires adaptatifs '
-translation-type: ht
-source-git-commit: 53b88de185ed1b6669ecfc3c7c6649d5627741e9
-workflow-type: ht
+description: Accélérer la conversion des formulaires imprimés en formulaires adaptatifs
+exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
+source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 100%
 
 ---
-
 
 # Présentation {#introduction-to-automated-forms-conversion-service}
 
