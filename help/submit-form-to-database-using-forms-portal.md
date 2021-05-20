@@ -4,7 +4,6 @@ description: Étendez le métamodèle par défaut pour ajouter un modèle, des v
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-translation-type: tm+mt
 source-git-commit: ead1b4ee177029c60f095dc596b1f3db5878760e
 workflow-type: tm+mt
 source-wordcount: '1215'
@@ -270,7 +269,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 
 1. Téléchargez le package suivant **aem-fp-db-integration-sample-pkg-6.1.2.zip** vers votre système de fichiers.
 
-   [Obtenir le fichier](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+[Obtenir le fichier](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Accédez au gestionnaire de packages AEM à l’adresse *http://[host]:[port]/crx/packmgr/*.
 1. Cliquez sur **[!UICONTROL Upload Package]** (Télécharger le package).
