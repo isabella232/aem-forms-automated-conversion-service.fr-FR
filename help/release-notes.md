@@ -3,9 +3,9 @@ title: 'Nouveautés Notes de mise à jour : service de conversion automatisée 
 description: En savoir plus sur les dernières fonctionnalités et le bogue corrigé pour le service de conversion automatisée de formulaires
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
 source-git-commit: fd568dca4ac552a1d9695d13ece1d03b2c1457b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
