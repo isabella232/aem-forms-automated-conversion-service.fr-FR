@@ -8,9 +8,9 @@ topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
 source-git-commit: 17d1c447d8aa68341214270932fb076b512422af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1259'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Lorsque vous utilisez un formulaire XDP pour la conversion, effectuez les étap
 
 * Analysez le formulaire XDP et corrigez les problèmes visuels. Assurez-vous que le document source utilise les structures et les contrôles prévus. Par exemple, le formulaire source peut comporter des cases à cocher au lieu de boutons radio pour une seule sélection. Remplacez les cases à cocher par des boutons radio pour produire un formulaire adaptatif avec les composants prévus.
 * [Ajoutez des liaisons au formulaire XDP](http://www.adobe.com/go/learn_aemforms_designer_65_fr) avant de démarrer la conversion. Lorsque des liaisons sont disponibles dans le formulaire XDP source, le service applique automatiquement des liaisons aux champs de formulaires adaptatifs correspondants lors de la conversion. Ainsi, vous ne perdrez pas de temps à appliquer manuellement les liaisons.
-* [Ajoutez des balises Adobe Sign](https://helpx.adobe.com/fr/sign/using/text-tag.html) au fichier XDP. Le service convertit automatiquement les balises Adobe Sign en champs de formulaires adaptatifs correspondants. Les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign. Pour obtenir la liste complète des champs pris en charge, consultez la documentation [Utilisation d’Adobe Sign dans un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=en).
+* [Ajoutez des balises Adobe Sign](https://helpx.adobe.com/fr/sign/using/text-tag.html) au fichier XDP. Le service convertit automatiquement les balises Adobe Sign en champs de formulaires adaptatifs correspondants. Les formulaires adaptatifs prennent en charge un nombre limité de champs Adobe Sign. Pour obtenir la liste complète des champs pris en charge, consultez la documentation [Utilisation d’Adobe Sign dans un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=fr).
 * Si possible, convertissez les tableaux complexes dans les documents XDP en tableaux simples. Un tableau comportant des champs de formulaire dans des cellules de tableau, des cellules de taille inégale, des cellules étendues sur des lignes ou colonnes, des cellules fusionnées, des bordures partielles ou aucune bordure visible est considéré comme un tableau complexe. Un tableau comportant l’un des éléments susmentionnés est considéré comme un tableau complexe.
 <!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
 
@@ -66,7 +66,7 @@ Le service commencerait à identifier et à attribuer à ces modèles des champs
 
 | Modèle | Exemple |
 |--- |--- |
-| **Modèle** <br> Le service ne convertit pas les formulaires PDF remplis en formulaires adaptatifs. <br><br>**Résolution** <br>Utilisez des formulaires adaptatifs vides. | ![Formulaire rempli](assets/best-practice-filled-forms.png) |
+| **Modèle** <br>Le service ne convertit pas les formulaires PDF remplis en formulaires adaptatifs. <br><br>**Résolution** <br>Utilisez des formulaires adaptatifs vides. | ![Formulaire rempli](assets/best-practice-filled-forms.png) |
 | **Modèle** <br>Le service peut ne pas reconnaître le texte et les champs denses. <br><br>**Résolution** <br> Laissez davantage d’espace entre le texte et les champs denses avant de débuter la conversion. |  |
 | **Modèle** <br>Le service ne prend pas en charge les formulaires numérisés. <br><br>**Résolution** <br>N’utilisez pas de formulaires numérisés. | ![Formulaire numérisé](assets/scanned-forms.png) |
 | **Modèle** <br>Le service n’extrait pas d’images et de texte figurant dans les images. <br><br>**Résolution** <br> Ajoutez manuellement des images ou du texte aux formulaires convertis. | ![Formulaire avec image contenant du texte](assets/best-practice-image-with-text.png) |
