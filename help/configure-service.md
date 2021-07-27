@@ -1,16 +1,16 @@
 ---
-title: Configurer le service de conversion automatisée de formulaires
+title: Configuration du service de conversion automatisée de formulaires
 description: Préparez votre instance AEM à utiliser le service de conversion automatisée de formulaires
 role: User, Admin
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
 source-git-commit: 6aae2035969e99abca0d310d8b023e2c22a9e938
 workflow-type: tm+mt
 source-wordcount: '2799'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Configurer le service de conversion automatisée de formulaires {#about-this-help}
+# Configuration du service de conversion automatisée de formulaires {#about-this-help}
 
 Cette aide décrit comment un administrateur AEM peut configurer le service de conversion automatisée de formulaires pour automatiser la conversion de ses formulaires PDF en formulaires adaptatifs. Cette aide est destinée aux administrateurs informatiques et AEM de votre entreprise. Cette aide s’adresse à un public familiarisé avec les technologies suivantes :
 
@@ -44,9 +44,9 @@ Pour utiliser le service de conversion automatisée de formulaires, les conditio
 Avant d’utiliser le service, préparez votre instance d’auteur AEM à la connexion au service exécuté sur Adobe Cloud. Pour préparer votre instance à la connexion au service, procédez aux étapes suivantes dans l’ordre indiqué :
 
 1. [Télécharger et installer AEM 6.4 ou AEM 6.5, ou intégrer AEM Forms as a Cloud Service](#aemquickstart)
-1. [Téléchargez et installez le dernier Service Pack AEM](#servicepack)
+1. [Télécharger et installer le dernier Service Pack AEM](#servicepack)
 1. [Télécharger et installer le dernier module complémentaire AEM Forms](#downloadaemformsaddon)
-1. (facultatif) [Télécharger et installer le dernier package connecteur](#installConnectorPackage)
+1. (Facultatif) [Télécharger et installer le dernier package connecteur](#installConnectorPackage)
 1. [Créer des thèmes et des modèles personnalisés](#referencepackage)
 
 ### Téléchargement et installation d’AEM 6.4 ou AEM 6.5, ou intégration d’AEM Forms as a Cloud Service {#aemquickstart}
@@ -66,7 +66,7 @@ Le service de conversion automatisée de formulaires s’exécute sur une instan
 
 Téléchargez et installez le dernier Service Pack AEM. Pour obtenir des instructions détaillées,  consultez [Notes de mise à jour du Service Pack AEM 6.4](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes/sp-release-notes.html) ou [Notes de mise à jour du Service Pack AEM 6.5](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes/sp-release-notes.html).
 
-### (Pour AEM 6.4 et AEM 6.5 uniquement) Téléchargement et installation du module complémentaire AEM Forms   {#downloadaemformsaddon}
+### (Pour AEM 6.4 et AEM 6.5 uniquement) Téléchargement et installation du module complémentaire AEM Forms  {#downloadaemformsaddon}
 
 Une instance AEM contient des fonctionnalités de formulaires de base. Le service de conversion nécessite toutes les capacités d’AEM Forms. Téléchargez et installez le module complémentaire AEM Forms pour bénéficier de toutes les capacités d’AEM Forms. Le module est requis pour la configuration et l’exécution du service de conversion. Pour obtenir des instructions détaillées, consultez [Installer et configurer les fonctionnalités de capture de données](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html).
 
@@ -127,10 +127,10 @@ Une fois qu’un administrateur vous a accordé un accès en tant que développe
 * [Configurer les notifications par courrier électronique](configure-service.md#configureemailnotification)
 * [Ajouter un utilisateur au groupe forms-users](#adduserstousergroup)
 * [Obtenir des certificats publics](#obtainpubliccertificates)
-* [Configuration des API de service sur la console Adobe Developer](#createintegration)
+* [Configurer les API de service sur Adobe Developer Console](#createintegration)
 * [Configurer le service cloud](configure-service.md#configure-the-cloud-service)
 
-#### Configurer les notifications par courrier électronique {#configureemailnotification}
+#### Configurer les notifications par e-mail {#configureemailnotification}
 
 Le service de conversion automatisée de formulaires utilise le service de messagerie Day CQ pour envoyer des notifications par courrier électronique. Ces notifications contiennent des informations sur les conversions ayant réussi ou échoué. Si vous choisissez de ne pas recevoir de notification, ignorez ces étapes. Pour configurer le service de messagerie Day CQ, procédez comme suit :
 
@@ -147,7 +147,7 @@ Le service de conversion automatisée de formulaires utilise le service de messa
 
 #### Ajouter un utilisateur au groupe forms-users {#adduserstousergroup}
 
-Indiquez une adresse électronique dans le profil de l’utilisateur AEM désigné pour exécuter le service. Assurez-vous que l’utilisateur est membre du groupe d’[utilisateurs de formulaires](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html). Les courriers électroniques sont envoyés à l’adresse de l’utilisateur qui procède à la conversion. Pour indiquer l’adresse de l’utilisateur et ajouter un utilisateur au groupe d’utilisateurs de formulaires :
+Indiquez une adresse électronique dans le profil de l’utilisateur AEM désigné pour exécuter le service. Assurez-vous que l’utilisateur est membre du groupe d’[utilisateurs de formulaires](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=fr). Les courriers électroniques sont envoyés à l’adresse de l’utilisateur qui procède à la conversion. Pour indiquer l’adresse de l’utilisateur et ajouter un utilisateur au groupe d’utilisateurs de formulaires :
 
 1. Connectez-vous à votre instance d’auteur AEM Forms en tant qu’administrateur AEM. Utilisez vos informations d’identification AEM locales pour vous connecter. N’utilisez pas Adobe ID pour vous connecter. Appuyez sur **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** (Outils) > **[!UICONTROL Security]** (Sécurité) > **[!UICONTROL Users]** (Utilisateurs).
 
@@ -223,7 +223,7 @@ Pour utiliser le service de conversion automatisée de formulaires, créez un pr
 
    <br/> <br/>
 
-#### Configuration du service cloud {#configure-the-cloud-service}
+#### Configurer le service cloud {#configure-the-cloud-service}
 
 Créez une configuration de service cloud pour connecter votre instance AEM au service de conversion. Cela vous permet également de spécifier un modèle, un thème et des fragments de formulaire pour une conversion. Vous pouvez créer plusieurs configurations de service cloud distinctes pour chaque ensemble de formulaires. Par exemple, vous pouvez avoir une configuration donnée pour les formulaires du service commercial et une autre pour les formulaires de support client. Pour créer une configuration de service cloud, procédez comme suit :
 
