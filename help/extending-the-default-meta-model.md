@@ -7,10 +7,10 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: 3f91fc0541f8fe8dbc997ae0b401c8a0a49347dd
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 100%
+source-wordcount: '2598'
+ht-degree: 92%
 
 ---
 
@@ -24,7 +24,7 @@ Le métamodèle est un schéma JSON. Avant de commencer, assurez-vous de bien m
 
 ## Métamodèle par défaut {#default-meta-model}
 
-Le service de conversion automatisée de formulaires comprend un métamodèle par défaut. Il s’agit d’un schéma JSON qui se trouve sur Adobe Cloud avec d’autres composants du service de conversion automatisée de formulaires. Une copie du métamodèle est disponible sur votre serveur AEM local à l’adresse suivante : http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json. Vous pouvez également [cliquer ici](assets/global.schema.json) pour accéder au schéma par défaut et le télécharger.
+Le service de conversion automatisée de formulaires comprend un métamodèle par défaut. Il s’agit d’un schéma JSON qui se trouve sur Adobe Cloud avec d’autres composants du service de conversion automatisée de formulaires. Une copie du métamodèle est disponible sur votre serveur AEM local à l’adresse suivante : http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Vous pouvez également [cliquer ici](assets/en.globalschema.json) pour accéder ou télécharger le schéma en anglais. Le métamodèle pour [français](assets/fr.globalschema.json), [allemand](assets/de.globalschema.json) et [espagnol](assets/es.globalschema.json) peut également être téléchargé.
 
 Le schéma du métamodèle dérive des entités de schéma figurant sur https://schema.org/docs/schemas.html. Il inclut notamment les entités Person, PostalAddress et LocalBusiness définies sur https://schema.org. Chaque entité du métamodèle correspond au type d’objet de schéma JSON. Le code suivant représente un exemple de structure de métamodèle :
 
@@ -213,6 +213,45 @@ Vous pouvez utiliser la propriété **aem:afProperties** dans le métamodèle po
   </tr>
  </tbody> 
 </table>
+
+## Créer un métamodèle personnalisé dans votre langue{#language-specific-meta-model}
+
+Vous pouvez créer un métamodèle spécifique à la langue. Ce métamodèle permet de créer des règles de mappage dans la langue de votre choix. Le service Automated forms conversion vous permet de créer des métamodèles dans les langues suivantes :
+
+* Anglais (en)
+* Français (fr)
+* Allemand (de)
+* Espagnol()
+
+Ajoutez la balise *aem:Language* metatag en haut d’un métamodèle pour spécifier sa langue. Par exemple :
+
+```JSON
+"metaTags": {
+        "aem:Language": "de"
+    }
+```
+
+L’anglais est la langue par défaut des métamodèles.
+
+### Observations relatives à la création d’un métamodèle spécifique à une langue
+
+* Assurez-vous que le nom de chaque clé est en anglais. Par exemple, emailAddress.
+* Assurez-vous que toutes les références d’entité et les valeurs prédéfinies de toutes les clés *id* sont en anglais. Par exemple &quot;id&quot; : &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;Entité&quot;.
+* Assurez-vous que la description ou les messages inclus dans un métamodèle pour les clés suivantes correspondent à la langue du métamodèle :
+   * aem:affKeyword
+   * title
+   * description
+   * enumNames
+   * shortDescription
+   * validatePictureClauseMessage
+
+   Par exemple, lorsque la langue du métamodèle est le français (&quot;aem:Language&quot;) : &quot;fr&quot;), assurez-vous que toutes les descriptions et tous les messages sont en français.
+
+* Assurez-vous que toutes les [propriétés de schéma JSON](#jsonschemaproperties) utilisent uniquement les valeurs prises en charge.
+
+L’image suivante présente des exemples de métamodèle de langue anglaise et de métamodèle de langue française correspondant :
+
+![](assets/language-specific-meta-model-comparison.png)
 
 ## Modifier des champs de formulaires adaptatifs à l’aide d’un métamodèle personnalisé {#modify-adaptive-form-fields-using-custom-meta-model}
 
