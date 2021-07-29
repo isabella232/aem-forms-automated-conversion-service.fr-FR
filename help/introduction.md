@@ -2,10 +2,10 @@
 title: Présentation
 description: Accélérer la conversion des formulaires imprimés en formulaires adaptatifs
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: fed54ea64e19c77868e8e58e29e909cf4447f696
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 100%
+source-wordcount: '690'
+ht-degree: 95%
 
 ---
 
@@ -33,9 +33,9 @@ Le service prend en charge les formulaires PDF non interactifs, les formulaires
 
 Le service prend également en charge les formulaires PDF compatibles avec Adobe Sign. Si le formulaire PDF source contient des balises de texte Adobe Sign, le service conserve toutes les informations liées à Adobe Sign pendant la conversion et associe les informations du signataire présentes dans le PDF source aux champs de formulaire adaptatif correspondants. Cette fonction est disponible uniquement pour AcroForms.
 
-Le service peut uniquement convertir les formulaires en anglais en formulaires adaptatifs. Vous pouvez traduire des formulaires adaptatifs générés dans une autre langue à l’aide du [Processus de traduction AEM](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+Le service peut convertir des formulaires en anglais, français, allemand et espagnol en formulaires adaptatifs. Vous pouvez également traduire les formulaires adaptatifs générés dans une autre langue à l’aide de [AEM processus de traduction](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 
-## Processus de conversion {#conversion-workflow}
+## Processus de conversion   {#conversion-workflow}
 
 Le service de conversion automatisée de formulaires s’exécute sur Adobe Cloud. Connectez votre instance AEM au service, téléchargez des formulaires sur votre instance AEM et lancez la conversion. Le processus de conversion est détaillé ci-dessous :
 
