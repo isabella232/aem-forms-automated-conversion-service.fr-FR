@@ -12,7 +12,7 @@ breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.
 feature: Formulaires adaptatifs
 role: User
 source-git-commit: 6aae2035969e99abca0d310d8b023e2c22a9e938
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '92'
 ht-degree: 100%
 
@@ -28,9 +28,9 @@ ht-degree: 100%
 + [Convertir des formulaires imprimés en formulaires adaptatifs](convert-existing-forms-to-adaptive-forms.md)
 + [Vérifier et corriger les formulaires convertis](review-correct-ui-edited.md)
 + [Étendre le métamodèle par défaut](extending-the-default-meta-model.md)
-+ [Processus recommandés de préremplissage et d’envoi de formulaires adaptatifs sur la base de sources de données](prefill-submit-forms.md)
-+ [Processus recommandés pour activer la génération d’un document d’enregistrement pour les formulaires adaptatifs](enable-document-of-record-generation.md)
-+ [Intégrer un formulaire adaptatif à une base de données à l’aide du processus AEM](submit-converted-adaptive-form-to-database.md)
++ [Workflows recommandés de préremplissage et d’envoi de formulaires adaptatifs sur la base de sources de données](prefill-submit-forms.md)
++ [Workflows recommandés pour activer la génération d’un document d’enregistrement pour les formulaires adaptatifs](enable-document-of-record-generation.md)
++ [Intégrer un formulaire adaptatif à une base de données à l’aide d’un workflow AEM](submit-converted-adaptive-form-to-database.md)
 + [Questions fréquemment posées](frequently-asked-questions.md)
 + [Problèmes connus](known-issues.md)
 + [Résolution des problèmes](troubleshoot-afcs.md)
