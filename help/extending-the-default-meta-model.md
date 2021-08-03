@@ -7,10 +7,10 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: 3f91fc0541f8fe8dbc997ae0b401c8a0a49347dd
+source-git-commit: 28e07a0264edaaeef22d211f411f7908ca0abaed
 workflow-type: tm+mt
-source-wordcount: '2598'
-ht-degree: 92%
+source-wordcount: '2620'
+ht-degree: 91%
 
 ---
 
@@ -221,23 +221,23 @@ Vous pouvez créer un métamodèle spécifique à la langue. Ce métamodèle per
 * Anglais (en)
 * Français (fr)
 * Allemand (de)
-* Espagnol()
+* Espagnol (es)
 
 Ajoutez la balise *aem:Language* metatag en haut d’un métamodèle pour spécifier sa langue. Par exemple :
 
 ```JSON
 "metaTags": {
-        "aem:Language": "de"
+        "aem:Language": "fr"
     }
 ```
 
-L’anglais est la langue par défaut des métamodèles.
+Lorsqu’aucune langue n’est spécifiée, le service considère que le métamodèle est en anglais.
 
 ### Observations relatives à la création d’un métamodèle spécifique à une langue
 
 * Assurez-vous que le nom de chaque clé est en anglais. Par exemple, emailAddress.
-* Assurez-vous que toutes les références d’entité et les valeurs prédéfinies de toutes les clés *id* sont en anglais. Par exemple &quot;id&quot; : &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;Entité&quot;.
-* Assurez-vous que la description ou les messages inclus dans un métamodèle pour les clés suivantes correspondent à la langue du métamodèle :
+* Assurez-vous que toutes les références d’entité et les valeurs prédéfinies de toutes les clés d’identifiant comprennent uniquement des caractères ASCII. Par exemple &quot;id&quot; : &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;#ContactPoint&quot;.
+* Assurez-vous que toutes les valeurs correspondant aux clés suivantes se trouvent dans la langue de métamodèle spécifiée :
    * aem:affKeyword
    * title
    * description
@@ -247,7 +247,7 @@ L’anglais est la langue par défaut des métamodèles.
 
    Par exemple, lorsque la langue du métamodèle est le français (&quot;aem:Language&quot;) : &quot;fr&quot;), assurez-vous que toutes les descriptions et tous les messages sont en français.
 
-* Assurez-vous que toutes les [propriétés de schéma JSON](#jsonschemaproperties) utilisent uniquement les valeurs prises en charge.
+* Assurez-vous que toutes les [propriétés de schéma JSON](#jsonschemaproperties) utilisent uniquement les valeurs prises en charge. Par exemple, la propriété type ne peut couvrir que les valeurs sélectionnées de type Chaîne, Nombre, Entier et Booléen.
 
 L’image suivante présente des exemples de métamodèle de langue anglaise et de métamodèle de langue française correspondant :
 
