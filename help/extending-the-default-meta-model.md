@@ -10,7 +10,7 @@ exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
 source-git-commit: 28e07a0264edaaeef22d211f411f7908ca0abaed
 workflow-type: tm+mt
 source-wordcount: '2620'
-ht-degree: 91%
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Le métamodèle est un schéma JSON. Avant de commencer, assurez-vous de bien m
 
 ## Métamodèle par défaut {#default-meta-model}
 
-Le service de conversion automatisée de formulaires comprend un métamodèle par défaut. Il s’agit d’un schéma JSON qui se trouve sur Adobe Cloud avec d’autres composants du service de conversion automatisée de formulaires. Une copie du métamodèle est disponible sur votre serveur AEM local à l’adresse suivante : http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Vous pouvez également [cliquer ici](assets/en.globalschema.json) pour accéder ou télécharger le schéma en anglais. Le métamodèle pour [français](assets/fr.globalschema.json), [allemand](assets/de.globalschema.json) et [espagnol](assets/es.globalschema.json) peut également être téléchargé.
+Le service de conversion automatisée de formulaires comprend un métamodèle par défaut. Il s’agit d’un schéma JSON qui se trouve sur Adobe Cloud avec d’autres composants du service de conversion automatisée de formulaires. Une copie du métamodèle est disponible sur votre serveur AEM local à l’adresse suivante : http://&lt;serveur>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Vous pouvez également [cliquer ici](assets/en.globalschema.json) pour accéder au schéma de langue anglaise et le télécharger. Les métamodèles pour le [français](assets/fr.globalschema.json), l’[allemand](assets/de.globalschema.json) et l’[espagnol](assets/es.globalschema.json) peuvent également être téléchargés.
 
 Le schéma du métamodèle dérive des entités de schéma figurant sur https://schema.org/docs/schemas.html. Il inclut notamment les entités Person, PostalAddress et LocalBusiness définies sur https://schema.org. Chaque entité du métamodèle correspond au type d’objet de schéma JSON. Le code suivant représente un exemple de structure de métamodèle :
 
@@ -107,7 +107,7 @@ Le concept **allOf** dans le métamodèle permet l’héritage entre les entité
 
 Chaque propriété peut en outre inclure :
 
-* [ Propriétés du schéma JSON](#jsonschemaproperties)
+* [Propriétés du schéma JSON](#jsonschemaproperties)
 * [Recherche par mots-clés pour appliquer des propriétés aux champs de formulaires adaptatifs générés](#keywordsearch)
 * [Propriétés supplémentaires](#additionalproperties)
 
@@ -214,16 +214,16 @@ Vous pouvez utiliser la propriété **aem:afProperties** dans le métamodèle po
  </tbody> 
 </table>
 
-## Créer un métamodèle personnalisé dans votre langue{#language-specific-meta-model}
+## Créer un métamodèle personnalisé dans votre langue {#language-specific-meta-model}
 
-Vous pouvez créer un métamodèle spécifique à la langue. Ce métamodèle permet de créer des règles de mappage dans la langue de votre choix. Le service Automated forms conversion vous permet de créer des métamodèles dans les langues suivantes :
+Vous pouvez créer un métamodèle spécifique à la langue. Ce métamodèle permet de créer des règles de mappage dans la langue de votre choix. Le service Conversion de formulaires automatisée vous permet de créer des métamodèles dans les langues suivantes :
 
 * Anglais (en)
 * Français (fr)
 * Allemand (de)
 * Espagnol (es)
 
-Ajoutez la balise *aem:Language* metatag en haut d’un métamodèle pour spécifier sa langue. Par exemple :
+Ajoutez la balise de métadonnées *aem:Language* en haut d’un métamodèle pour spécifier sa langue. Par exemple :
 
 ```JSON
 "metaTags": {
@@ -249,7 +249,7 @@ Lorsqu’aucune langue n’est spécifiée, le service considère que le métamo
 
 * Assurez-vous que toutes les [propriétés de schéma JSON](#jsonschemaproperties) utilisent uniquement les valeurs prises en charge. Par exemple, la propriété type ne peut couvrir que les valeurs sélectionnées de type Chaîne, Nombre, Entier et Booléen.
 
-L’image suivante présente des exemples de métamodèle de langue anglaise et de métamodèle de langue française correspondant :
+L’image suivante présente des exemples de métamodèle de langue anglaise et la correspondance du métamodèle de langue française :
 
 ![](assets/language-specific-meta-model-comparison.png)
 
@@ -340,7 +340,7 @@ Dans ce métamodèle personnalisé, le service de conversion utilise le texte da
 
 #### Convertir un champ de formulaire en cases à cocher à choix multiples dans le formulaire adaptatif {#convert-a-form-field-to-multiple-choice-check-boxes-in-the-adaptive-form}
 
-**Exemple **: remplacez le champ **Country** (Pays) de type string (chaîne) dans le formulaire avant la conversion par des cases à cocher dans le formulaire adaptatif après la conversion.
+**Exemple** : remplacez le champ **Country** (Pays) de type string (chaîne) dans le formulaire avant la conversion par des cases à cocher dans le formulaire adaptatif après la conversion.
 
 Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Country** (Pays) dans le formulaire, le service de conversion remplace le champ par les cases à cocher suivantes à l’aide de la propriété **enum** :
 
