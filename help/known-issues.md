@@ -7,10 +7,10 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 100%
+source-wordcount: '819'
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ Avant de commencer à utiliser le service de conversion automatisée de formulai
 * Les formulaires PDF de plus de 15 pages ne sont pas pris en charge.
 * Les documents chiffrés, protégés par mot de passe et sécurisés ne sont pas convertis. Supprimez le chiffrement ou les mots de passe avant d’exécuter la conversion.
 * Les tableaux complexes (par exemple, les tableaux sans bordure, les tableaux imbriqués et les tableaux avec des valeurs d’espace réservé) ne sont pas pris en charge. Utilisez l’éditeur de formulaire adaptatif pour ajouter ou modifier des tableaux complexes après la conversion. Seuls les tableaux simples, avec des champs vides, des en-têtes appropriés et des bordures clairement définies sont pris en charge.
-* Le service convertit uniquement les formulaires en anglais en formulaires adaptatifs. Vous pouvez traduire des formulaires adaptatifs convertis dans une autre langue à l’aide du [Processus de traduction AEM](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+* Le service convertit uniquement les formulaires en anglais, français, allemand et espagnol en formulaires adaptatifs. Vous pouvez traduire des formulaires adaptatifs convertis dans une autre langue à l’aide du [Processus de traduction AEM](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
 * AEM 6.4 Forms ne prend pas en charge la détection automatique de la mise en page à plusieurs colonnes des formulaires d’entrée.
 * Les informations codées à l’aide de couleurs dans le formulaire PDF source ne sont pas transférées vers le formulaire adaptatif.
 * Les couleurs du formulaire PDF source ne sont pas transférées vers les thèmes de formulaire adaptatif.
