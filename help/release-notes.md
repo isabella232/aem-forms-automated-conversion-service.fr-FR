@@ -5,7 +5,7 @@ exl-id: fccafbc9-28c1-4736-922c-24d675b25213
 source-git-commit: 3bf065a754d8e8f97a660eb2ae39f37341bb4668
 workflow-type: tm+mt
 source-wordcount: '431'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ Le service de conversion automatisée de formulaires est continuellement amélio
 * Instructions spéciales
 * Changements prévus
 
-## 29 juillet 2021 (AFC-2021.07.2) {#july-2021}
+## 29 juillet 2021 (AFC-2021.07.2) {#july-2021}
 
 * Ajout de la possibilité de convertir un formulaire PDF en français, en allemand et en espagnol en formulaire adaptatif.
 
