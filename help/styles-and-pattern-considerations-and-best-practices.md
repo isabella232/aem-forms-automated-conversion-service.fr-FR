@@ -7,10 +7,10 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: c070651253877408466231ab80a6b7e0d04a9fab
+source-git-commit: 730910935e8c9e8a3ab2b670b022989afc403b5a
 workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 99%
+source-wordcount: '1267'
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,8 @@ Vous pouvez télécharger tous les formulaires PDF en une seule ou en plusieurs
 * Regroupez les documents sources dans un lot de 8 à 15 documents. Conservez les formulaires sources avec des fragments de formulaires adaptatifs courants dans un seul lot.
 * Ne téléchargez pas de formulaires protégés. Le service ne convertit pas les formulaires protégés par mot de passe et sécurisés.
 * Ne téléchargez pas de [portfolios PDF](https://helpx.adobe.com/fr/acrobat/using/overview-pdf-portfolios.html). Le service ne convertit pas un portfolio PDF en formulaire adaptatif.
-* Ne téléchargez pas de formulaires remplis et numérisés. Ces types de formulaires ne sont pas pris en charge.
+* Ne téléchargez pas de formulaires numérisés, remplis et dans une langue autre que l’anglais, le français, l’allemand et l’espagnol. Ces types de formulaires ne sont pas pris en charge.
+
 * Ne téléchargez pas de formulaires PDF sources dont le nom comporte des espaces. Supprimez l’espace du nom du fichier avant de télécharger les formulaires.
 
 Lorsque vous utilisez un formulaire XDP pour la conversion, effectuez les étapes suivantes avant de télécharger les formulaires XDP sources :
