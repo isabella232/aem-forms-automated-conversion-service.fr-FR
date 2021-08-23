@@ -8,9 +8,9 @@ topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
 source-git-commit: 28e07a0264edaaeef22d211f411f7908ca0abaed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2620'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -236,8 +236,8 @@ Lorsqu’aucune langue n’est spécifiée, le service considère que le métamo
 ### Observations relatives à la création d’un métamodèle spécifique à une langue
 
 * Assurez-vous que le nom de chaque clé est en anglais. Par exemple, emailAddress.
-* Assurez-vous que toutes les références d’entité et les valeurs prédéfinies de toutes les clés d’identifiant comprennent uniquement des caractères ASCII. Par exemple &quot;id&quot; : &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;#ContactPoint&quot;.
-* Assurez-vous que toutes les valeurs correspondant aux clés suivantes se trouvent dans la langue de métamodèle spécifiée :
+* Assurez-vous que toutes les références d’entité et les valeurs prédéfinies de toutes les clés id sont constituées uniquement de caractères ASCII. Par exemple, &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;#ContactPoint&quot;.
+* Assurez-vous que toutes les valeurs correspondant aux clés suivantes se trouvent dans la langue de métamodèle spécifiée :
    * aem:affKeyword
    * title
    * description
@@ -245,7 +245,7 @@ Lorsqu’aucune langue n’est spécifiée, le service considère que le métamo
    * shortDescription
    * validatePictureClauseMessage
 
-   Par exemple, lorsque la langue du métamodèle est le français (&quot;aem:Language&quot;) : &quot;fr&quot;), assurez-vous que toutes les descriptions et tous les messages sont en français.
+   Par exemple, lorsque la langue du métamodèle est le français (&quot;aem:Language&quot;: &quot;fr&quot;), assurez-vous que toutes les descriptions et tous les messages sont en français.
 
 * Assurez-vous que toutes les [propriétés de schéma JSON](#jsonschemaproperties) utilisent uniquement les valeurs prises en charge. Par exemple, la propriété type ne peut couvrir que les valeurs sélectionnées de type Chaîne, Nombre, Entier et Booléen.
 
@@ -282,10 +282,10 @@ Voici quelques exemples courants d’utilisation d’un métamodèle personnalis
 * Modifier le libellé d’un champ de formulaire
 * Modifier le type d’un champ de formulaire
 * Ajouter du texte d’aide à un champ de formulaire
-* Convertir un champ de formulaire en cases à cocher à choix multiples dans le formulaire adaptatif
+* Convertir un champ de formulaire en cases d’option à choix multiples dans le formulaire adaptatif
 * Modifier le format d’un champ de formulaire
 * Ajouter des validations à des champs de formulaires adaptatifs
-* Convertir un champ de texte en liste déroulante dans le formulaire adaptatif
+* Convertir un champ de formulaire en liste déroulante dans le formulaire adaptatif
 * Ajouter des options supplémentaires à la liste déroulante
 * Convertir un champ de chaîne en un champ multiligne
 
@@ -428,10 +428,10 @@ Dans ce métamodèle personnalisé, le service de conversion utilise le texte da
 
 Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Country** (Pays) dans le formulaire, le service de conversion remplace le champ par les options de liste déroulante suivantes à l’aide de la propriété **enum** :
 
-* Inde
-* Angleterre
-* Australie
-* Nouvelle-Zélande
+* India
+* England
+* Australia
+* New Zealand
 
 Les propriétés **sling:resourceType** et **guideNodeClass** mappent un champ de formulaire à un composant de formulaire adaptatif de liste déroulante.
 
