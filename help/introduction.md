@@ -3,9 +3,9 @@ title: Présentation
 description: Accélérer la conversion des formulaires imprimés en formulaires adaptatifs
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
 source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '699'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Le service de conversion automatisée de formulaires s’exécute sur Adobe Clou
 Une fois votre environnement AEM Forms configuré, pour convertir vos formulaires PDF en formulaires adaptatifs, [téléchargez des formulaires PDF](convert-existing-forms-to-adaptive-forms.md) sur votre instance AEM et [démarrez la conversion](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Avant de télécharger les formulaires, tenez compte des éléments suivants :
 
 * Ne téléchargez pas de formulaires sécurisés. Le service ne convertit pas les formulaires protégés par mot de passe et chiffrés.
-* Ne téléchargez pas de formulaires remplis, numérisés, en couleurs et remplis dans une langue autre que l’anglais, le français, l’allemand et l’espagnol. Ces types de formulaires ne sont pas pris en charge.
+* Ne chargez pas de formulaires remplis, numérisés, colorés et remplis dans une langue autre que l’anglais, le français, l’allemand et l’espagnol. Ces types de formulaires ne sont pas pris en charge.
 * Ne téléchargez pas de formulaires PDF dont le nom comporte des espaces.
 * Ne téléchargez pas de [portfolios PDF](https://helpx.adobe.com/fr/acrobat/using/overview-pdf-portfolios.html). Le service ne convertit pas un portfolio PDF en formulaire adaptatif.
 * Apportez les modifications suggérées dans l’article [Bonnes pratiques et remarques](styles-and-pattern-considerations-and-best-practices.md) aux formulaires PDF.
