@@ -8,13 +8,13 @@ topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
 source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1844'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Questions fréquemment posées{#frequently-asked-questions}
+# Questions fréquemment posées {#frequently-asked-questions}
 
 1. **Quelle version d’AEM Forms le service de conversion automatisée de formulaires prend-il en charge ?**
 
@@ -31,7 +31,7 @@ ht-degree: 99%
    <p>Le service peut convertir des formulaires PDF non interactifs, des formulaires XDP et PDF basés sur XFA et des AcroForms en formulaires adaptatifs. Le service ne prend pas en charge les formulaires numérisés ou remplis. Pour connaître les autres restrictions, consultez l’article <a href="known-issues.md">Problèmes connus</a>.<br /> </p> 
     <p>Nous ajoutons régulièrement la prise en charge d’autres types de sources. Reportez-vous régulièrement à la section <a href="introduction.md">Formulaires PDF pris en charge</a> pour vous tenir au courant des dernières caractéristiques et fonctionnalités ajoutées.</p>
 
-   Le service peut convertir uniquement des formulaires en anglais, en français, en allemand et en espagnol en formulaires adaptatifs. Vous pouvez traduire des formulaires adaptatifs générés dans une autre langue à l’aide du [Processus de traduction AEM.](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+   Le service peut convertir en formulaires adaptatifs uniquement des formulaires en anglais, français, allemand et espagnol. Vous pouvez traduire des formulaires adaptatifs générés dans une autre langue à l’aide du [Processus de traduction AEM.](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **Le service peut-il produire un formulaire XDP au lieu d’un formulaire adaptatif ?**
 
@@ -42,7 +42,7 @@ ht-degree: 99%
    <p>Vous pouvez utiliser le service pour générer : </p>
 
    * un formulaire adaptatif lié à un schéma JSON ; et
-   * un formulaire adaptatif qui n’est lié à aucun schéma.<br><br>
+   * un formulaire adaptatif qui n’est lié à aucun schéma. <br><br>
 
 1. **Le service peut-il convertir un formulaire Microsoft Word en formulaire adaptatif ?**
 
