@@ -3,9 +3,9 @@ title: 'Nouveautés Notes de mise à jour : service de conversion automatisée 
 description: En savoir plus sur les dernières fonctionnalités et le bogue corrigé pour le service de conversion automatisée de formulaires
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
 source-git-commit: 3bf065a754d8e8f97a660eb2ae39f37341bb4668
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '431'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Le service de conversion automatisée de formulaires est continuellement amélio
 
 ## 29 juillet 2021 (AFC-2021.07.2) {#july-2021}
 
-* Ajout de la possibilité de convertir un formulaire PDF en français, en allemand et en espagnol en formulaire adaptatif.
+* Ajout de la possibilité de convertir en formulaires adaptatifs les formulaires PDF en français, allemand et espagnol.
 
 ## 24 juin 2021 (AFC-2021.06.2) {#june-2021}
 
