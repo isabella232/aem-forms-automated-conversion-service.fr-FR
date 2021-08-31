@@ -2,10 +2,10 @@
 title: 'Nouveautés Notes de mise à jour : service de conversion automatisée de formulaires'
 description: En savoir plus sur les dernières fonctionnalités et le bogue corrigé pour le service de conversion automatisée de formulaires
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 3bf065a754d8e8f97a660eb2ae39f37341bb4668
-workflow-type: ht
-source-wordcount: '431'
-ht-degree: 100%
+source-git-commit: 19412c37f354fd47b661de114f286147c93c5b9e
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 95%
 
 ---
 
@@ -73,6 +73,6 @@ Le service détecte désormais plus efficacement les listes à puces et numérot
 
 **Installation du package connecteur du service de conversion automatisée de formulaires**
 
-Le package connecteur 1.1.38 ou version ultérieure est nécessaire pour utiliser les dernières fonctionnalités et améliorations proposées dans la version AFC-2020.03.1. Vous pouvez télécharger le package connecteur depuis le [partage de package AEM](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
+Le package connecteur 1.1.38 ou version ultérieure est nécessaire pour utiliser les dernières fonctionnalités et améliorations proposées dans la version AFC-2020.03.1.
 
 Si vous disposez déjà d’un environnement de service de conversion automatisée de formulaires opérationnel, installez les derniers Service Pack, module complémentaire AEM Forms et package connecteur dans cet ordre pour en utiliser les dernières fonctionnalités. Pour obtenir des instructions détaillées, consultez l’article [Configurer le service de conversion automatisée de formulaires](configure-service.md).
