@@ -1,15 +1,15 @@
 ---
 title: 'Bonnes pratiques et remarques '
-seo-title: 'Bonnes pratiques et remarques '
+seo-title: Best practices and considerations
 description: Bonnes pratiques et remarques relatives au service de conversion automatisée de formulaires
-seo-description: Liste des styles et des modèles dans les formulaires PDF sources que le service de conversion automatisée de formulaires a du mal à identifier
+seo-description: List of styles and patterns in source PDF forms which Automated Forms Conversion service finds difficult to identify
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 9d107d2dfc64fd84d4f734ded5898612ce9a3295
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1247'
 ht-degree: 98%
 
 ---
@@ -33,7 +33,7 @@ Vous pouvez télécharger tous les formulaires PDF en une seule ou en plusieurs
 * Ne téléchargez pas de formulaires protégés. Le service ne convertit pas les formulaires protégés par mot de passe et sécurisés.
 * Ne téléchargez pas de [portfolios PDF](https://helpx.adobe.com/fr/acrobat/using/overview-pdf-portfolios.html). Le service ne convertit pas un portfolio PDF en formulaire adaptatif.
 * Ne téléchargez pas de formulaires PDF sources dont le nom comporte des espaces. Supprimez l’espace du nom du fichier avant de télécharger les formulaires.
-* Ne téléchargez pas de formulaires numérisés, remplis et dans une langue autre que l’anglais, le français, l’allemand et l’espagnol. Ces types de formulaires ne sont pas pris en charge.
+* Ne téléchargez pas de formulaires numérisés, remplis et remplis dans une langue autre que l’anglais, le français, l’allemand, l’espagnol, l’italien et le portugais. Ces types de formulaires ne sont pas pris en charge.
 
 Lorsque vous utilisez un formulaire XDP pour la conversion, effectuez les étapes suivantes avant de télécharger les formulaires XDP sources :
 

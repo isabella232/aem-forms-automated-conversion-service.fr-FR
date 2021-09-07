@@ -1,16 +1,16 @@
 ---
 title: Étendre le métamodèle par défaut
-seo-title: Étendre le métamodèle par défaut
+seo-title: Extend the default meta-model
 description: Étendez le métamodèle par défaut pour ajouter un modèle, des validations et des entités spécifiques à votre entreprise et appliquer des configurations aux champs de formulaire adaptatif lors de l’exécution du service de conversion automatisée de formulaires.
-seo-description: Étendez le métamodèle par défaut pour ajouter un modèle, des validations et des entités spécifiques à votre entreprise et appliquer des configurations aux champs de formulaire adaptatif lors de l’exécution du service de conversion automatisée de formulaires.
+seo-description: Extend the default meta-model to add pattern, validations, and entities specific to your organization and apply configurations to adaptive form fields while running the Automated Forms Conversion service.
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: 28e07a0264edaaeef22d211f411f7908ca0abaed
-workflow-type: ht
-source-wordcount: '2620'
-ht-degree: 100%
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
+workflow-type: tm+mt
+source-wordcount: '2594'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ Le métamodèle est un schéma JSON. Avant de commencer, assurez-vous de bien m
 
 ## Métamodèle par défaut {#default-meta-model}
 
-Le service de conversion automatisée de formulaires comprend un métamodèle par défaut. Il s’agit d’un schéma JSON qui se trouve sur Adobe Cloud avec d’autres composants du service de conversion automatisée de formulaires. Une copie du métamodèle est disponible sur votre serveur AEM local à l’adresse suivante : http://&lt;serveur>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Vous pouvez également [cliquer ici](assets/en.globalschema.json) pour accéder au schéma de langue anglaise et le télécharger. Les métamodèles pour le [français](assets/fr.globalschema.json), l’[allemand](assets/de.globalschema.json) et l’[espagnol](assets/es.globalschema.json) peuvent également être téléchargés.
+Le service de conversion automatisée de formulaires comprend un métamodèle par défaut. Il s’agit d’un schéma JSON qui se trouve sur Adobe Cloud avec d’autres composants du service de conversion automatisée de formulaires. Une copie du métamodèle est disponible sur votre serveur AEM local à l’adresse suivante : http://&lt;serveur>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Vous pouvez également [cliquer ici](assets/en.globalschema.json) pour accéder au schéma de langue anglaise et le télécharger. Le métamodèle pour [français](assets/fr.globalschema.json), [allemand](assets/de.globalschema.json) [espagnol](assets/es.globalschema.json), [italien](assets/it.globalschema.json) et [portugais](assets/pt_br.globalschema.json) peut également être téléchargé.
 
 Le schéma du métamodèle dérive des entités de schéma figurant sur https://schema.org/docs/schemas.html. Il inclut notamment les entités Person, PostalAddress et LocalBusiness définies sur https://schema.org. Chaque entité du métamodèle correspond au type d’objet de schéma JSON. Le code suivant représente un exemple de structure de métamodèle :
 
@@ -222,6 +222,8 @@ Vous pouvez créer un métamodèle spécifique à la langue. Ce métamodèle per
 * Français (fr)
 * Allemand (de)
 * Espagnol (es)
+* Italien (it)
+* Portugais (pt-br)
 
 Ajoutez la balise de métadonnées *aem:Language* en haut d’un métamodèle pour spécifier sa langue. Par exemple :
 
@@ -428,10 +430,10 @@ Dans ce métamodèle personnalisé, le service de conversion utilise le texte da
 
 Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Country** (Pays) dans le formulaire, le service de conversion remplace le champ par les options de liste déroulante suivantes à l’aide de la propriété **enum** :
 
-* India
-* England
-* Australia
-* New Zealand
+* Inde
+* Angleterre
+* Australie
+* Nouvelle-Zélande
 
 Les propriétés **sling:resourceType** et **guideNodeClass** mappent un champ de formulaire à un composant de formulaire adaptatif de liste déroulante.
 

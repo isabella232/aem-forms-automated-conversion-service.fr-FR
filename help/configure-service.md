@@ -3,10 +3,10 @@ title: Configuration du service de conversion automatisée de formulaires
 description: Préparez votre instance AEM à utiliser le service de conversion automatisée de formulaires
 role: User, Admin
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 264208305996e98ff2dbccf0e63027b4c757754c
-workflow-type: ht
-source-wordcount: '2811'
-ht-degree: 100%
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
+workflow-type: tm+mt
+source-wordcount: '2813'
+ht-degree: 99%
 
 ---
 
@@ -72,7 +72,6 @@ Une instance AEM contient des fonctionnalités de formulaires de base. Le servic
 
 >[!NOTE]
 > Assurez-vous de procéder aux configurations nécessaires après l’installation du module complémentaire.
-
 
 <!-- ### (Optional) Download and install connector package  {#installConnectorPackage}
 
@@ -241,7 +240,7 @@ Créez une configuration de service cloud pour connecter votre instance AEM au 
    | Template (Modèle) | Modèle par défaut à appliquer aux formulaires convertis. Vous pouvez toujours indiquer un modèle différent avant de démarrer la conversion. Un modèle contient une structure de base et un contenu initial pour un formulaire adaptatif. Vous pouvez choisir un modèle parmi les modèles prêts à l’emploi. Vous pouvez également créer un modèle personnalisé. |
    | Theme (Thème) | Thème par défaut à appliquer aux formulaires convertis. Vous pouvez toujours indiquer un thème différent avant de démarrer la conversion.  Vous pouvez cliquer sur l’icône pour choisir un thème prêt à l’emploi. Vous pouvez également créer un thème personnalisé. |
    | Existing Fragments (Fragments existants) | Emplacement des fragments existants, le cas échéant. |
-   | Custom Meta-model (Métamodèle personnalisé) | Chemin d’accès du fichier .schema.json du métamodèle personnalisé. Vous pouvez créer des métamodèles distinctes pour l’anglais, le français, l’allemand et l’espagnol. |
+   | Custom Meta-model (Métamodèle personnalisé) | Chemin d’accès du fichier .schema.json du métamodèle personnalisé. Vous pouvez créer des métamodèles distincts pour les langues anglaise, française, allemande, espagnole, italienne et portugaise. |
 
 1. Dans l’onglet **[!UICONTROL Advanced]** (Avancé) de la page **[!UICONTROL Create Automated Forms Conversion Configuration]** (Créer une configuration de conversion automatisée de formulaires), spécifiez la valeur des champs suivants :
 
