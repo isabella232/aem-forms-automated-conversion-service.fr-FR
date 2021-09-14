@@ -70,16 +70,15 @@ ht-degree: 99%
 
    <p>Oui, le service prend en charge les formulaires XDP liés à des schémas et nécessite l’intégration du schéma au formulaire XDP source. Lorsque vous convertissez un formulaire XDP lié à un schéma, le service génère un schéma JSON. La structure du schéma JSON est similaire à celle du schéma XSD des formulaires XDP sources.</p> <br>
 
-1. **Le service n’est pas parvenu à convertir les formulaires. Quelle en est la raison et comment résoudre le problème ?**
-Les raisons les plus courantes de l’échec de la conversion sont les suivantes :
+1. **Le service n’est pas parvenu à convertir les formulaires. Quelle en est la raison et comment résoudre le problème?** Les raisons les plus courantes de l’échec de la conversion sont les suivantes :
 </p>
-   * Des formulaires PDF sécurisés sont fournis pour conversion. N’utilisez pas de formulaires PDF protégés par mot de passe ou sécurisés pour la conversion.
-   * La connexion Internet est interrompue. Assurez-vous d’être connecté à Internet pendant la conversion.
-   * Le PDF source a une image du formulaire au lieu du formulaire réel.
-   * Le service n’est pas configuré correctement, l’URL du service n’est pas fournie ou l’URL du service fournie est incorrecte. Vérifiez la [configuration du service](configure-service.md#configure-the-cloud-service) dans **[!UICONTROL AEM]** > **[!UICONTROL Tools]** (Outils) > **[!UICONTROL Cloud Services]** (Services cloud) > **[!UICONTROL Automated Forms Conversion configuration]** (Configuration de conversion automatisée de formulaires).
-   * La configuration IMS n’est pas configurée correctement. Vérifiez l’intégrité de la configuration IMS pour vous assurer de son bon fonctionnement. Pour vérifier si la configuration IMS est correcte ou non :
-      1. Accédez à `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`
-      2. Sélectionnez la configuration. Dans l’en-tête, cliquez sur **[!UICONTROL Check Health]** (Vérifier l’intégrité), puis sur **[!UICONTROL Check]** (Vérifier). En cas de réussite, le message **[!UICONTROL Token retrieved successfully!]** (Jeton récupéré) s’affiche. <br> <br>
+   * Des formulaires PDF sécurisés sont fournis pour conversion. N’utilisez pas de formulaires PDF protégés par mot de passe ou sécurisés pour la conversion. 
+   * La connexion Internet est interrompue.  Assurez-vous d’être connecté à Internet pendant la conversion. 
+   * Le PDF source a une image du formulaire au lieu du formulaire réel. 
+   * Le service n’est pas configuré correctement, l’URL du service n’est pas fournie ou l’URL du service fournie est incorrecte.  Vérifiez la [configuration du service](configure-service.md#configure-the-cloud-service) dans **[!UICONTROL AEM]** > **[!UICONTROL Tools]** (Outils) > **[!UICONTROL Cloud Services]** (Services cloud) > **[!UICONTROL Automated Forms Conversion configuration]** (Configuration de conversion automatisée de formulaires). 
+   * La configuration IMS n’est pas configurée correctement.  Vérifiez l’intégrité de la configuration IMS pour vous assurer de son bon fonctionnement.  Pour vérifier si la configuration IMS est correcte ou non : 
+      1. Accédez à `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html` 
+      2. Sélectionnez la configuration.  Dans l’en-tête, cliquez sur **[!UICONTROL Check Health]** (Vérifier l’intégrité), puis sur **[!UICONTROL Check]** (Vérifier). En cas de réussite, le message **[!UICONTROL Token retrieved successfully!]** (Jeton récupéré) s’affiche. <br> <br>
 
 1. **L’utilisation de polices personnalisées a-t-elle un impact sur la conversion ?**
 

@@ -5,7 +5,7 @@ exl-id: fccafbc9-28c1-4736-922c-24d675b25213
 source-git-commit: 833cada8efcc3f0a0e5788c1ab99a95d814e0153
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -77,6 +77,6 @@ Le service détecte désormais plus efficacement les listes à puces et numérot
 
 **Installation du package connecteur du service de conversion automatisée de formulaires**
 
-Le package connecteur 1.1.38 ou version ultérieure est nécessaire pour utiliser les dernières fonctionnalités et améliorations proposées dans la version AFC-2020.03.1.
+Le package connecteur 1.1.38, ou version ultérieure, est nécessaire pour utiliser les dernières fonctionnalités et améliorations proposées dans la version AFC-2020.03.1.
 
 Si vous disposez déjà d’un environnement de service de conversion automatisée de formulaires opérationnel, installez les derniers Service Pack, module complémentaire AEM Forms et package connecteur dans cet ordre pour en utiliser les dernières fonctionnalités. Pour obtenir des instructions détaillées, consultez l’article [Configurer le service de conversion automatisée de formulaires](configure-service.md).
