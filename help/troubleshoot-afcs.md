@@ -1,14 +1,14 @@
 ---
 title: 'Résolution des problèmes du service de conversion automatisée de formulaires '
-seo-title: 'Résolution des problèmes du service de conversion automatisée de formulaires (AFCS) '
+seo-title: Troubleshoot Automated Forms Conversion Service (AFCS)
 description: 'Problèmes courants de l’AFCS et leurs solutions '
-seo-description: Problèmes courants de l’AFCS et leurs solutions
+seo-description: Common AFCS issues and their solutions
 contentOwner: khsingh
 topic-tags: forms
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
 source-git-commit: 5353a071f8633b36fc73c34c5d7629228659e2ba
 workflow-type: ht
-source-wordcount: '663'
+source-wordcount: '651'
 ht-degree: 100%
 
 ---
