@@ -8,9 +8,9 @@ topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
 source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1835'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 99%
    <p>Le service peut convertir des formulaires PDF non interactifs, des formulaires XDP et PDF basés sur XFA et des AcroForms en formulaires adaptatifs. Le service ne prend pas en charge les formulaires numérisés ou remplis. Pour connaître les autres restrictions, consultez l’article <a href="known-issues.md">Problèmes connus</a>.<br /> </p> 
     <p>Nous ajoutons régulièrement la prise en charge d’autres types de sources. Reportez-vous régulièrement à la section <a href="introduction.md">Formulaires PDF pris en charge</a> pour vous tenir au courant des dernières caractéristiques et fonctionnalités ajoutées.</p>
 
-   Le service peut convertir uniquement des formulaires en anglais, français, allemand, espagnol, italien et portugais en formulaires adaptatifs. Vous pouvez traduire des formulaires adaptatifs générés dans une autre langue à l’aide du [Processus de traduction AEM.](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+   Le service peut convertir en formulaires adaptatifs uniquement des formulaires en anglais, français, allemand, espagnol, italien et portugais. Vous pouvez traduire des formulaires adaptatifs générés dans une autre langue à l’aide du [Processus de traduction AEM.](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **Le service peut-il produire un formulaire XDP au lieu d’un formulaire adaptatif ?**
 
@@ -70,15 +70,16 @@ ht-degree: 99%
 
    <p>Oui, le service prend en charge les formulaires XDP liés à des schémas et nécessite l’intégration du schéma au formulaire XDP source. Lorsque vous convertissez un formulaire XDP lié à un schéma, le service génère un schéma JSON. La structure du schéma JSON est similaire à celle du schéma XSD des formulaires XDP sources.</p> <br>
 
-1. **Le service n’est pas parvenu à convertir les formulaires. Quelle en est la raison et comment résoudre le problème?** Les raisons les plus courantes de l’échec de la conversion sont les suivantes :
+1. **Le service n’est pas parvenu à convertir les formulaires. Quelle en est la raison et comment résoudre le problème?**
+Les raisons les plus courantes de l’échec de la conversion sont les suivantes :
 </p>
-   * Des formulaires PDF sécurisés sont fournis pour conversion. N’utilisez pas de formulaires PDF protégés par mot de passe ou sécurisés pour la conversion. 
-   * La connexion Internet est interrompue.  Assurez-vous d’être connecté à Internet pendant la conversion. 
-   * Le PDF source a une image du formulaire au lieu du formulaire réel. 
-   * Le service n’est pas configuré correctement, l’URL du service n’est pas fournie ou l’URL du service fournie est incorrecte.  Vérifiez la [configuration du service](configure-service.md#configure-the-cloud-service) dans **[!UICONTROL AEM]** > **[!UICONTROL Tools]** (Outils) > **[!UICONTROL Cloud Services]** (Services cloud) > **[!UICONTROL Automated Forms Conversion configuration]** (Configuration de conversion automatisée de formulaires). 
-   * La configuration IMS n’est pas configurée correctement.  Vérifiez l’intégrité de la configuration IMS pour vous assurer de son bon fonctionnement.  Pour vérifier si la configuration IMS est correcte ou non : 
-      1. Accédez à `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html` 
-      2. Sélectionnez la configuration.  Dans l’en-tête, cliquez sur **[!UICONTROL Check Health]** (Vérifier l’intégrité), puis sur **[!UICONTROL Check]** (Vérifier). En cas de réussite, le message **[!UICONTROL Token retrieved successfully!]** (Jeton récupéré) s’affiche. <br> <br>
+   * Des formulaires PDF sécurisés sont fournis pour conversion. N’utilisez pas de formulaires PDF protégés par mot de passe ou sécurisés pour la conversion.
+   * La connexion Internet est interrompue. Assurez-vous d’être connecté à Internet pendant la conversion.
+   * Le PDF source a une image du formulaire au lieu du formulaire réel.
+   * Le service n’est pas configuré correctement, l’URL du service n’est pas fournie ou l’URL du service fournie est incorrecte. Vérifiez la [configuration du service](configure-service.md#configure-the-cloud-service) dans **[!UICONTROL AEM]** > **[!UICONTROL Tools]** (Outils) > **[!UICONTROL Cloud Services]** (Services cloud) > **[!UICONTROL Automated Forms Conversion configuration]** (Configuration de conversion automatisée de formulaires).
+   * La configuration IMS n’est pas configurée correctement. Vérifiez l’intégrité de la configuration IMS pour vous assurer de son bon fonctionnement. Pour vérifier si la configuration IMS est correcte ou non :
+      1. Accédez à `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`
+      2. Sélectionnez la configuration. Dans l’en-tête, cliquez sur **[!UICONTROL Check Health]** (Vérifier l’intégrité), puis sur **[!UICONTROL Check]** (Vérifier). En cas de réussite, le message **[!UICONTROL Token retrieved successfully!]** (Jeton récupéré) s’affiche. <br> <br>
 
 1. **L’utilisation de polices personnalisées a-t-elle un impact sur la conversion ?**
 
