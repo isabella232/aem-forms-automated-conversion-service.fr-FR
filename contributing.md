@@ -1,51 +1,61 @@
 ---
-source-git-commit: 5f945d77db476387159d342511b82691cf7708ee
-translation-type: tm+mt
+source-git-commit: 2f85c45eda63751a60997d670804c34e21634359
+workflow-type: tm+mt
+source-wordcount: '534'
+ht-degree: 100%
 
 ---
-# Contribution
+# Contribution à la documentation d’Adobe Experience Manager Cloud Service
 
-Merci d’avoir choisi d&#39;apporter votre contribution !
+Merci d’avoir choisi de contribuer à la documentation d’Adobe Experience Manager Cloud Service. Nous apprécions toute contribution relative au contenu proposée par notre communauté de lecteurs, ainsi que par nos collègues d’Adobe.
 
-Vous trouverez ci-dessous un ensemble de directives à suivre lorsque vous contribuez à ce projet.
+Ce fichier décrit comment contribuer à la documentation ainsi que les directives à suivre lors de l’apport de vos contributions.
 
-## Code de conduite
+## Code de conduite Open Source d’Adobe
 
-Ce projet respecte le [code de conduite](code-of-conduct.md) d’Adobe. Votre participation
-implique le respect de ce code. Veuillez signaler tout comportement inacceptable à
-[Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+Ce projet a adopté le [Code de conduite Adobe Open Source](code-of-conduct.md). En contribuant à la documentation AEM, vous acceptez de respecter ce code de conduite. Veuillez signaler tout comportement inacceptable à [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## Guide du contributeur
+## Instructions relatives à la contribution
 
-Voir le [Guide du contributeur](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Bien que toute contribution visant à améliorer la documentation d’AEM soit la bienvenue, nous vous demandons, si possible, de bien vouloir respecter certaines instructions et normes. Pour plus d’informations, voir les [Instructions relatives à la contribution à la documentation](guidelines.md) AEM.
 
-## Vous avez une question ?
+## Comment contribuer
 
-Commencez par signaler un problème. Les validateurs de ce projet peuvent parvenir à un consensus concernant la direction du projet et les solutions aux problèmes dans les fils liés aux problèmes (le cas échéant).
+Nous souhaitons faciliter au maximum la soumission de vos contributions. Vous pouvez contribuer de deux manières :
 
-## Contrat de licence du contributeur
+* [Créer un problème](#create-an-issue)
+* [Créer une demande d’extraction](#create-a-pull-request)
 
-Toutes les contributions tierces à ce projet doivent être accompagnées d’un contrat de licence de contributeur
-signé permettant d’&#39;autoriser Adobe à redistribuer vos contributions
-dans le cadre du projet. [Signez notre contrat de licence du contributeur](https://opensource.adobe.com/cla.html). Vous n’avez besoin de soumettre un CLA Adobe qu’une seule fois. Par conséquent, si vous l’avez déjà soumis, vous n’avez rien à faire.
+La méthode choisie dépend de votre aisance pour modifier vous-même la documentation dans GitHub.
 
-## Révision du code
+>[!NOTE]
+>
+>Les contributions proposées entrent dans le champ d’application des [Conditions d’utilisation d’Adobe.](https://www.adobe.com/fr/legal/terms.html)
 
-Toutes les soumissions doivent prendre la forme de demandes d’extraction et doivent être examinées
-par les validateurs du projet. Lisez la [documentation relative aux demandes d’extraction de GitHub](https://help.github.com/articles/about-pull-requests/) pour plus d’informations sur l’envoi de demandes d’extraction.
+### Création d’une demande {#create-an-issue}
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+Vous avez une suggestion, une observation à propos des documents actuels ou une question sur la manière dont un élément est décrit ? Vous pouvez créer un problème. Les propositions relatives aux problèmes sont également excellentes si vous souhaitez apporter votre contribution, mais que vous n’êtes pas habitué à modifier les documents ou à générer vous-même une demande d’extraction.
 
-## De contributeur à validateur
+Les propositions relatives aux problèmes vous permettent de décrire facilement vos idées d’amélioration de documents, avant examen par un membre de l’équipe AEM Docs. Pour créer un problème, il suffit de cliquer sur le lien **Log an issue** (Soumettre un problème) en haut du panneau de navigation de droite d’une page.
 
-Nous apprécions les contributions de notre communauté. Si vous souhaitez faire davantage que contribuer et devenir un validateur pour disposer d’un accès en écriture complet et avoir le droit de participer aux décisions concernant le voix au chapitre dans le projet, vous devez
-être invité au projet. Les validateurs utilisent un processus de nomination
-interne qui doit atteindre un consensus avant l’envoi des invitations. Dans ce processus, le silence vaut approbation. Si vous pensez être qualifié et souhaitez vous impliquer davantage,
-n’hésitez pas à contacter les validateurs pour en discuter.
+### Créer une demande d’extraction {#create-a-pull-request}
 
-## Problèmes de sécurité
+Si vous rencontrez un problème et savez exactement comment le résoudre, envisagez de créer une demande d’extraction. Les demandes d’extraction vous permettent d’apporter vos propres modifications à la documentation, qui sont ensuite examinées pour inclusion par un membre de l’équipe AEM Docs. Pour effectuer les modifications suggérées et créer la demande d’extraction, il suffit de cliquer sur le lien **Edit this page** (Modifier cette page) en haut du panneau de navigation de droite d’une page.
 
-Les problèmes de sécurité ne doivent pas être signalés dans ce suivi de problèmes. Au lieu de cela, [soumettez un problème à nos experts en sécurité](https://helpx.adobe.com/security/alertus.html).
+Toutes les demandes d’extraction doivent être accompagnées d’un [contrat de licence de contributeur (CLA) signé.](https://opensource.adobe.com/cla.html) Ce document autorise Adobe à redistribuer vos contributions dans le cadre du projet. Vous n’avez besoin de soumettre un CLA Adobe qu’une seule fois. Par conséquent, si vous l’avez déjà soumis, vous n’avez rien à faire.
+
+### Présentation rapide en vidéo
+
+Regardez la vidéo suivante pour un aperçu rapide de la création de problèmes et de demandes d’extraction.
+
+>[!VIDEO](https://video.tv.adobe.com/v/27069)
+
+### Contributions des employés d’Adobe
+
+Si vous êtes un employé d’Adobe et souhaitez faire une contribution, utilisez l’organisation `AdobeDocs` dans notre référentiel git d’entreprise.
+
+Nous apprécions évidemment toute contribution et examinerons votre contribution si elle est effectuée dans le référentiel public. Toutefois, les demandes d’extraction des employés d’Adobe sont plus faciles à traiter et peuvent être approuvées plus rapidement dans le référentiel d’entreprise. Veillez à ce que toute information de propriété exclusive ne soit discutée que sur le référentiel de l’entreprise.
+
+## Informations supplémentaires
+
+Pour plus d’informations sur l’utilisation de la plate-forme de création GitHub, consultez le [Guide du contributeur d’Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
