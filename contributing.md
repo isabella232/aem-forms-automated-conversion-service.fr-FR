@@ -1,13 +1,13 @@
 ---
-source-git-commit: 2f85c45eda63751a60997d670804c34e21634359
+source-git-commit: 1cef5bea746a63d0c8f8819f919c75f5d6aa96e9
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-# Contribution à la documentation d’Adobe Experience Manager Cloud Service
+# Contribution à la documentation du service de conversion automatisée d’AEM Forms
 
-Merci d’avoir choisi de contribuer à la documentation d’Adobe Experience Manager Cloud Service. Nous apprécions toute contribution relative au contenu proposée par notre communauté de lecteurs, ainsi que par nos collègues d’Adobe.
+Merci d’avoir choisi de contribuer à la documentation du service de conversion automatisée d’AEM Forms. Nous nous félicitons des contributions au contenu, proposées aussi bien par notre communauté de lecteurs que par nos collègues employés d’Adobe.
 
 Ce fichier décrit comment contribuer à la documentation ainsi que les directives à suivre lors de l’apport de vos contributions.
 
