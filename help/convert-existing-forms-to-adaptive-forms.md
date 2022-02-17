@@ -1,25 +1,25 @@
 ---
 title: 'Convertir des formulaires PDF en formulaires adaptatifs  '
-seo-title: 'Convertir des formulaires PDF en formulaires adaptatifs  '
+seo-title: Convert PDF forms to adaptive forms
 description: Exécuter le service de conversion automatisée de formulaires pour convertir des formulaires PDF en formulaires adaptatifs
-seo-description: Exécuter le service de conversion automatisée de formulaires pour convertir des formulaires PDF en formulaires adaptatifs
+seo-description: Run the Automated Forms Conversion service to convert PDF forms to adaptive forms
 uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: 5f07f5df6369007a491cf0873839f84a61827cb5
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 100%
+source-wordcount: '1740'
+ht-degree: 90%
 
 ---
 
-# Convertir des formulaires PDF en formulaires adaptatifs {#convert-print-forms-to-adaptive-forms}
+# Convertir des formulaires PDF en formulaires adaptatifs  {#convert-print-forms-to-adaptive-forms}
 
 Le service de conversion automatisée de formulaires AEM Forms, optimisé par Adobe Sensei, convertit automatiquement vos formulaires PDF en formulaires adaptatifs compatibles avec divers appareils et réactifs. Que vous utilisiez des formulaires PDF non interactifs, des formulaires Acro ou des formulaires PDF basés sur XFA, le service de conversion automatisée de formulaires peut facilement convertir ces formulaires en formulaires adaptatifs. Pour plus d’informations sur les fonctionnalités, le processus de conversion et les informations d’intégration, consultez la page [Service de conversion automatisée de formulaires](introduction.md).
 
-## Conditions préalables {#pre-requisites}
+## Prérequis {#pre-requisites}
 
 * [**Configuration du service de conversion**](configure-service.md)
 
@@ -28,7 +28,6 @@ Le service de conversion automatisée de formulaires AEM Forms, optimisé par A
 * **Préparation des [thèmes](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/themes.html) à appliquer aux formulaires convertis :** l’utilisation d’un thème vous permet d’harmoniser le style de tous les formulaires adaptatifs de votre entreprise.
 
 * **(facultatif)** [**Convertir vos formulaires PDF sources en formulaire Adobe Sign**](frequently-asked-questions.md)
-
 
 ## Démarrer le processus de conversion {#start-the-conversion-process}
 
@@ -59,7 +58,7 @@ Pour télécharger les formulaires à convertir dans un dossier sur votre instan
 1. Appuyez sur le dossier nouvellement créé pour l’ouvrir.
 1. Appuyez sur **[!UICONTROL Create]** (Créer) > **[!UICONTROL File Upload]** (Téléchargement de fichier). Sélectionnez les formulaires à télécharger et cliquez sur **[!UICONTROL Open]** (Ouvrir), puis sur **[!UICONTROL Upload]** (Télécharger). Les formulaires sont alors téléchargés.
 
-### Exécuter la conversion {#run-the-conversion}
+### Exécutez la conversion {#run-the-conversion}
 
 Après avoir téléchargé les formulaires et configuré le service, procédez comme suit pour démarrer la conversion :
 
@@ -77,6 +76,7 @@ Si vous ne sélectionnez pas cette option, le service de conversion associe auto
 Si vous sélectionnez cette option, le service de conversion génère un formulaire adaptatif sans liaison de modèle de données. Après la conversion, vous pouvez associer un formulaire adaptatif à un modèle de données de formulaire, un schéma XML ou un schéma JSON. Pour en savoir plus, consultez la page [Créer un formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-5/forms/using/creating-adaptive-form.html).
 
    <!--
+
    Comment Type: draft
 
    <note type="note">
@@ -104,6 +104,17 @@ Si vous sélectionnez cette option, le service de conversion génère un formula
       > Le package connecteur 1.1.38 ou version ultérieure est nécessaire pour utiliser la fonctionnalité  **[!UICONTROL Auto-detect logical sections]** (Détection automatique de sections logiques).
 
 
+* (AEM Forms as a Cloud Service uniquement) La variable [Conversion automatique des sections en fragments] s’applique aux PDF forms de plus de 15 pages. Il convertit les sections de niveau supérieur détectées en fragments. Il active également le chargement différé pour tous les fragments créés. Cela permet d’améliorer la vitesse de rendu des formulaires convertis et facilite le chargement de formulaires volumineux dans l’éditeur de formulaires adaptatifs.
+
+   >[!NOTE]
+   > N’utilisez pas de modèle de mise en page réactive lors de l’utilisation de l’option Conversion automatique des sections en fragments .
+   > Utilisez l’éditeur de vérification et de correction pour fusionner de petits panneaux en grands. Cela permet de réduire le nombre de fragments dans le formulaire adaptatif converti.
+   > Si vous rencontrez l’exception &quot;too many calls&quot;,
+   >
+   > * restructurer le formulaire pour créer une hiérarchie simplifiée
+   > * [augmenter la valeur du paramètre sling.max.calls ;]à un nombre suffisamment élevé jusqu’à ce que l’exception disparaisse.
+   > * [augmentation de la taille du cache](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/configure-aem-forms/configure-adaptive-forms-cache.html). L’erreur se produit si le formulaire est trop complexe, s’il comporte un grand nombre de tableaux et une structure hiérarchique à plusieurs niveaux.
+
 
 1. Appuyez sur **[!UICONTROL Start Conversion]** (Démarrer la conversion). La conversion est alors lancée. La progression de la conversion s’affiche sur le dossier ou le formulaire tout au long de la conversion. Une fois la conversion terminée, le message est remplacé par un autre message d’état : Converted (Converti), Partially Converted (Partiellement converti) ou Conversion Failed (Échec de la conversion). À la fin de la conversion, un message est également envoyé à l’adresse électronique configurée :
 
@@ -115,6 +126,7 @@ Si vous sélectionnez cette option, le service de conversion génère un formula
    Le service de conversion ne télécharge automatiquement le formulaire PDF vers le formulaire adaptatif converti en tant que modèle de document d’enregistrement que si vous activez l’option **[!UICONTROL Tools]** (Outils) > **[!UICONTROL Cloud Services]** (Services cloud) > **[!UICONTROL Automated Forms Conversion Configuration]** (Configuration de la conversion automatisée de formulaires) > **[!UICONTROL Properties of selected configuration]** (Propriétés de la configuration sélectionnée) > **[!UICONTROL Advanced]** (Avancé) > **[!UICONTROL Generate Document of Record]** (Générer un document d’enregistrement).
 
    <!--
+
    Comment Type: draft
 
    <note type="note">
