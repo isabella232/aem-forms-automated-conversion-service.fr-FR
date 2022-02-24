@@ -9,9 +9,9 @@ topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
 source-git-commit: 5f07f5df6369007a491cf0873839f84a61827cb5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1740'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -33,11 +33,11 @@ Le service de conversion automatisée de formulaires AEM Forms, optimisé par A
 
 Après avoir connecté votre instance AEM au service de conversion AEM Forms, vous pouvez convertir vos formulaires PDF en formulaires adaptatifs. Pour convertir les formulaires, procédez aux étapes suivantes dans l’ordre indiqué :
 
-* [Télécharger les formulaires PDF sur votre serveur AEM Forms](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
-* [Exécutez la conversion](convert-existing-forms-to-adaptive-forms.md#run-the-conversion)
+* [Charger les formulaires PDF sur votre serveur AEM Forms](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
+* [Exécuter la conversion](convert-existing-forms-to-adaptive-forms.md#run-the-conversion)
 * [Vérifier et corriger les formulaires convertis](review-correct-ui-edited.md)
 
-### Télécharger les formulaires PDF sur votre serveur AEM Forms {#upload-pdf-forms-to-your-aem-forms-server}
+### Charger les formulaires PDF sur votre serveur AEM Forms {#upload-pdf-forms-to-your-aem-forms-server}
 
 Le service de conversion convertit les formulaires PDF disponibles sur votre instance AEM Forms en formulaires adaptatifs. Vous pouvez télécharger tous les formulaires PDF en une seule ou en plusieurs fois, selon les besoins. Avant de télécharger les formulaires, tenez compte des éléments suivants :
 
@@ -58,7 +58,7 @@ Pour télécharger les formulaires à convertir dans un dossier sur votre instan
 1. Appuyez sur le dossier nouvellement créé pour l’ouvrir.
 1. Appuyez sur **[!UICONTROL Create]** (Créer) > **[!UICONTROL File Upload]** (Téléchargement de fichier). Sélectionnez les formulaires à télécharger et cliquez sur **[!UICONTROL Open]** (Ouvrir), puis sur **[!UICONTROL Upload]** (Télécharger). Les formulaires sont alors téléchargés.
 
-### Exécutez la conversion {#run-the-conversion}
+### Exécuter la conversion {#run-the-conversion}
 
 Après avoir téléchargé les formulaires et configuré le service, procédez comme suit pour démarrer la conversion :
 
@@ -104,16 +104,16 @@ Si vous sélectionnez cette option, le service de conversion génère un formula
       > Le package connecteur 1.1.38 ou version ultérieure est nécessaire pour utiliser la fonctionnalité  **[!UICONTROL Auto-detect logical sections]** (Détection automatique de sections logiques).
 
 
-* (AEM Forms as a Cloud Service uniquement) La variable [Conversion automatique des sections en fragments] s’applique aux PDF forms de plus de 15 pages. Il convertit les sections de niveau supérieur détectées en fragments. Il active également le chargement différé pour tous les fragments créés. Cela permet d’améliorer la vitesse de rendu des formulaires convertis et facilite le chargement de formulaires volumineux dans l’éditeur de formulaires adaptatifs.
+* (AEM Forms as a Cloud Service uniquement) Lʼoption [Conversion automatique des sections en fragments] s’applique aux formulaires PDF qui contiennent plus de 15 pages. Cette option permet de convertir en fragments les sections de niveau supérieur détectées. Elle permet également le chargement différé de tous les fragments créés. Cette option accélère le rendu des formulaires convertis et facilite le chargement de formulaires volumineux dans l’éditeur de formulaires adaptatifs.
 
    >[!NOTE]
-   > N’utilisez pas de modèle de mise en page réactive lors de l’utilisation de l’option Conversion automatique des sections en fragments .
-   > Utilisez l’éditeur de vérification et de correction pour fusionner de petits panneaux en grands. Cela permet de réduire le nombre de fragments dans le formulaire adaptatif converti.
-   > Si vous rencontrez l’exception &quot;too many calls&quot;,
+   > N’utilisez pas de modèle de disposition réactive lorsque vous utilisez l’option Conversion automatique des sections en fragments.
+   > Utilisez l’éditeur de vérification et de correction pour fusionner de petits panneaux en un grand. Cela permet de réduire le nombre de fragments dans le formulaire adaptatif converti.
+   > Si vous rencontrez l’exception « nombre d’appels trop élevé » :
    >
-   > * restructurer le formulaire pour créer une hiérarchie simplifiée
-   > * [augmenter la valeur du paramètre sling.max.calls ;]à un nombre suffisamment élevé jusqu’à ce que l’exception disparaisse.
-   > * [augmentation de la taille du cache](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/configure-aem-forms/configure-adaptive-forms-cache.html). L’erreur se produit si le formulaire est trop complexe, s’il comporte un grand nombre de tableaux et une structure hiérarchique à plusieurs niveaux.
+   > * Restructurez le formulaire afin de créer une hiérarchie simplifiée.
+   > * [Augmentez la valeur du paramètre sling.max.calls] à un nombre suffisamment élevé jusquʼà ce que lʼexception disparaisse.
+   > * [Augmentez la taille du cache](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/configure-aem-forms/configure-adaptive-forms-cache.html?lang=fr). Lʼerreur se produit dans les cas suivants : un formulaire trop complexe, un nombre élevé de tableaux et une structure hiérarchique à plusieurs niveaux.
 
 
 1. Appuyez sur **[!UICONTROL Start Conversion]** (Démarrer la conversion). La conversion est alors lancée. La progression de la conversion s’affiche sur le dossier ou le formulaire tout au long de la conversion. Une fois la conversion terminée, le message est remplacé par un autre message d’état : Converted (Converti), Partially Converted (Partiellement converti) ou Conversion Failed (Échec de la conversion). À la fin de la conversion, un message est également envoyé à l’adresse électronique configurée :
@@ -153,4 +153,4 @@ Si vous sélectionnez cette option, le service de conversion génère un formula
 
 ## Vérifier et corriger les formulaires convertis {#review-and-correct-the-converted-forms}
 
-Les formulaires réels ont des exigences de capture de données complexes. Une fois la conversion automatisée terminée, les clients peuvent vérifier la qualité de conversion du formulaire et apporter les modifications nécessaires. AEM Forms fournit un éditeur [de vérification et de correction](review-correct-ui-edited.md) pour procéder aux changements nécessaires. Il vous permet d’améliorer l’identification automatisée des champs de formulaire et de convertir les champs identifiés d’un type à un autre. Par exemple, il peut vous aider à identifier la mise en page à deux colonnes d’un formulaire et modifier un champ identifié automatiquement comme un bouton radio en un champ à choix multiples.
+Les formulaires réels ont des exigences de capture de données complexes. Une fois la conversion automatisée terminée, les clients peuvent vérifier la qualité de conversion du formulaire et apporter les modifications nécessaires. AEM Forms fournit un éditeur de [vérification et de correction](review-correct-ui-edited.md) pour procéder aux changements nécessaires. Il vous permet d’améliorer l’identification automatisée des champs de formulaire et de convertir les champs identifiés d’un type à un autre. Par exemple, il peut vous aider à identifier la mise en page à deux colonnes d’un formulaire et modifier un champ identifié automatiquement comme un bouton radio en un champ à choix multiples.
