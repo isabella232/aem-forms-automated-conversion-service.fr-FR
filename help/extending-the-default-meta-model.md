@@ -7,10 +7,10 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
-workflow-type: ht
+source-git-commit: e3ba3807668084495acb77f57ea2da6d5a53e626
+workflow-type: tm+mt
 source-wordcount: '2594'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -272,7 +272,7 @@ Pour utiliser un métamodèle personnalisé lors de la conversion, procédez com
 1. Créez un dossier dans **[!UICONTROL Forms]** (Formulaires) > **[!UICONTROL Forms &amp; Documents]** (Formulaires et documents) et téléchargez le fichier de schéma JSON de métamodèle personnalisé dans le dossier.
 1. Ouvrez les propriétés du service de conversion à l’aide de :
 
-   **[!UICONTROL Tools]** (Outils) > **[!UICONTROL Cloud Services]** (Services cloud) > **[!UICONTROL Automated Forms Conversion Configuration]** (Configuration de la conversion automatisée de formulaires) > **&lt;** Properties of selected configuration **(Propriétés de la configuration sélectionnée) >**
+   **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuration des Automateds forms conversion]** > **&lt;properties of=&quot;&quot; selected=&quot;&quot; configuration=&quot;&quot;>**
 
 1. Dans l’onglet **[!UICONTROL Basic]** (De base), spécifiez l’emplacement du métamodèle personnalisé dans le champ **[!UICONTROL Custom Meta-model]** (Métamodèle personnalisé) et appuyez sur **[!UICONTROL Save &amp; Close]** (Enregistrer et fermer).
 1. [Exécutez la conversion](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process) pour appliquer le métamodèle personnalisé au processus de conversion.
@@ -430,10 +430,10 @@ Dans ce métamodèle personnalisé, le service de conversion utilise le texte da
 
 Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Country** (Pays) dans le formulaire, le service de conversion remplace le champ par les options de liste déroulante suivantes à l’aide de la propriété **enum** :
 
-* India
-* England
-* Australia
-* New Zealand
+* Inde
+* Angleterre
+* Australie
+* Nouvelle-Zélande
 
 Les propriétés **sling:resourceType** et **guideNodeClass** mappent un champ de formulaire à un composant de formulaire adaptatif de liste déroulante.
 
