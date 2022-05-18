@@ -8,9 +8,9 @@ topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
 source-git-commit: e3ba3807668084495acb77f57ea2da6d5a53e626
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2594'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -49,8 +49,8 @@ Le schéma du métamodèle dérive des entités de schéma figurant sur https://
 Pour télécharger le métamodèle par défaut sur le système de fichiers local, procédez comme suit :
 
 1. Connectez-vous à l’instance AEM Forms.
-1. Accédez au dossier **[!UICONTROL Forms]** (Formulaires) > **[!UICONTROL Forms &amp; Documents]** (Formulaires et documents) **>** **[!UICONTROL Meta Model]** (Métamodèle).
-1. Sélectionnez le fichier **[!UICONTROL global.schema.json]** et appuyez sur **[!UICONTROL Download]** (Télécharger). Une boîte de dialogue de téléchargement s’affiche. Sélectionnez l’option **[!UICONTROL Download asset(s) as binary files]** (Télécharger le ou les actifs sous forme de fichiers binaires). Appuyez sur **[!UICONTROL Download]** (Télécharger). Une archive est téléchargée.
+1. Accédez au dossier **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]** **>** **[!UICONTROL Métamodèle]**.
+1. Sélectionnez le fichier **[!UICONTROL global.schema.json]** et appuyez sur **[!UICONTROL Télécharger]**. Une boîte de dialogue de téléchargement s’affiche. Sélectionnez l’option **[!UICONTROL Télécharger le ou les actifs sous forme de fichiers binaires]**. Appuyez sur **[!UICONTROL Télécharger]**. Une archive est téléchargée.
 
    <!--
    Comment Type: draft
@@ -97,7 +97,7 @@ Un métamodèle fait référence à un fichier de schéma JSON qui contient des 
     }
 ```
 
-Dans cet exemple, **Event** (Événement) représente le nom d’une entité dont la valeur **id** est **Eventid**. L’entité Event (Événement) comprend plusieurs propriétés :
+Dans cet exemple, **Événement** représente le nom d’une entité dont la valeur **id** est **Eventid**. L’entité Événement comprend plusieurs propriétés :
 
 * startDate
 * endDate
@@ -140,10 +140,10 @@ Le métamodèle prend en charge les propriétés communes du schéma JSON suivan
    <td> 
     <p>La propriété type définit le type de données pour le champ de formulaire adaptatif généré. Les valeurs possibles pour la propriété type sont les suivantes :</p>
     <ul> 
-     <li>string (chaîne) : génère un champ de formulaire adaptatif de type données texte.</li> 
-     <li>number (nombre) : génère un champ de formulaire adaptatif de type données numériques.</li>
-     <li>integer (entier) : génère un champ de formulaire adaptatif de type données numériques avec un sous-type défini sur « integer ».</li>
-     <li>boolean (booléen) : génère un composant de formulaire adaptatif de basculement.</li>
+     <li>chaîne : génère un champ de formulaire adaptatif de type données texte.</li> 
+     <li>nombre : génère un champ de formulaire adaptatif de type données numériques.</li>
+     <li>entier : génère un champ de formulaire adaptatif de type données numériques avec un sous-type défini sur « integer ».</li>
+     <li>booléen : génère un composant de formulaire adaptatif de basculement.</li>
      </ul><p>Pour en savoir plus sur l’utilisation de la propriété type dans un métamodèle, consultez la section <strong>Modifier le type d’un champ de formulaire</strong> dans <a href="#custommetamodelexamples">Exemples de métamodèles personnalisés</a>.</p></td> 
   </tr>
   <td><p>pattern</p></td> 
@@ -152,7 +152,7 @@ Le métamodèle prend en charge les propriétés communes du schéma JSON suivan
   </tr>
   <td><p>format</p></td> 
    <td> 
-    <p>La propriété format restreint la valeur du champ de formulaire adaptatif généré selon un modèle nommé plutôt qu’une expression régulière. Les valeurs possibles pour la propriété format sont les suivantes :<ul><li>email (adresse électronique) : génère un composant de formulaire adaptatif de messagerie.</li><li>hostname (nom d’hôte) : génère un composant de formulaire adaptatif de zone de texte.</li></ul>Pour en savoir plus sur l’utilisation de la propriété format dans un métamodèle, consultez la section <strong>Modifier le format d’un champ de formulaire</strong> dans <a href="#custommetamodelexamples">Exemples de métamodèles personnalisés</a>.</p> </td> 
+    <p>La propriété format restreint la valeur du champ de formulaire adaptatif généré selon un modèle nommé plutôt qu’une expression régulière. Les valeurs possibles pour la propriété format sont les suivantes :<ul><li>adresse électronique : génère un composant de formulaire adaptatif de messagerie.</li><li>nom d’hôte : génère un composant de formulaire adaptatif de zone de texte.</li></ul>Pour en savoir plus sur l’utilisation de la propriété format dans un métamodèle, consultez la section <strong>Modifier le format d’un champ de formulaire</strong> dans <a href="#custommetamodelexamples">Exemples de métamodèles personnalisés</a>.</p> </td> 
   </tr>
   <td><p>enum et enumNames</p></td> 
    <td> 
@@ -176,7 +176,7 @@ Les mots-clés sont référencés à l’aide de la propriété **aem:affKeyword
 }
 ```
 
-Dans cet exemple, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Bank account number** (Numéro de compte bancaire) dans le formulaire, le service de conversion convertit le champ en un type **number** (nombre) à l’aide de la propriété **type**.
+Dans cet exemple, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Numéro de compte bancaire** dans le formulaire, le service de conversion convertit le champ en un type **nombre** à l’aide de la propriété **type**.
 
 ### Propriétés supplémentaires pour les champs de formulaires adaptatifs générés {#additionalproperties}
 
@@ -269,12 +269,12 @@ Cependant, vous pouvez enregistrer un métamodèle personnalisé dans un dossier
 
 Pour utiliser un métamodèle personnalisé lors de la conversion, procédez comme suit :
 
-1. Créez un dossier dans **[!UICONTROL Forms]** (Formulaires) > **[!UICONTROL Forms &amp; Documents]** (Formulaires et documents) et téléchargez le fichier de schéma JSON de métamodèle personnalisé dans le dossier.
+1. Créez un dossier dans **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]** et téléchargez le fichier de schéma JSON de métamodèle personnalisé dans le dossier.
 1. Ouvrez les propriétés du service de conversion à l’aide de :
 
-   **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuration des Automateds forms conversion]** > **&lt;properties of=&quot;&quot; selected=&quot;&quot; configuration=&quot;&quot;>**
+   **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Configuration de la conversion automatisée de formulaires]** > **&lt;Propriétés de la configuration sélectionnée>**
 
-1. Dans l’onglet **[!UICONTROL Basic]** (De base), spécifiez l’emplacement du métamodèle personnalisé dans le champ **[!UICONTROL Custom Meta-model]** (Métamodèle personnalisé) et appuyez sur **[!UICONTROL Save &amp; Close]** (Enregistrer et fermer).
+1. Dans l’onglet **[!UICONTROL De base]**, spécifiez l’emplacement du métamodèle personnalisé dans le champ **[!UICONTROL Métamodèle personnalisé]** et appuyez sur **[!UICONTROL Enregistrer et fermer]**.
 1. [Exécutez la conversion](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process) pour appliquer le métamodèle personnalisé au processus de conversion.
 
 ### Exemples de métamodèles personnalisés {#custommetamodelexamples}
@@ -295,7 +295,7 @@ Voici quelques exemples courants d’utilisation d’un métamodèle personnalis
 
 **Exemple :** remplacez le libellé du numéro de compte bancaire dans le formulaire par Numéro de compte personnalisé dans le formulaire adaptatif après la conversion.
 
-Dans ce métamodèle personnalisé, le service de conversion utilise la propriété **title** comme mot-clé de recherche. Après avoir récupéré le texte **Bank account number** (Numéro de compte bancaire) dans le formulaire, le service de conversion remplace le texte par la chaîne **Customer account number** (numéro de compte client) mentionnée avec la propriété **jcr:title** dans la section **aem:afProperties**.
+Dans ce métamodèle personnalisé, le service de conversion utilise la propriété **title** comme mot-clé de recherche. Après avoir récupéré le texte **Numéro de compte bancaire** dans le formulaire, le service de conversion remplace le texte par la chaîne **numéro de compte client** mentionnée avec la propriété **jcr:title** dans la section **aem:afProperties**.
 
 ```
 {
@@ -311,9 +311,9 @@ Dans ce métamodèle personnalisé, le service de conversion utilise la proprié
 
 #### Modifier le type d’un champ de formulaire {#modify-the-type-of-a-form-field}
 
-**Exemple** : remplacez le champ **Bank account number** (Numéro de compte bancaire) de type texte dans le formulaire avant la conversion par un champ de type number dans le formulaire adaptatif après la conversion.
+**Exemple** : remplacez le champ **Numéro de compte bancaire** de type texte dans le formulaire avant la conversion par un champ de type number dans le formulaire adaptatif après la conversion.
 
-Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Bank account number** (Numéro de compte bancaire) dans le formulaire, le service de conversion convertit le champ en un type number (nombre) à l’aide de la propriété **type**.
+Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Numéro de compte bancaire** dans le formulaire, le service de conversion convertit le champ en un type nombre à l’aide de la propriété **type**.
 
 ```
 {
@@ -326,9 +326,9 @@ Dans ce métamodèle personnalisé, le service de conversion utilise le texte da
 
 #### Ajouter du texte d’aide à un champ de formulaire {#add-help-text-to-a-form-field}
 
-**Exemple** : ajouter du texte d’aide au champ **Bank account number** (Numéro de compte bancaire) du formulaire adaptatif.
+**Exemple** : ajouter du texte d’aide au champ **Numéro de compte bancaire** du formulaire adaptatif.
 
-Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Bank account number** (Numéro de compte bancaire) dans le formulaire, le service de conversion ajoute le texte d’aide au formulaire adaptatif à l’aide de la propriété **description**.
+Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Numéro de compte bancaire** dans le formulaire, le service de conversion ajoute le texte d’aide au formulaire adaptatif à l’aide de la propriété **description**.
 
 ```
 {
@@ -342,9 +342,9 @@ Dans ce métamodèle personnalisé, le service de conversion utilise le texte da
 
 #### Convertir un champ de formulaire en cases à cocher à choix multiples dans le formulaire adaptatif {#convert-a-form-field-to-multiple-choice-check-boxes-in-the-adaptive-form}
 
-**Exemple** : remplacez le champ **Country** (Pays) de type string (chaîne) dans le formulaire avant la conversion par des cases à cocher dans le formulaire adaptatif après la conversion.
+**Exemple** : remplacez le champ **Pays** de type chaîne dans le formulaire avant la conversion par des cases à cocher dans le formulaire adaptatif après la conversion.
 
-Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Country** (Pays) dans le formulaire, le service de conversion remplace le champ par les cases à cocher suivantes à l’aide de la propriété **enum** :
+Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Pays** dans le formulaire, le service de conversion remplace le champ par les cases à cocher suivantes à l’aide de la propriété **enum** :
 
 * India
 * England
@@ -376,9 +376,9 @@ Les propriétés **sling:resourceType** et **guideNodeClass** mappent un champ d
 
 #### Modifier le format d’un champ de formulaire {#modify-the-format-of-a-form-field}
 
-**Exemple** : remplacez le format du champ **Email Address** (Adresse électronique) par un format d’adresse électronique.
+**Exemple** : remplacez le format du champ **Adresse électronique** par un format d’adresse électronique.
 
-Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Email Address** (Adresse électronique) dans le formulaire, le service de conversion remplace le champ par un format d’adresse électronique à l’aide de la propriété **format**.
+Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Adresse électronique** dans le formulaire, le service de conversion remplace le champ par un format d’adresse électronique à l’aide de la propriété **format**.
 
 ```
 {
@@ -392,9 +392,9 @@ Dans ce métamodèle personnalisé, le service de conversion utilise le texte da
 
 #### Ajouter des validations à des champs de formulaires adaptatifs {#add-validations-to-adaptive-form-fields}
 
-**Exemple 1 :** ajoutez une validation au champ **Postal Code** (Code postal) du formulaire adaptatif.
+**Exemple 1 :** ajoutez une validation au champ **Code postal** du formulaire adaptatif.
 
-Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Postal Code** (Code postal) dans le formulaire, le service de conversion ajoute une validation au champ à l’aide de la propriété **validatePictureClause** définie dans la section **aem:afProperties**. Selon la validation, l’entrée que vous spécifiez pour le champ **Postal Code** (Code postal) dans le formulaire adaptatif après la conversion doit comprendre six caractères.
+Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Code postal** dans le formulaire, le service de conversion ajoute une validation au champ à l’aide de la propriété **validatePictureClause** définie dans la section **aem:afProperties**. Selon la validation, l’entrée que vous spécifiez pour le champ **Code postal** dans le formulaire adaptatif après la conversion doit comprendre six caractères.
 
 ```
 {
@@ -408,9 +408,9 @@ Dans ce métamodèle personnalisé, le service de conversion utilise le texte da
 }
 ```
 
-**Exemple 2 :** ajoutez une validation au champ **Bank account number** (Numéro de compte bancaire) du formulaire adaptatif.
+**Exemple 2 :** ajoutez une validation au champ **Numéro de compte bancaire** du formulaire adaptatif.
 
-Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Bank account number** (Numéro de compte bancaire) dans le formulaire, le service de conversion ajoute une validation au champ à l’aide de la propriété **mandatory** définie dans la section **aem:afProperties**. Selon la validation, vous devez spécifier une valeur pour le champ **Bank account number** (Numéro de compte bancaire) avant d’envoyer le formulaire après la conversion.
+Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Numéro de compte bancaire** dans le formulaire, le service de conversion ajoute une validation au champ à l’aide de la propriété **mandatory** définie dans la section **aem:afProperties**. Selon la validation, vous devez spécifier une valeur pour le champ **Numéro de compte bancaire** avant d’envoyer le formulaire après la conversion.
 
 ```
 {
@@ -426,14 +426,14 @@ Dans ce métamodèle personnalisé, le service de conversion utilise le texte da
 
 #### Convertir un champ de texte en liste déroulante dans le formulaire adaptatif {#convert-a-text-field-to-drop-down-list-in-the-adaptive-form}
 
-**Exemple** : remplacez le champ **Country** (Pays) de type string dans le formulaire avant la conversion par des options de liste déroulante dans le formulaire adaptatif après la conversion.
+**Exemple** : remplacez le champ **Pays** de type string dans le formulaire avant la conversion par des options de liste déroulante dans le formulaire adaptatif après la conversion.
 
-Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Country** (Pays) dans le formulaire, le service de conversion remplace le champ par les options de liste déroulante suivantes à l’aide de la propriété **enum** :
+Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Pays** dans le formulaire, le service de conversion remplace le champ par les options de liste déroulante suivantes à l’aide de la propriété **enum** :
 
-* Inde
-* Angleterre
-* Australie
-* Nouvelle-Zélande
+* India
+* England
+* Australia
+* New Zealand
 
 Les propriétés **sling:resourceType** et **guideNodeClass** mappent un champ de formulaire à un composant de formulaire adaptatif de liste déroulante.
 
@@ -488,9 +488,9 @@ Pour ajouter une option supplémentaire, mettez à jour la propriété **enum** 
 
 #### Convertir un champ de chaîne en un champ multiligne {#convert-a-string-field-to-a-multi-line-field}
 
-**Exemple :** remplacez le champ **Address** (Adresse) de type string par un champ multiligne dans le formulaire après la conversion.
+**Exemple :** remplacez le champ **Adresse** de type string par un champ multiligne dans le formulaire après la conversion.
 
-Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Address** (Adresse) dans le formulaire, le service remplace le champ de texte par un champ multiligne à l’aide de la propriété **multiLine** définie dans la section **aem:afProperties**.
+Dans ce métamodèle personnalisé, le service de conversion utilise le texte dans **aem:affKeyword** comme mot-clé de recherche. Après avoir récupéré le texte **Adresse** dans le formulaire, le service remplace le champ de texte par un champ multiligne à l’aide de la propriété **multiLine** définie dans la section **aem:afProperties**.
 
 ```
 {
