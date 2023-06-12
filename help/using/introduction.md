@@ -3,7 +3,7 @@ title: Présentation
 description: Accélérer la conversion des formulaires imprimés en formulaires adaptatifs
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
 source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
 ht-degree: 100%
 
