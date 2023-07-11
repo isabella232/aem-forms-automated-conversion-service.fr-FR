@@ -6,9 +6,9 @@ topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
 source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1670'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Procédez aux étapes de configuration suivantes pour créer une connexion entre
     </tr>
     <tr> 
     <td><p>URI de connexion JDBC</p></td> 
-    <td><p>jdbc:mysql://[hôte]:[port]/[nom_schéma]</p></td>
+    <td><p>jdbc:mysql://[host]:[port]/[schema_name]</p></td>
     </tr>
     <tr> 
     <td><p>Nom d’utilisateur</p></td> 
@@ -109,11 +109,11 @@ Procédez aux étapes de configuration suivantes pour créer une connexion entre
     <td><p>Mot de passe associé au nom d’utilisateur</p></td>
     </tr>
     <tr> 
-    <td><p>Isolation de transaction</p></td> 
-    <td><p>READ_ENGTTED</p></td>
+    <td><p>Isolation des transactions</p></td> 
+    <td><p>READ_COMMITTED</p></td>
     </tr>
     <tr> 
-    <td><p>Nombre maximal de connexions Principales</p></td> 
+    <td><p>Nombre max. de connexions actives</p></td> 
     <td><p>1 000</p></td>
     </tr>
     <tr> 
@@ -121,7 +121,7 @@ Procédez aux étapes de configuration suivantes pour créer une connexion entre
     <td><p>100</p></td>
     </tr>
     <tr> 
-    <td><p>Connexions inactives min.</p></td> 
+    <td><p>Nombre min. de connexions inactives</p></td> 
     <td><p>10</p></td>
     </tr>
     <tr> 
@@ -129,7 +129,7 @@ Procédez aux étapes de configuration suivantes pour créer une connexion entre
     <td><p>10</p></td>
     </tr>
     <tr> 
-    <td><p>Attente max</p></td> 
+    <td><p>Attente max.</p></td> 
     <td><p>100 000</p></td>
     </tr>
      <tr> 
@@ -142,10 +142,10 @@ Procédez aux étapes de configuration suivantes pour créer une connexion entre
     </tr>
      <tr> 
     <td><p>Requête de validation</p></td> 
-    <td><p>Les exemples de valeurs sont SELECT 1(mysql), select 1 from double(oracle), SELECT 1 (MS Sql Server) (validationQuery).</p></td>
+    <td><p>Exemples de valeurs : SELECT 1(mysql), select 1 from dual (oracle), SELECT 1 (MS Sql Server) (validationQuery).</p></td>
     </tr>
      <tr> 
-    <td><p>Délai de requête de validation</p></td> 
+    <td><p>Délai d’expiration des requêtes de validation</p></td> 
     <td><p>10 000</p></td>
     </tr>
     </tbody> 
@@ -216,7 +216,7 @@ Connectez-vous au référentiel **crx-repository** et accédez à */content/form
 
 Vous devez créer un modèle de processus capable de traiter ces données et les envoyer à la base de données MYSQL à l’aide du modèle de données de formulaire créé dans les sections précédentes.
 
-## Créer un modèle de processus pour traiter les données JSON {#create-workflow-model}
+## Créer un modèle de worflow pour traiter les données JSON {#create-workflow-model}
 
 Pour créer un modèle de processus permettant d’envoyer les données du formulaire adaptatif à la base de données, procédez comme suit :
 
