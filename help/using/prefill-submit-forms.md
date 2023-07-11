@@ -1,7 +1,7 @@
 ---
 title: Processus recommandés de préremplissage et d’envoi de formulaires adaptatifs sur la base de sources de données
 seo-title: Prefill and submit options for adaptive forms
-description: Processus de préremplissage et d’envoi de formulaires adaptatifs sur la base de sources de données générés à l’aide du service de conversion automatisée de formulaires.
+description: Workflows de préremplissage et d’envoi de formulaires adaptatifs sur la base de sources de données générés à l’aide du service de conversion automatisée de formulaires.
 seo-description: Data-source based prefill and submit workflows for adaptive forms generated using Automated Forms Conversion Service.
 uuid: 91409a82-141c-4233-82b1-1539a0b250f8
 contentOwner: khsingh
@@ -10,7 +10,7 @@ discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
 exl-id: 5deef8f5-5098-47c1-b696-b2db59e92931
 source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2574'
 ht-degree: 100%
 
