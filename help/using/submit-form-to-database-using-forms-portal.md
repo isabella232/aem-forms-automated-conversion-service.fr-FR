@@ -5,14 +5,14 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1214'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 
-# Intégrer des formulaires adaptatifs à une base de données à l’aide du portail Forms {#submit-forms-to-database-using-forms-portal}
+# Intégrer des formulaires adaptatifs à une base de données à l’aide du portail Formulaires. {#submit-forms-to-database-using-forms-portal}
 
 Le service de conversion automatisée de formulaires vous permet de convertir un formulaire PDF non interactif, un formulaire Acro ou un formulaire PDF basé sur XFA en un formulaire adaptatif. Lors du lancement du processus de conversion, vous avez la possibilité de générer un formulaire adaptatif avec ou sans liaison de données.
 
@@ -44,7 +44,7 @@ L’établissement d’une connexion entre une instance AEM et une base de donn�
 
 * [Configurer des paramètres de connexion](#configure-connection-between-aem-instance-and-database)
 
-* [Installer et configurer l’exemple de package pour l’intégration au portail Forms](#set-up-and-configure-sample)
+* [Installer et configurer l’exemple de package pour l’intégration au portail Formulaires](#set-up-and-configure-sample)
 
 ### Installer le fichier mysql-connector-java-5.1.39-bin.jar {#install-mysql-connector-java-file}
 
@@ -160,32 +160,32 @@ Procédez aux étapes de configuration suivantes pour créer une connexion entre
     <th><strong>Valeur</strong></th> 
     </tr> 
     <tr> 
-    <td><p>Service de données de brouillon du portail Forms</p></td> 
+    <td><p>Service de données de brouillon du portail Formulaires</p></td> 
     <td><p>Identifiant du service de données de brouillon</p></td>
     <td><p>formsportal.sampledataservice</p></td> 
     </tr>
     <tr> 
-    <td><p>Service de métadonnées de brouillon du portail Forms</p></td> 
+    <td><p>Service de métadonnées de brouillon du portail Formulaires</p></td> 
     <td><p>Identifiant du service de métadonnées de brouillon</p></td>
     <td><p>formsportal.samplemetadataservice</p></td> 
     </tr>
     <tr> 
-    <td><p>Service de données d’envoi du portail Forms</p></td> 
+    <td><p>Service de données d’envoi du portail Formulaires</p></td> 
     <td><p>Identifiant du service de données d’envoi</p></td>
     <td><p>formsportal.sampledataservice</p></td> 
     </tr>
     <tr> 
-    <td><p>Service de métadonnées d’envoi du portail Forms</p></td> 
+    <td><p>Service de métadonnées d’envoi du portail Formulaires</p></td> 
     <td><p>Identifiant du service de métadonnées d’envoi</p></td>
     <td><p>formsportal.samplemetadataservice</p></td> 
     </tr>
     <tr> 
-    <td><p>Service de données de signature en attente du portail Forms</p></td> 
+    <td><p>Service de données de signature en attente du portail Formulaires</p></td> 
     <td><p>Identificateur du service de données de signature en attente</p></td>
     <td><p>formsportal.sampledataservice</p></td> 
     </tr>
     <tr> 
-    <td><p>Service de métadonnées de signature en attente du portail Forms</p></td> 
+    <td><p>Service de métadonnées de signature en attente du portail Formulaires</p></td> 
     <td><p>Identificateur du service de métadonnées de signature en attente</p></td>
     <td><p>formsportal.samplemetadataservice</p></td> 
     </tr>
@@ -210,7 +210,7 @@ Procédez aux étapes de configuration suivantes pour créer une connexion entre
     </tr>
     <tr> 
     <td><p>URI de connexion JDBC</p></td> 
-    <td><p>jdbc:mysql://[hôte]:[port]/[nom_schéma]</p></td>
+    <td><p>jdbc:mysql://[host]:[port]/[schema_name]</p></td>
     </tr>
     <tr> 
     <td><p>Nom d’utilisateur</p></td> 
@@ -221,11 +221,11 @@ Procédez aux étapes de configuration suivantes pour créer une connexion entre
     <td><p>Mot de passe associé au nom d’utilisateur</p></td>
     </tr>
     <tr> 
-    <td><p>Isolation de transaction</p></td> 
-    <td><p>READ_ENGTTED</p></td>
+    <td><p>Isolation des transactions</p></td> 
+    <td><p>READ_COMMITTED</p></td>
     </tr>
     <tr> 
-    <td><p>Nombre maximal de connexions Principales</p></td> 
+    <td><p>Nombre max. de connexions actives</p></td> 
     <td><p>1 000</p></td>
     </tr>
     <tr> 
@@ -233,7 +233,7 @@ Procédez aux étapes de configuration suivantes pour créer une connexion entre
     <td><p>100</p></td>
     </tr>
     <tr> 
-    <td><p>Connexions inactives min.</p></td> 
+    <td><p>Nombre min. de connexions inactives</p></td> 
     <td><p>10</p></td>
     </tr>
     <tr> 
@@ -241,7 +241,7 @@ Procédez aux étapes de configuration suivantes pour créer une connexion entre
     <td><p>10</p></td>
     </tr>
     <tr> 
-    <td><p>Attente max</p></td> 
+    <td><p>Attente max.</p></td> 
     <td><p>100 000</p></td>
     </tr>
      <tr> 
@@ -254,10 +254,10 @@ Procédez aux étapes de configuration suivantes pour créer une connexion entre
     </tr>
      <tr> 
     <td><p>Requête de validation</p></td> 
-    <td><p>Les exemples de valeurs sont SELECT 1(mysql), select 1 from double(oracle), SELECT 1 (MS Sql Server) (validationQuery).</p></td>
+    <td><p>Exemples de valeurs : SELECT 1(mysql), select 1 from dual (oracle), SELECT 1 (MS Sql Server) (validationQuery).</p></td>
     </tr>
      <tr> 
-    <td><p>Délai de requête de validation</p></td> 
+    <td><p>Délai d’expiration des requêtes de validation</p></td> 
     <td><p>10 000</p></td>
     </tr>
     </tbody> 
@@ -276,7 +276,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 1. Parcourez l’arborescence pour sélectionner le package **aem-fp-db-integration-sample-pkg-6.1.2.zip** et cliquez sur **[!UICONTROL OK]**.
 1. Cliquez sur **[!UICONTROL Install]** (Installer) en regard du package pour l’installer.
 
-## Configurer le formulaire adaptatif converti pour l’intégration au portail Forms {#configure-converted-adaptive-form-for-forms-portal-integration}
+## Configurer le formulaire adaptatif converti pour l’intégration au portail Formulaires {#configure-converted-adaptive-form-for-forms-portal-integration}
 
 Pour activer l’envoi de formulaires adaptatifs à l’aide de la page Portail Forms, procédez comme suit :
 1. [Exécutez la conversion](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process) pour convertir un formulaire source en un formulaire adaptatif.
@@ -285,7 +285,7 @@ Pour activer l’envoi de formulaires adaptatifs à l’aide de la page Portail 
 1. Dans la section **[!UICONTROL Submission]** (Envoi), sélectionnez **[!UICONTROL Forms Portal Submit Action]** (Action d’envoi vers le portail Forms) dans la liste déroulante **[!UICONTROL Submit Action]** (Action d’envoi).
 1. Appuyez sur ![Enregistrer la politique de modèle](assets/edit_template_done.png) pour enregistrer les paramètres.
 
-## Créer et configurer la page Portail Forms {#create-configure-forms-portal-page}
+## Créer et configurer la page Portail Formulaires {#create-configure-forms-portal-page}
 
 Pour créer une page Portail Forms et la configurer afin de pouvoir envoyer des formulaires adaptatifs via cette page, procédez comme suit :
 
