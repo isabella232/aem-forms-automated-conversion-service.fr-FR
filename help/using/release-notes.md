@@ -1,8 +1,14 @@
 ---
 title: 'Nouveautés Notes de mise à jour : service de conversion automatisée de formulaires'
 description: En savoir plus sur les dernières fonctionnalités et le bogue corrigé pour le service de conversion automatisée de formulaires
+solution: Experience Manager Forms
+feature: Adaptive Forms
+topic: Administration
+topic-tags: forms
+role: Admin, Developer
+level: Beginner, Intermediate
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
+source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
 workflow-type: ht
 source-wordcount: '454'
 ht-degree: 100%
