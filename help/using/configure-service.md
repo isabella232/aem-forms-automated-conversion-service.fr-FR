@@ -1,9 +1,14 @@
 ---
 title: Configuration du service de conversion automatisée de formulaires
 description: Préparez votre instance AEM à utiliser le service de conversion automatisée de formulaires
-role: User, Admin
+solution: Experience Manager Forms
+feature: Adaptive Forms
+topic: Administration
+topic-tags: forms
+role: Admin, Developer, User
+level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
+source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
 workflow-type: ht
 source-wordcount: '2813'
 ht-degree: 100%
