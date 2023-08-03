@@ -1,5 +1,5 @@
 ---
-title: Présentation vers le service automated forms conversion
+title: Présentation du service de conversion automatisée de formulaires
 description: Accélérer la conversion des formulaires imprimés en formulaires adaptatifs
 solution: Experience Manager Forms
 feature: Adaptive Forms
@@ -9,9 +9,9 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
 source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '708'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
