@@ -3,14 +3,12 @@ title: Convertir des formulaires PDF en formulaires adaptatifs
 seo-title: Convert PDF forms to adaptive forms
 description: Exécuter le service de conversion automatisée de formulaires pour convertir des formulaires PDF en formulaires adaptatifs
 seo-description: Run the Automated Forms Conversion service to convert PDF forms to adaptive forms
-uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
-discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
-exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
+feature: Adaptive Forms, Foundation Components
+source-git-commit: 444cc37ec6fa2af2d8d2952efd18368a5725e881
 workflow-type: ht
-source-wordcount: '1740'
+source-wordcount: '1721'
 ht-degree: 100%
 
 ---
